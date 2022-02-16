@@ -1,0 +1,164 @@
+.font-size(@sizeValue) {
+    @remValue: @sizeValue;
+    @pxValue: (@sizeValue * 10);
+    font-size:~"@{pxValue}px";
+    font-size:~"@{remValue}rem";
+}
+
+
+
+html {
+    font-size: 62.5%;
+    font-display: auto;
+    text-rendering: auto;
+}
+
+#casiopea-wsite {
+
+    p {
+        color: #000;
+
+        &.text-white,
+        &.txt-white {
+            color: #fff;
+        }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        color: #000;
+
+        &.text-white,
+        &.txt-white {
+            color: #fff;
+        }
+    }
+
+    button {
+        position: relative;
+
+        &:hover,
+        &:focus,
+        &:active {
+            box-shadow: none;
+            outline: 0px;
+        }
+
+        &:after {
+            position: absolute;
+            font: normal normal normal 14px/1 FontAwesome;
+            right: 0px;
+            left: auto;
+        }
+
+        &:not(.collapsed) {
+            &::after {
+                content: "\f077";
+
+
+            }
+        }
+
+
+        &.collapsed {
+            &::after {
+                content: "\f078";
+            }
+        }
+
+    }
+
+    .casiopea-section {
+
+        &.fluid-section {
+            padding: 0px;
+            max-width: 100%;
+        }
+
+        .video-container {
+            background: #000;
+            height: 100%;
+            width: 100%;
+            display: block
+        }
+
+        .video-container {
+            .video {
+                display: block;
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    #our-team {
+        .semblance {
+            clear: both;
+            display: block;
+            float: left;
+            width: 100%;
+            text-align: left;
+            .font-size(1.4);
+
+            button {
+                background: transparent;
+                color: #000;
+                border: 0;
+                border-bottom: 1px solid #000;
+                text-align: left;
+                padding: 0px 0px 12px 0px;
+                margin-top: 30px;
+                margin-bottom: 10px;
+                text-transform: none;
+                border-radius: 0px;
+                width: 100%;
+
+                &:hover,
+                &:focus,
+                &:active {
+                    box-shadow: none;
+                    outline: 0px;
+                }
+
+            }
+
+            .collapse {
+                text-align: left;
+
+
+                .card-body {
+                    text-align: left;
+                    .font-size(1.4);
+
+                    p {
+                        text-align: left;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+
+//large screens
+@media only screen and (min-width:1175px) {}
+
+//mobile devices tablet+phone
+@media only screen and (max-width :767px),
+(max-device-width:767px) {
+
+
+    #our-team {
+        .profile-team-item {
+            margin-bottom: 30px;
+        }
+    }
+
+}
