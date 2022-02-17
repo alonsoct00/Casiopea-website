@@ -179,7 +179,8 @@ footer {
                     -webkit-appearance: none;
                     color: #000;
 
-                    &:focus, &:hover {
+                    &:focus,
+                    &:hover {
                         background: #61f1e99c;
                     }
 
@@ -198,6 +199,52 @@ footer {
         animation: cssVisible 3000ms forwards;
     }
 }
+
+
+#casiopea-faq {
+	background: #f33c38;
+
+	.jumbotron {
+		background: #f33c38;
+	}
+    #grid-faq {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: normal;
+        max-width: 100%;
+        padding: 20px;
+        background: #f33c38;
+
+        .faq-item {
+            display: inline-flex;
+            align-items: normal;
+            justify-content: normal;
+            margin-bottom: 30px;
+        }
+
+        .faq-question {
+            width: 80%;
+            margin: 0px auto;
+
+        }
+
+        .thumbnail-faq {
+            width: 100%;
+
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    footer {
+    	background: #f33c38 !important;
+    }
+
+}
+
 
 
 //large screens
