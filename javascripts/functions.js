@@ -10,9 +10,61 @@ class Header extends HTMLElement {
     connectedCallback() {
         this.innerHTML =
             `
-        
-            
-    `
+            <section>
+                <a class='h-link brand' href='index.html'>
+                    Casiopea
+                </a>
+                <ul id='navigation'>
+                    <div class='trigger'>
+                        <div class='bar'></div>
+                        <div class='bar'></div>
+                        <div class='bar'></div>
+                    </div>
+                    <li>
+                        <a class="h-link" href='index.html'>Inicio</a>
+                    </li>
+                    <li>
+                        <a href='index.html#about-us'>Quienes somos</a>
+                    </li>
+                    <li>
+                        <a class="h-link" href='proyectos.html'>Proyectos</a>
+                        <ul id="filter-nav">
+                            <li class="filter-nav-item">
+                                <a class="filter-nav-anchor" href='proyectos.html#all' data-filter='*'>All</a>
+                            </li>
+                            <li class="filter-nav-item">
+                                <a class="filter-nav-anchor" href='proyectos.html#motion-graphics' data-filter=".motion-graphics">Motion graphics</a>
+                            </li>
+                            <li class="filter-nav-item">
+                                <a class="filter-nav-anchor" href='proyectos.html#stop-motion' data-filter=".stop-motion">Stop motion</a>
+                            </li>
+                            <li class="filter-nav-item">
+                                <a class="filter-nav-anchor" href='proyectos.html#animated-cartoons' data-filter=".animated-cartoons">Dibujo animado</a>
+                            </li>
+                            <li class="filter-nav-item">
+                                <a class="filter-nav-anchor" href='proyectos.html#video-i' data-filter=".video-i">Video intervenido</a>
+                            </li>
+                            <li class="filter-nav-item">
+                                <a class="filter-nav-anchor" href='proyectos.html#fonima' data-filter=".fonima">Fonima</a>
+                            </li>
+                            <li class="filter-nav-item">
+                                <a class="filter-nav-anchor" href='proyectos.html#workshops' data-filter=".workshops">Talleres</a>
+                            </li>
+                            <li>
+                                <a class="filter-nav-anchor" href='proyectos.html#visuals' data-filter=".visuals">Visuales</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="h-link" href='faq.html'>Preguntas frecuentes</a>
+                    </li>
+                    <li>
+                        <a class="h-link" href='contacto.html'>Contacto</a>
+                    </li>
+                </ul>
+            </section>
+                
+         `
     }
 }
 
@@ -22,7 +74,18 @@ class Footer extends HTMLElement {
     connectedCallback() {
         this.innerHTML =
             `
-    
+                <section class='text-center'>
+                <div class='social'>
+                    <a class='icon fa fa-dribbble' href='#'></a>
+                    <a class='icon fa fa-behance' href='#'></a>
+                    <a class='icon fa fa-facebook' href='#'></a>
+                    <a class='icon fa fa-instagram' href='#'></a>
+                    <a class='icon fa fa-twitter' href='#'></a>
+                </div>
+                <div class='copy'>
+                    <p>&copy; 2022 Casiopea. All Rights Reserved.</p>
+                </div>
+            </section>
 
     `
 
@@ -127,7 +190,7 @@ customElements.define('main-footer', Footer);
     });
 
     // Fade effect on navigation / header links
-    $('a').on('tap', function(e) {
+    $('a.h-link').on('tap', function(e) {
         e.stopPropagation();
         var href = $(this).attr('href');
         if (href != '#' && !$(this).hasClass('lightbox') && !$(this).hasClass('anchor')) {
