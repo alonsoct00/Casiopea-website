@@ -200,13 +200,97 @@ footer {
     }
 }
 
+#casiopea-project {
+
+    &.white-menu {
+        #navigation li a {
+            color: #f0f0f0;
+        }
+    }
+
+    .casiopea-project-hero-intro {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+
+        .video-container {
+            margin: 0px;
+            display: block;
+            height: 100%;
+            width: auto;
+
+            video {
+                display: block;
+                width: 100%;
+                height: auto;
+                object-fit: cover
+            }
+        }
+
+        .img-hero-intro {
+            display: block;
+            margin: 0px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .intro-project-title {
+        opacity: 0.5;
+    }
+
+    #info-project-txt {
+        font-size: .9em;
+        line-height: 1.6em;
+        font-family: "Inconsolata", sans-serif;
+
+        dl {
+            dt {
+                display: inline-block;
+            }
+
+            dd {
+                display: inline-block;
+            }
+        }
+    }
+
+    #project-work-demos {
+        .row {
+            display: flex;
+            align-items: normal;
+            justify-content: normal;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+
+            &.flex-row-reverse {
+                flex-direction: row-reverse;
+            }
+        }
+
+        .lottie-object {
+            display: block;
+        }
+
+        .img-project-container {
+            display: block;
+        }
+    }
+}
+
 
 #casiopea-faq {
-	background: #f33c38;
+    background: #f33c38;
 
-	.jumbotron {
-		background: #f33c38;
-	}
+    .jumbotron {
+        background: #f33c38;
+    }
+
     #grid-faq {
         display: flex;
         flex-wrap: wrap;
@@ -239,8 +323,9 @@ footer {
             }
         }
     }
+
     footer {
-    	background: #f33c38 !important;
+        background: #f33c38 !important;
     }
 
 }
