@@ -221,3 +221,4 @@ customElements.define('main-footer', Footer);
     });
 
 })(jQuery);
+
