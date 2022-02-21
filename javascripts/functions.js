@@ -21,45 +21,45 @@ class Header extends HTMLElement {
                         <div class='bar'></div>
                     </div>
                     <li>
-                        <a class="h-link" href='/index.html'>Inicio</a>
+                        <a class="h-link" href='index.html'>Inicio</a>
                     </li>
                     <li>
-                        <a href='/index.html#about-us'>Quienes somos</a>
+                        <a href='index.html#about-us'>Quienes somos</a>
                     </li>
                     <li>
-                        <a class="h-link" href='/proyectos.html'>Proyectos</a>
+                        <a class="h-link" href='proyectos.html'>Proyectos</a>
                         <ul id="filter-nav">
                             <li class="filter-nav-item">
-                                <a class="h-link filter-nav-anchor" href='/proyectos.html#all' data-filter='*'>All</a>
+                                <a class="h-link filter-nav-anchor" href='proyectos.html#all' data-filter='*'>All</a>
                             </li>
                             <li class="filter-nav-item">
-                                <a class="h-link filter-nav-anchor" href='/proyectos.html#motion-graphics' data-filter=".motion-graphics">Motion graphics</a>
+                                <a class="h-link filter-nav-anchor" href='proyectos.html#motion-graphics' data-filter=".motion-graphics">Motion graphics</a>
                             </li>
                             <li class="filter-nav-item">
-                                <a class="h-link filter-nav-anchor" href='/proyectos.html#stop-motion' data-filter=".stop-motion">Stop motion</a>
+                                <a class="h-link filter-nav-anchor" href='proyectos.html#stop-motion' data-filter=".stop-motion">Stop motion</a>
                             </li>
                             <li class="filter-nav-item">
-                                <a class="h-link filter-nav-anchor" href='/proyectos.html#animated-cartoons' data-filter=".animated-cartoons">Dibujo animado</a>
+                                <a class="h-link filter-nav-anchor" href='proyectos.html#animated-cartoons' data-filter=".animated-cartoons">Dibujo animado</a>
                             </li>
                             <li class="filter-nav-item">
-                                <a class="h-link filter-nav-anchor" href='/proyectos.html#video-i' data-filter=".video-i">Video intervenido</a>
+                                <a class="h-link filter-nav-anchor" href='proyectos.html#video-i' data-filter=".video-i">Video intervenido</a>
                             </li>
                             <li class="filter-nav-item">
-                                <a class="h-link filter-nav-anchor" href='/proyectos.html#fonima' data-filter=".fonima">Fonima</a>
+                                <a class="h-link filter-nav-anchor" href='proyectos.html#fonima' data-filter=".fonima">Fonima</a>
                             </li>
                             <li class="filter-nav-item">
-                                <a class="h-link filter-nav-anchor" href='/proyectos.html#workshops' data-filter=".workshops">Talleres</a>
+                                <a class="h-link filter-nav-anchor" href='proyectos.html#workshops' data-filter=".workshops">Talleres</a>
                             </li>
                             <li>
-                                <a class="filter-nav-anchor" href='/proyectos.html#visuals' data-filter=".visuals">Visuales</a>
+                                <a class="filter-nav-anchor" href='proyectos.html#visuals' data-filter=".visuals">Visuales</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a class="h-link" href='/faq.html'>Preguntas frecuentes</a>
+                        <a class="h-link" href='faq.html'>Preguntas frecuentes</a>
                     </li>
                     <li>
-                        <a class="h-link" href='/contacto.html'>Contacto</a>
+                        <a class="h-link" href='contacto.html'>Contacto</a>
                     </li>
                 </ul>
             </section>
