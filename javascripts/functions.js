@@ -24,7 +24,7 @@ class Header extends HTMLElement {
                         <a class="h-link" href='index.html'>Inicio</a>
                     </li>
                     <li>
-                        <a href='index.html#about-us'>Quienes somos</a>
+                        <a href='about-us.html'>Quienes somos</a>
                     </li>
                     <li>
                         <a class="h-link" href='proyectos.html'>Proyectos</a>
