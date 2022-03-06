@@ -220,6 +220,7 @@ footer {
             display: block;
             height: 100%;
             width: auto;
+            min-width: 100vw;
 
             video {
                 display: block;
@@ -271,6 +272,10 @@ footer {
             &.flex-row-reverse {
                 flex-direction: row-reverse;
             }
+
+            > div.col-xs-12 {
+                margin: 24px 0;
+            }
         }
 
         .lottie-object {
@@ -287,17 +292,208 @@ footer {
                 margin: 0px auto;
             }
         }
+
+        .video-container {
+            width: 100%;
+            display: flex;
+            margin: 0px auto;
+            overflow: hidden;
+
+            video {
+                display: block;
+                margin: 0;
+                width: 100%;
+            }
+        }
+    }
+
+    .other-projects-block {
+        visibility: hidden;
+
+        .other-projects-info {
+            .item {
+                opacity: 1 !important;
+            }
+        }
+    }
+
+    .dos-camaleones-project {
+
+        .other-projects-block {
+            background: #eee;
+        }
+
+        header {
+            #navigation li a {
+                color: #fff;
+            }
+
+            #navigation li:hover a {
+                text-decoration: none;
+                color: #403E3B;
+            }
+        }
+
+        footer {
+            background: #EEEEEE !important;
+        }
+    }
+
+
+
+    .fonima-project {
+
+        .other-projects-block {
+            background: #000;
+        }
+
+
+        header {
+            #navigation li a {
+                color: #fff;
+            }
+
+            #navigation li:hover a {
+                text-decoration: none;
+                color: #403E3B;
+            }
+        }
+
+        footer {
+            background: #000 !important;
+        }
+    }
+
+    .birdsong-project {
+
+        .other-projects-block {
+            background: #eee;
+        }
+
+        header {
+            #navigation li a {
+                color: #fff;
+            }
+
+            #navigation li:hover a {
+                text-decoration: none;
+                color: #403E3B;
+            }
+        }
+
+        footer {
+            background: #FFF !important;
+        }
     }
 
     .sobre-amor-project {
+        .other-projects-block {
+            background: #a64a96;
+        }
+
+        header {
+            #navigation li a {
+                color: #fff;
+            }
+
+            #navigation li:hover a {
+                text-decoration: none;
+                color: #403E3B;
+            }
+        }
+
         footer {
             background: #a64a96 !important;
         }
     }
 
-    .conoces-tomas {
+    .smmx-project {
+
+        .other-projects-block {
+            background: #eee;
+        }
+
+        header {
+            #navigation li a {
+                color: #fff;
+            }
+
+            #navigation li:hover a {
+                text-decoration: none;
+                color: #403E3B;
+            }
+        }
+
+        footer {
+            background: #FFF !important;
+        }
+    }
+
+    .conoces-tomas-project {
+
+        header {
+            #navigation li a {
+                color: #fff;
+            }
+
+            #navigation li:hover a {
+                text-decoration: none;
+                color: #403E3B;
+            }
+        }
+
+        .other-projects-block {
+            background: #4FD9D1;
+        }
+
         footer {
             background: #4FD9D1 !important;
+        }
+    }
+
+
+    .poliangular-project {
+
+        .other-projects-block {
+            background: #e5e1dd;
+        }
+
+        header {
+            #navigation li a {
+                color: #fff;
+            }
+
+            #navigation li:hover a {
+                text-decoration: none;
+                color: #403E3B;
+            }
+        }
+
+        footer {
+            background: #e5e1dd !important;
+        }
+    }
+
+
+    .la-vejez-project {
+
+        .other-projects-block {
+            background: #eee;
+        }
+
+        header {
+            #navigation li a {
+                color: #fff;
+            }
+
+            #navigation li:hover a {
+                text-decoration: none;
+                color: #403E3B;
+            }
+        }
+
+        footer {
+            background: #eee !important;
         }
     }
 }
