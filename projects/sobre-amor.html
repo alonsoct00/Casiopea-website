@@ -96,13 +96,10 @@
             <div class='block'>
                 <div class="row" class="video-main-wrapper">
                     <div class="col-md-12">
-                        <iframe src="https://player.vimeo.com/video/664507588?h=df8010ac46" width="100%" height="600" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> 
-
-                        <p><a href="https://vimeo.com/664507588">Fragmentos animados para serie Sobre Amor</a> from <a href="https://vimeo.com/casiopea">Casiopea</a> on <a href="https://vimeo.com">Vimeo</a>.</p> 
+                        <iframe src="https://player.vimeo.com/video/664507588?h=df8010ac46" width="100%" height="600" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                        <p><a href="https://vimeo.com/664507588">Fragmentos animados para serie Sobre Amor</a> from <a href="https://vimeo.com/casiopea">Casiopea</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
                     </div>
                 </div>
-
-
                 <div class="row">
                     <div class='col-md-12 col-xs-12'>
                         <span class="img-project-container">
@@ -114,31 +111,30 @@
                             <img src="4-sobre_amor/media/2-SobreAmor.jpg" alt="Sobre Amor 2" title="Sobre Amor 2" class="img-fluid">
                         </span>
                     </div>
-
                     <div class='col-md-12 col-xs-12'>
                         <span class="img-project-container">
                             <img src="4-sobre_amor/media/3-SobreAmor.jpg" alt="Sobre Amor 3" title="Sobre Amor 3" class="img-fluid">
                         </span>
                     </div>
-
                     <div class='col-md-12 col-xs-12'>
                         <span class="img-project-container">
                             <img src="4-sobre_amor/media/4-SobreAmor.jpg" alt="Sobre Amor 4" title="Sobre Amor 4" class="img-fluid">
                         </span>
                     </div>
                 </div>
-
             </div>
         </section>
-        <section class='block'>
-            <div class='row mb-5'>
-                <div class='col-md-12'>
-                    <div class='title-block'>
-                        <h3>Otros Proyectos</h3>
+        <section class='wide other-projects-block'>
+            <div class='block'>
+                <div class='row mb-5'>
+                    <div class='col-md-12'>
+                        <div class='title-block'>
+                            <h3>Otros Proyectos</h3>
+                        </div>
                     </div>
                 </div>
+                <ul class='col-3 other-projects-info' id='grid'></ul>
             </div>
-            <ul class='col-3 other-projects-info' id='grid'></ul>
         </section>
         <footer>
             <!-- Footer component-->
@@ -156,7 +152,46 @@
     <script src="../javascripts/jquery.placeholder.js" type="text/javascript"></script>
     <script src="../javascripts/waypoints.min.js" type="text/javascript"></script>
     <script src="../javascripts/functions.js" type="text/javascript"></script>
+    <script async>
+    $("a.h-link, a").each(function() {
+        var $this = $(this);
+        var _href = $this.attr("href");
+        $this.attr("href", '../' + _href);
+    });
+    </script>
+    <script type="text/javascript" async defer>
+    const projhtml = window.location.pathname.split('/').slice(0, -1).join('/');
 
+    $.ajax({
+        url: projhtml,
+        success: function(datahtml) {
+            $(datahtml).find("a").attr("href", function(i, projhtml) {
+                if (projhtml.match(/\.(html)$/)) {
+                    $(".other-projects-info").append(" <li class='item'><a class='inner' href='" + projhtml + "' style='background:url(" + projhtml.slice(0, -5) + ".jpg);'><div class='caption'><div class='titles'><div class='title'>" + projhtml.slice(0, -5) + "</div></div></div></a></li>");
+                }
+            });
+        }
+    });
+
+    function showRandom() {
+        var ul = $('.other-projects-info'),
+            lis = ul.find('li').detach(),
+            used = [];
+        var new_lis = [];
+        while (true) {
+            var li = lis[Math.floor(Math.random() * lis.length)];
+            if (used.indexOf(li) === -1 && new_lis.indexOf(li) === -1) new_lis.push(li);
+            if (new_lis.length >= 3) break;
+        }
+        used = new_lis;
+        ul.html(new_lis);
+
+        $('.other-projects-block').css('visibility', 'visible');
+    }
+
+    //showRandom();
+    setTimeout(showRandom, 4500);
+    </script>
 </body>
 
 </html>
