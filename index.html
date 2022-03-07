@@ -33,11 +33,7 @@
         <section class="casiopea-section fluid-section" id="home-hero-top">
             <div class="casiopea-home-hero">
                 <div class="video-container scrim-invisible">
-                    <video class="video" poster="https://dummyimage.com/1920x1080/000/fff" playsinline muted autoplay loop>
-                        <source src="https://file-examples-com.github.io/uploads/2020/03/file_example_WEBM_1920_3_7MB.webm">
-                        <source src="https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_1920_18MG.mp4" type="video/mp4">
-                        <source src="https://file-examples-com.github.io/uploads/2018/04/file_example_MOV_1920_2_2MB.mov" type="video/mov">
-                    </video>
+                    <video class="video" id="home-hero-video" poster="media/reel-poster.jpg" playsinline muted autoplay loop></video>
                 </div>
             </div>
         </section>
@@ -57,6 +53,20 @@
     <script src="javascripts/jquery.placeholder.js" type="text/javascript"></script>
     <script src="javascripts/waypoints.min.js" type="text/javascript"></script>
     <script src="javascripts/functions.js" type="text/javascript"></script>
+    <script>
+    var mainVideo = $('#home-hero-video'),
+        desktopSrcmp4 = "media/home-reel-desktop.mp4",
+        desktopSrcmov = "media/home-reel-desktop.mov",
+        mobileSrcmp4 = "media/home-reel-mob.mp4",
+        mobileSrcmov = "media/home-reel-mob.mov"
+    if ($(window).width() < 767) {
+        mainVideo.append("<source type='video/mp4' src='" + mobileSrcmp4 + "' />");
+        mainVideo.append("<source type='video/mov' src='" + mobileSrcmov + "' />");
+    } else {
+        mainVideo.append("<source type='video/mp4' src='" + desktopSrcmp4 + "' />");
+        mainVideo.append("<source type='video/mov' src='" + desktopSrcmov + "' />");
+    }
+    </script>
 </body>
 
 </html>

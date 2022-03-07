@@ -25,7 +25,7 @@
 
 <body id="casiopea-project" class="white-menu">
     <div class="Noise"></div>
-    <div class='container-fluid' id="casiopea-wsite">
+    <div class='container-fluid fonima-project' id="casiopea-wsite">
         <header data-spy='affix'>
             <!-- Navbar component-->
             <main-header></main-header>
@@ -101,15 +101,17 @@
                 </div>
             </div>
         </section>
-        <section class='block'>
-            <div class='row mb-5'>
-                <div class='col-md-12'>
-                    <div class='title-block'>
-                        <h3>Otros Proyectos</h3>
+        <section class='wide other-projects-block'>
+            <div class='block'>
+                <div class='row mb-5'>
+                    <div class='col-md-12'>
+                        <div class='title-block'>
+                            <h3>Otros Proyectos</h3>
+                        </div>
                     </div>
                 </div>
+                <ul class='col-3 other-projects-info' id='grid'></ul>
             </div>
-            <ul class='col-3 other-projects-info' id='grid'></ul>
         </section>
         <footer>
             <!-- Footer component-->
@@ -127,7 +129,46 @@
     <script src="../javascripts/jquery.placeholder.js" type="text/javascript"></script>
     <script src="../javascripts/waypoints.min.js" type="text/javascript"></script>
     <script src="../javascripts/functions.js" type="text/javascript"></script>
+    <script async>
+    $("a.h-link, a").each(function() {
+        var $this = $(this);
+        var _href = $this.attr("href");
+        $this.attr("href", '../' + _href);
+    });
+    </script>
+    <script type="text/javascript" async defer>
+    const projhtml = window.location.pathname.split('/').slice(0, -1).join('/');
 
+    $.ajax({
+        url: projhtml,
+        success: function(datahtml) {
+            $(datahtml).find("a").attr("href", function(i, projhtml) {
+                if (projhtml.match(/\.(html)$/)) {
+                    $(".other-projects-info").append(" <li class='item'><a class='inner' href='" + projhtml + "' style='background:url(" + projhtml.slice(0, -5) + ".jpg);'><div class='caption'><div class='titles'><div class='title'>" + projhtml.slice(0, -5) + "</div></div></div></a></li>");
+                }
+            });
+        }
+    });
+
+    function showRandom() {
+        var ul = $('.other-projects-info'),
+            lis = ul.find('li').detach(),
+            used = [];
+        var new_lis = [];
+        while (true) {
+            var li = lis[Math.floor(Math.random() * lis.length)];
+            if (used.indexOf(li) === -1 && new_lis.indexOf(li) === -1) new_lis.push(li);
+            if (new_lis.length >= 3) break;
+        }
+        used = new_lis;
+        ul.html(new_lis);
+
+        $('.other-projects-block').css('visibility', 'visible');
+    }
+
+    //showRandom();
+    setTimeout(showRandom, 4500);
+    </script>
 </body>
 
 </html>
