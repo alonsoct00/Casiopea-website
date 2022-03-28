@@ -12,7 +12,9 @@ class Header extends HTMLElement {
             `
             <section>
                 <a class='h-link brand' href='index.html'>
-                    Casiopea
+                    <span class="img-logo">
+                        <img src="images/logo_casiopea_blanco.gif" alt="CASIOPEA" title="CASIOPEA" class="log-img-white" />
+                    </span>
                 </a>
                 <ul id='navigation'>
                     <div class='trigger'>
