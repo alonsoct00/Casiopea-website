@@ -25,6 +25,15 @@ html {
     opacity: 0.05;
 }
 
+
+header {
+    section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
 footer {
     background: #ebfdc6 !important;
 
@@ -38,7 +47,7 @@ footer {
     width: 100%;
     max-width: 120px;
 
-    img{
+    img {
         display: block;
         width: 100%;
         height: auto;
@@ -281,11 +290,21 @@ footer {
             flex-wrap: wrap;
             margin-bottom: 30px;
 
-            &.flex-row-reverse {
+            &.flex-row-reverse,
+            &.row-reverse {
                 flex-direction: row-reverse;
             }
 
-            > div.col-xs-12 {
+            &.align-content-center.align-items-center {
+                align-items: center !important;
+                justify-content: center !important;
+            }
+
+            &.flex-column {
+                flex-direction: column;
+            }
+
+            >div.col-xs-12 {
                 margin: 24px 0;
             }
         }
@@ -487,6 +506,30 @@ footer {
     }
 
 
+    .animasivo-project {
+
+        .other-projects-block {
+            background: #121212;
+        }
+
+        header {
+            #navigation li a {
+                color: #fff;
+            }
+
+            #navigation li:hover a {
+                text-decoration: none;
+                color: #403E3B;
+            }
+        }
+
+        footer {
+            background: #121212 !important;
+            color: #f0f0f0;
+        }
+    }
+
+
     .la-vejez-project {
 
         .other-projects-block {
@@ -506,6 +549,30 @@ footer {
 
         footer {
             background: #eee !important;
+        }
+    }
+
+
+    .ruido-furia-project {
+
+        .other-projects-block {
+            background: #030817;
+        }
+
+        header {
+            #navigation li a {
+                color: #fff;
+            }
+
+            #navigation li:hover a {
+                text-decoration: none;
+                color: #403E3B;
+            }
+        }
+
+        footer {
+            background: #030817 !important;
+            color: #f0f0f0;
         }
     }
 }
