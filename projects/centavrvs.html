@@ -25,16 +25,19 @@
 
 <body id="casiopea-project">
     <div class="Noise"></div>
-    <div class='container-fluid' id="casiopea-wsite">
+    <div class='container-fluid centavrvs-project' id="casiopea-wsite">
         <header data-spy='affix'>
             <!-- Navbar component-->
             <main-header></main-header>
         </header>
         <section class='jumbotron casiopea-section'>
             <div class="casiopea-project-hero-intro">
-                <span class="img-hero-intro">
-                    <img src="" alt="SMMX">
-                </span>
+                <div class="video-container scrim-invisible">
+                    <video class="video" poster="" playsinline muted autoplay loop style="background: #000;">
+                        <source src="8-Centavrvs/media/portada/CENTAVRVS_3s_portada.mp4" type="video/mp4">
+                        <source src="8-Centavrvs/media/portada/CENTAVRVS_3s_portada.mov" type="video/mov">
+                    </video>
+                </div>
             </div>
             <div class='text-center'>
                 <h1 class="intro-project-title">Centavrvs - Debilidad</h1>
@@ -106,10 +109,10 @@
                 </div>
             </div>
         </section>
-        <section class='wide' id="project-work-demos" style="background:#eeeeee;">
+        <section class='wide' id="project-work-demos" style="background:#000;">
             <div class='block'>
-                <div class="row">
-                    <div class='col-md-6 col-md-offset-3 col-xs-12'>
+                <div class="row align-items-center justify-content-center">
+                    <div class='col-md-6 col-xs-12'>
                         <span class="img-project-container">
                             <img src="8-Centavrvs/media/1-centavrvs-1.gif" class="img-fluid">
                         </span>
@@ -150,7 +153,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row align-items-center justify-content-center">
                     <div class='col-md-8 col-md-offset-2 col-xs-12'>
                         <span class="img-project-container">
                             <img src="8-Centavrvs/media/7-centavrvs-virgen.gif" class="img-fluid">
@@ -164,8 +167,8 @@
                         </span>
                     </div>
                 </div>
-                <div class="row">
-                    <div class='col-md-7 col-md-offset-5 col-xs-12'>
+                <div class="row row-reverse">
+                    <div class='col-md-7 col-xs-12'>
                         <span class="img-project-container">
                             <img src="8-Centavrvs/media/9-centavrvs-caras.gif" class="img-fluid">
                         </span>
@@ -176,6 +179,11 @@
                         <span class="img-project-container">
                             <img src="8-Centavrvs/media/10-centavrvs-cabeza.gif" class="img-fluid">
                         </span>
+                    </div>
+                </div>
+                <div class="row" class="video-row-iframe">
+                    <div class="col-md-12 video-main-wrapper">
+                        <iframe width="100%" height="800" src="https://www.youtube.com/embed/dgjT_rRPGPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -207,11 +215,11 @@
     <script src="../javascripts/waypoints.min.js" type="text/javascript"></script>
     <script src="../javascripts/functions.js" type="text/javascript"></script>
     <script async>
-        $("a.h-link, a").each(function() {
-           var $this = $(this);       
-           var _href = $this.attr("href"); 
-           $this.attr("href", '../' + _href);
-        });
+    $("a.h-link, a").each(function() {
+        var $this = $(this);
+        var _href = $this.attr("href");
+        $this.attr("href", '../' + _href);
+    });
     </script>
 </body>
 
