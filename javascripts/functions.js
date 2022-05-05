@@ -78,7 +78,7 @@ class Footer extends HTMLElement {
             `
                 <section class='text-center'>
                 <div class='social'>
-                    <a class='icon fa fa-vimeo' href=' https://vimeo.com/casiopea'></a>
+                    <a class='icon fa fa-vimeo' href='https://vimeo.com/casiopea'></a>
                     <a class='icon fa fa-behance' href='https://www.behance.net/somoscasiopea'></a>
                     <a class='icon fa fa-facebook' href='https://www.facebook.com/SomosCasiopea'></a>
                     <a class='icon fa fa-instagram' href='https://www.instagram.com/somoscasiopea/'></a>
