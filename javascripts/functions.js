@@ -78,11 +78,11 @@ class Footer extends HTMLElement {
             `
                 <section class='text-center'>
                 <div class='social'>
-                    <a class='icon fa fa-dribbble' href='#'></a>
-                    <a class='icon fa fa-behance' href='#'></a>
-                    <a class='icon fa fa-facebook' href='#'></a>
-                    <a class='icon fa fa-instagram' href='#'></a>
-                    <a class='icon fa fa-twitter' href='#'></a>
+                    <a class='icon fa fa-vimeo' href=' https://vimeo.com/casiopea'></a>
+                    <a class='icon fa fa-behance' href='https://www.behance.net/somoscasiopea'></a>
+                    <a class='icon fa fa-facebook' href='https://www.facebook.com/SomosCasiopea'></a>
+                    <a class='icon fa fa-instagram' href='https://www.instagram.com/somoscasiopea/'></a>
+                    <a class='icon fa fa-youtube' href='https://www.youtube.com/channel/UCYPkq5tLezsfBVEY1_1mcvA'></a>
                 </div>
                 <div class='copy'>
                     <p>&copy; 2022 Casiopea. All Rights Reserved.</p>
