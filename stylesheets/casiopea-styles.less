@@ -36,6 +36,7 @@ header {
     &.affix {
         background: #000 !important;
     }
+
     section {
         display: flex;
         align-items: center;
@@ -51,7 +52,9 @@ header {
         color: #403E3B;
     }
 
-    a.h-link.filter-nav-anchor:hover, .filter-nav-anchor:hover, .filter-nav-anchor:focus {
+    a.h-link.filter-nav-anchor:hover,
+    .filter-nav-anchor:hover,
+    .filter-nav-anchor:focus {
         color: #fff !important;
     }
 
@@ -222,7 +225,15 @@ footer {
 
 #casiopea-projects {
     header {
-        background-color: #000;
+        background-color: transparent;
+
+        #navigation li a {
+            color: #000;
+        }
+
+        .img-logo img {
+            filter: invert(1);
+        }
     }
 
     .jumbotron {
@@ -551,7 +562,8 @@ footer {
         footer {
             background: #0a090c !important;
 
-            .social a, .copy p {
+            .social a,
+            .copy p {
                 color: #f0f0f0 !important;
             }
         }
@@ -577,7 +589,8 @@ footer {
             background: #000 !important;
             color: #fff;
 
-            .social a, .copy p {
+            .social a,
+            .copy p {
                 color: #f0f0f0 !important;
             }
         }
@@ -650,7 +663,8 @@ footer {
             background: #121212 !important;
             color: #f0f0f0;
 
-            .social a, .copy p {
+            .social a,
+            .copy p {
                 color: #f0f0f0 !important;
             }
         }
@@ -701,7 +715,8 @@ footer {
             background: #030817 !important;
             color: #f0f0f0;
 
-            .social a, .copy p {
+            .social a,
+            .copy p {
                 color: #f0f0f0 !important;
             }
         }
@@ -753,7 +768,8 @@ footer {
             background: #151915 !important;
             color: #f0f0f0;
 
-            .social a, .copy p {
+            .social a,
+            .copy p {
                 color: #f0f0f0 !important;
             }
         }
