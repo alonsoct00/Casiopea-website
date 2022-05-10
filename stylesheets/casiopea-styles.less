@@ -117,6 +117,29 @@ footer {
         }
     }
 
+    a#back-cta {
+        position: relative;
+        clear: both;
+        margin: 0px auto;
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        color: inherit;
+        background: inherit;
+        text-align: center;
+        font-size: 18px;
+        bottom: 0;
+        left: 0px;
+        right: 0px;
+        z-index: 1;
+    }
+
+    #back-cta:before {
+        content: "\2190";
+        display: inline-block;
+        margin-right: 4px;
+    }
+
     button {
         position: relative;
 
@@ -472,7 +495,7 @@ footer {
 
     .dos-camaleones-project {
 
-        .other-projects-block {
+        .other-projects-block, #back-cta {
             background: #eee;
         }
 
@@ -496,7 +519,7 @@ footer {
 
     .fonima-project {
 
-        .other-projects-block {
+        .other-projects-block, #back-cta {
             background: #000;
         }
 
@@ -519,7 +542,7 @@ footer {
 
     .birdsong-project {
 
-        .other-projects-block {
+        .other-projects-block, #back-cta {
             background: #eee;
         }
 
@@ -540,7 +563,7 @@ footer {
     }
 
     .sobre-amor-project {
-        .other-projects-block {
+        .other-projects-block, #back-cta {
             background: #a64a96;
 
             .title-block {
@@ -568,7 +591,7 @@ footer {
 
     .smmx-project {
 
-        .other-projects-block {
+        .other-projects-block, #back-cta {
             background: #0a090c;
         }
 
@@ -605,7 +628,15 @@ footer {
             }
         }
 
-        .other-projects-block {
+        #cta-video {
+            color: #000;
+
+            &:hover {
+                color: #EDFFC9;
+            }
+        }
+
+        .other-projects-block, #back-cta {
             background: #000;
         }
 
@@ -633,7 +664,7 @@ footer {
             }
         }
 
-        .other-projects-block {
+        .other-projects-block, #back-cta {
             background: #4FD9D1;
         }
 
@@ -654,7 +685,7 @@ footer {
             }
         }
 
-        .other-projects-block {
+        .other-projects-block, #back-cta {
             background: #edffc9;
         }
 
@@ -666,7 +697,7 @@ footer {
 
     .poliangular-project {
 
-        .other-projects-block {
+        .other-projects-block, #back-cta {
             background: #e5e1dd;
         }
 
@@ -689,7 +720,7 @@ footer {
 
     .animasivo-project {
 
-        .other-projects-block {
+        .other-projects-block, #back-cta {
             background: #121212;
         }
 
@@ -718,7 +749,7 @@ footer {
 
     .la-vejez-project {
 
-        .other-projects-block {
+        .other-projects-block, #back-cta {
             background: #eee;
         }
 
@@ -741,7 +772,7 @@ footer {
 
     .ruido-furia-project {
 
-        .other-projects-block {
+        .other-projects-block, #back-cta {
             background: #030817 !important;
         }
 
@@ -770,7 +801,7 @@ footer {
 
     .adentro-afuera-project {
 
-        .other-projects-block {
+        .other-projects-block, #back-cta {
             background: #4fd9d1;
         }
 
@@ -794,7 +825,7 @@ footer {
 
     .la-catrina-project {
 
-        .other-projects-block {
+        .other-projects-block, #back-cta {
             background: #151915;
         }
 
@@ -821,7 +852,7 @@ footer {
     }
 
     .en-un-ser-vivo-project {
-        .other-projects-block {
+        .other-projects-block, #back-cta {
             background: #CBF7F2;
         }
 
@@ -842,7 +873,7 @@ footer {
     }
 
     .video-explicativo-project {
-        .other-projects-block {
+        .other-projects-block, #back-cta {
             background: #8F7AEE;
         }
 
@@ -870,7 +901,7 @@ footer {
     }
 
     .cutout-project {
-        .other-projects-block {
+        .other-projects-block, #back-cta {
             background: #917AF0;
         }
 
@@ -901,7 +932,7 @@ footer {
 
 
     .no-devoluciones-project {
-        .other-projects-block {
+        .other-projects-block, #back-cta {
             background: #e53f3f;
         }
 
@@ -923,7 +954,7 @@ footer {
     }
 
     .talleres-project {
-        .other-projects-block {
+        .other-projects-block, #back-cta {
             background: #4FD9D1;
         }
 
@@ -974,13 +1005,13 @@ footer {
             margin: 0px auto;
 
             a {
-                color: #000;
+                color: #000 !important;
 
-                &:hover {
-                    color: #EDFFC9;
+                &:hover,
+                &:focus {
+                    color: #EDFFC9 !important;
                 }
             }
-
         }
 
         .thumbnail-faq {
