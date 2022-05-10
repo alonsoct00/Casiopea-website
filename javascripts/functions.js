@@ -26,7 +26,7 @@ class Header extends HTMLElement {
                         <a class="h-link" href='index.html'>Inicio</a>
                     </li>
                     <li>
-                        <a href='about-us.html'>Quienes somos</a>
+                        <a class="h-link" href='about-us.html'>Quienes somos</a>
                     </li>
                     <li>
                         <a class="h-link" href='proyectos.html'>Proyectos</a>
@@ -221,5 +221,7 @@ customElements.define('main-footer', Footer);
             window.location.reload()
         }
     });
+
+    $('<a href="/proyectos" id="back-cta">Regresar</a>').insertBefore('.other-projects-block');
 
 })(jQuery);
