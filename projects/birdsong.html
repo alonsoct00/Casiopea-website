@@ -32,9 +32,11 @@
         </header>
         <section class='jumbotron casiopea-section'>
             <div class="casiopea-project-hero-intro">
-                <figure class="lottie-object">
-                    <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_thz9zosn.json" background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay></lottie-player>
-                </figure>
+                <div class="video-container scrim-invisible">
+                    <video class="video" poster="" playsinline muted autoplay loop>
+                        <source src="3-Birdsong/media/Birdsong-portada.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
             <div class='text-center'>
                 <h1 class="intro-project-title">Bird Song</h1>
@@ -103,9 +105,11 @@
                 </div>
                 <div class='row mb-5'>
                     <div class='col-md-12 col-xs-12 text-center'>
-                        <figure class="lottie-object">
-                            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_h1qiwecb.json" background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay></lottie-player>
-                        </figure>
+                        <div class="video-container scrim-invisible">
+                            <video class="video" playsinline muted autoplay loop>
+                                <source src="3-Birdsong/media/2-Birdsong.mp4" type="video/mp4">
+                            </video>
+                        </div>
                     </div>
                 </div>
                 <div class='row mb-5'>
@@ -129,23 +133,29 @@
                 </div>
                 <div class='row mb-5'>
                     <div class='col-md-12 col-xs-12'>
-                        <figure class="lottie-object">
-                            <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_l2z74tfx.json" background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay></lottie-player>
-                        </figure>
+                        <div class="video-container scrim-invisible">
+                            <video class="video" playsinline muted autoplay loop>
+                                <source src="3-Birdsong/media/6-Birdsong.mp4" type="video/mp4">
+                            </video>
+                        </div>
                     </div>
                 </div>
                 <div class='row mb-5'>
                     <div class='col-md-12 col-xs-12'>
-                        <figure class="lottie-object">
-                            <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_xyryxi5l.json" background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay></lottie-player>
-                        </figure>
+                        <div class="video-container scrim-invisible">
+                            <video class="video" playsinline muted autoplay loop>
+                                <source src="3-Birdsong/media/7-Birdsong.mp4" type="video/mp4">
+                            </video>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12 col-xs-12">
-                        <figure class="lottie-object">
-                            <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_hlf2kwpj.json" background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay></lottie-player>
-                        </figure>
+                        <div class="video-container scrim-invisible">
+                            <video class="video" playsinline muted autoplay loop>
+                                <source src="3-Birdsong/media/8-Birdsong.mp4" type="video/mp4">
+                            </video>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -157,7 +167,11 @@
                 </div>
                 <div class="row" class="video-main-wrapper">
                     <div class="col-md-12">
-                        <iframe width="100%" height="600" src="https://www.youtube.com/embed/XBt8igEETiU" title="Birdsong" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-container scrim-invisible">
+                            <video class="video" playsinline muted autoplay loop>
+                                <source src="3-Birdsong/media/10-Birdsong.mp4" type="video/mp4">
+                            </video>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -211,7 +225,7 @@
         }
     });
 
-    function showRandom() {
+    /*function showRandom() {
         var ul = $('.other-projects-info'),
             lis = ul.find('li').detach(),
             used = [];
@@ -225,7 +239,7 @@
         ul.html(new_lis);
 
         $('.other-projects-block').css('visibility', 'visible');
-    }
+    }*/
     //showRandom();
     //setTimeout(showRandom, 4500);
     </script>
