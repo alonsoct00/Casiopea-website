@@ -26,7 +26,7 @@ class Header extends HTMLElement {
                         <a class="h-link" href='index.html'>Inicio</a>
                     </li>
                     <li>
-                        <a class="h-link" href='about-us.html'>Quienes somos</a>
+                        <a class="h-link" href='about-us.html'>Quiénes somos</a>
                     </li>
                     <li>
                         <a class="h-link" href='proyectos.html'>Proyectos</a>
@@ -78,11 +78,11 @@ class Footer extends HTMLElement {
             `
                 <section class='text-center'>
                 <div class='social'>
-                    <a class='icon fa fa-vimeo' href='https://vimeo.com/casiopea'></a>
-                    <a class='icon fa fa-behance' href='https://www.behance.net/somoscasiopea'></a>
-                    <a class='icon fa fa-facebook' href='https://www.facebook.com/SomosCasiopea'></a>
-                    <a class='icon fa fa-instagram' href='https://www.instagram.com/somoscasiopea/'></a>
-                    <a class='icon fa fa-youtube' href='https://www.youtube.com/channel/UCYPkq5tLezsfBVEY1_1mcvA'></a>
+                    <a class='icon fa fa-vimeo' href='https://vimeo.com/casiopea' target="_blank"></a>
+                    <a class='icon fa fa-behance' href='https://www.behance.net/somoscasiopea' target="_blank"></a>
+                    <a class='icon fa fa-facebook' href='https://www.facebook.com/SomosCasiopea' target="_blank"></a>
+                    <a class='icon fa fa-instagram' href='https://www.instagram.com/somoscasiopea/' target="_blank"></a>
+                    <a class='icon fa fa-youtube' href='https://www.youtube.com/channel/UCYPkq5tLezsfBVEY1_1mcvA' target="_blank"></a>
                 </div>
                 <div class='copy'>
                     <p>&copy; 2022 Casiopea. All Rights Reserved.</p>
