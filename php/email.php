@@ -1,6 +1,6 @@
 <?php
-$subject    = 'E-mail from example'; // Subject of your email
-$to         = 'e-mail@example.com'; //Your e-mail address
+$subject    = 'E-mail desde sitio web de asiopea'; // Subject of your email
+$to         = 'somoscasiopea@gmail.com'; //Your e-mail address
 $headers    = 'MIME-Version: 1.0' . "\r\n" .
               'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 $message    = 'Name: ' . $_REQUEST['name'] . ' <br/>' .

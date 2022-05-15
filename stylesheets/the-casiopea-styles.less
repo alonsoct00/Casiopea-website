@@ -70,6 +70,10 @@ footer {
     section {
         padding: 40px 0 !important;
     }
+
+    a.icon {
+        color: #000;
+    }
 }
 
 .img-logo {
@@ -333,6 +337,9 @@ footer {
 #casiopea-project {
 
     .jumbotron.casiopea-section {
+        max-height: 760px;
+        overflow: hidden;
+
         &:after {
             content: "";
             width: 100%;
@@ -340,7 +347,7 @@ footer {
             height: auto;
             background: #000;
             z-index: 1;
-            opacity: 0.25;
+            opacity: 0.30;
             position: absolute;
             top: 0px;
             right: 0px;
@@ -401,13 +408,21 @@ footer {
         line-height: 1.6em;
         font-family: "Inconsolata", sans-serif;
 
+
         dl {
             font-size: 0.95em;
             color: #000;
 
+            div {
+                display: flex;
+                align-items: normal;
+                margin-bottom: 18px;
+            }
+
             dt {
                 display: inline-block;
                 font-weight: normal;
+                margin-right: 8px;
             }
 
             dd {
@@ -530,6 +545,7 @@ footer {
         .other-projects-block,
         #back-cta {
             background: #000;
+            color: #fff;
         }
 
 
@@ -546,6 +562,21 @@ footer {
 
         footer {
             background: #000 !important;
+
+            .social a,
+            .copy p {
+                color: #f0f0f0 !important;
+            }
+        }
+
+        .link-to {
+            a {
+                color: #000;
+
+                &:hover {
+                    color: #a64a96;
+                }
+            }
         }
     }
 
@@ -568,7 +599,7 @@ footer {
         }
 
         footer {
-            background: #FFF !important;
+            background: #fff !important;
         }
     }
 
@@ -577,6 +608,7 @@ footer {
         .other-projects-block,
         #back-cta {
             background: #a64a96;
+            color: #fff;
 
             .title-block {
                 h3 {
@@ -598,6 +630,11 @@ footer {
 
         footer {
             background: #a64a96 !important;
+
+            .social a,
+            .copy p {
+                color: #f0f0f0 !important;
+            }
         }
     }
 
@@ -606,6 +643,7 @@ footer {
         .other-projects-block,
         #back-cta {
             background: #0a090c;
+            color: #fff;
         }
 
         header {
@@ -642,7 +680,7 @@ footer {
         }
 
         #cta-video {
-            color: #000;
+            color: #f0f0f0;
 
             &:hover {
                 color: #EDFFC9;
@@ -652,6 +690,7 @@ footer {
         .other-projects-block,
         #back-cta {
             background: #000;
+            color: #f0f0f0;
         }
 
         footer {
@@ -681,6 +720,7 @@ footer {
         .other-projects-block,
         #back-cta {
             background: #4FD9D1;
+            color: #000;
         }
 
         footer {
@@ -703,6 +743,7 @@ footer {
         .other-projects-block,
         #back-cta {
             background: #edffc9;
+            color: #000;
         }
 
         footer {
@@ -716,6 +757,7 @@ footer {
         .other-projects-block,
         #back-cta {
             background: #e5e1dd;
+            color: #000;
         }
 
         header {
@@ -732,6 +774,16 @@ footer {
         footer {
             background: #e5e1dd !important;
         }
+
+        .link-to {
+            a {
+                color: #000;
+
+                &:hover {
+                    color: #a64a96;
+                }
+            }
+        }
     }
 
 
@@ -740,6 +792,7 @@ footer {
         .other-projects-block,
         #back-cta {
             background: #121212;
+            color: #f0f0f0;
         }
 
         header {
@@ -770,6 +823,7 @@ footer {
         .other-projects-block,
         #back-cta {
             background: #eee;
+            color: #000;
         }
 
         header {
@@ -794,6 +848,7 @@ footer {
         .other-projects-block,
         #back-cta {
             background: #030817 !important;
+            color: #f0f0f0;
         }
 
         header {
@@ -824,6 +879,7 @@ footer {
         .other-projects-block,
         #back-cta {
             background: #4fd9d1;
+            color: #000;
         }
 
         header {
@@ -849,6 +905,7 @@ footer {
         .other-projects-block,
         #back-cta {
             background: #151915;
+            color: #f0f0f0;
         }
 
         header {
@@ -878,6 +935,7 @@ footer {
         .other-projects-block,
         #back-cta {
             background: #CBF7F2;
+            color: #000;
         }
 
         header {
@@ -901,6 +959,7 @@ footer {
         .other-projects-block,
         #back-cta {
             background: #8F7AEE;
+            color: #000;
         }
 
         #project-work-demos {
@@ -931,11 +990,16 @@ footer {
         .other-projects-block,
         #back-cta {
             background: #917AF0;
+            color: #000;
         }
 
         #project-work-demos {
             h2 {
                 font-size: 18px;
+            }
+
+            .row {
+                margin-bottom: 0px;
             }
         }
 
@@ -954,6 +1018,23 @@ footer {
             background: #917AF0 !important;
         }
 
+        span.img-project-container {
+            background: #000;
+        }
+
+    }
+
+    .pulso-project {
+
+        .other-projects-block,
+        #back-cta {
+            background: #ea5b63;
+            color: #000;
+        }
+
+        footer {
+            background: #ea5b63 !important;
+        }
     }
 
 
@@ -964,6 +1045,7 @@ footer {
         .other-projects-block,
         #back-cta {
             background: #e53f3f;
+            color: #000;
         }
 
         header {
@@ -988,6 +1070,7 @@ footer {
         .other-projects-block,
         #back-cta {
             background: #4FD9D1;
+            color: #000;
         }
 
         header {
@@ -1008,6 +1091,62 @@ footer {
     }
 }
 
+
+#contact-page {
+    background: #917AF0 !important;
+
+    header {
+        #navigation li a {
+            color: #000;
+        }
+
+        #navigation li:hover a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .img-logo img {
+            filter: invert(1);
+        }
+    }
+
+    section.contact {
+        margin: 0px;
+        width: 100%;
+        max-width: 100%;
+        display: block;
+    }
+    section.jumbotron section {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .btn.btn-default {
+        background: #000;
+
+        &:hover, &:focus {
+            background: #333;
+        }
+    }
+
+    .link-to {
+        a {
+            color: #000;
+
+            &:hover {
+                color: #edffc9;
+            }
+        }
+    }
+
+
+    footer {
+        background: #917AF0 !important;
+    }
+
+}
 
 #casiopea-faq {
     background: #f33c38;
