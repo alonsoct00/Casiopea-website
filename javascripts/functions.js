@@ -53,7 +53,7 @@ class Header extends HTMLElement {
                                 <a class="h-link filter-nav-anchor" href='proyectos.html#workshops' data-filter=".workshops">Talleres</a>
                             </li>
                             <li>
-                                <a class="filter-nav-anchor" href='proyectos.html#visuals' data-filter=".visuals">Visuales</a>
+                                <a class="h-link filter-nav-anchor" href='proyectos.html#visuals' data-filter=".visuals">Visuales</a>
                             </li>
                         </ul>
                     </li>

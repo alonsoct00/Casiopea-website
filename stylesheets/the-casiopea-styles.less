@@ -35,6 +35,10 @@ header {
 
     &.affix {
         background: #000 !important;
+
+        .img-logo img {
+            filter: invert(0) !important;
+        }
     }
 
     section {
@@ -272,6 +276,27 @@ footer {
     }
 }
 
+#main-aboutus-page {
+    .casiopea-home-hero {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+
+        .img-hero-intro {
+            display: block;
+            margin: 0px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+
 #casiopea-projects {
     header {
         background-color: transparent;
@@ -334,16 +359,17 @@ footer {
     }
 }
 
+
 #casiopea-project {
 
     .jumbotron.casiopea-section {
-        max-height: 760px;
+        max-height: auto;
         overflow: hidden;
 
         &:after {
             content: "";
             width: 100%;
-            min-height: 100vh;
+            min-height: 100%;
             height: auto;
             background: #000;
             z-index: 1;
@@ -413,16 +439,16 @@ footer {
             font-size: 0.95em;
             color: #000;
 
-            div {
+            /*div {
                 display: flex;
                 align-items: normal;
-                margin-bottom: 18px;
-            }
+                margin-bottom: 4px;
+            }*/
 
             dt {
                 display: inline-block;
                 font-weight: normal;
-                margin-right: 8px;
+                margin-right: 0px;
             }
 
             dd {
@@ -1018,10 +1044,6 @@ footer {
             background: #917AF0 !important;
         }
 
-        span.img-project-container {
-            background: #000;
-        }
-
     }
 
     .pulso-project {
@@ -1116,6 +1138,7 @@ footer {
         max-width: 100%;
         display: block;
     }
+
     section.jumbotron section {
         position: relative;
         bottom: 0;
@@ -1126,7 +1149,8 @@ footer {
     .btn.btn-default {
         background: #000;
 
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
             background: #333;
         }
     }
@@ -1216,8 +1240,26 @@ footer {
         text-align: left;
     }
 
-    #casiopea-wsite {
+    ul#filter-nav {
+        display: none;
+    }
+
+    /*#casiopea-wsite {
         overflow-x: hidden;
+    }*/
+
+    #casiopea-project .jumbotron.casiopea-section {
+        max-height: max-content;
+        height: auto;
+        overflow: hidden;
+    }
+
+    #casiopea-project .jumbotron.casiopea-section::after {
+        height: 100%;
+    }
+
+    #casiopea-project .casiopea-project-hero-intro {
+        height: auto;
     }
 
     #casiopea-projects header #navigation li a {
@@ -1237,16 +1279,15 @@ footer {
         width: 100vw;
     }
 
-    #casiopea-wsite #our-team .semblance button {
-        word-break: break-word;
-        white-space: pre-wrap;
-    }
-
 
     #our-team {
         .profile-team-item {
             margin-bottom: 30px;
         }
+    }
+
+    #contact-page header #navigation li a {
+        color: #fff;
     }
 
     .float-right {
@@ -1257,11 +1298,20 @@ footer {
         justify-content: center !important;
     }
 
+    iframe {
+        height: auto;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+
+    section .block {
+        overflow-x: hidden;
+    }
+
 }
 
-a.icon.fa.fa-vimeo {
-    display: none;
-}
 
 @keyframes cssVisible {
     0% {
