@@ -26,14 +26,14 @@
 <body id="main-home-page">
     <div class="Noise"></div>
     <div class='container-fluid' id="casiopea-wsite">
-        <header data-spy='affix'>
+        <header data-spy='affix' style="display: none;">
             <!-- Navbar component-->
             <main-header></main-header>
         </header>
         <section class="casiopea-section fluid-section" id="home-hero-top">
             <div class="casiopea-home-hero">
                 <div class="video-container scrim-invisible">
-                    <video class="video" id="home-hero-video" poster="media/reel-poster.jpg" playsinline muted autoplay loop></video>
+                    <video class="video" id="home-hero-video" poster="media/REEL2026_WEB_GIF.gif" playsinline muted autoplay loop></video>
                 </div>
             </div>
         </section>
@@ -55,10 +55,10 @@
     <script src="javascripts/functions.js" type="text/javascript"></script>
     <script async>
     var mainVideo = $('#home-hero-video'),
-        desktopSrcmp4 = "media/home-reel-desktop.mp4",
-        desktopSrcmov = "media/home-reel-desktop.mov",
-        mobileSrcmp4 = "media/home-reel-mob.mp4",
-        mobileSrcmov = "media/home-reel-mob.mov"
+        desktopSrcmp4 = "media/REEL2026_WEB_GIF.mp4",
+        desktopSrcmov = "media/REEL2026_WEB_GIF.mov",
+        mobileSrcmp4 = "media/REEL2026_WEB_GIF_vert.mp4",
+        mobileSrcmov = "media/REEL2026_WEB_GIF_vert.mov"
     if ($(window).width() < 767) {
         mainVideo.append("<source type='video/mp4' src='" + mobileSrcmp4 + "' />");
         mainVideo.append("<source type='video/mov' src='" + mobileSrcmov + "' />");
