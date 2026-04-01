@@ -222,6 +222,6 @@ customElements.define('main-footer', Footer);
         }
     });
 
-    $('<a href="/proyectos" id="back-cta">Regresar</a>').insertBefore('.other-projects-block');
+    $('<a href="/proyectos.html" id="back-cta">Regresar</a>').insertBefore('.other-projects-block');
 
 })(jQuery);

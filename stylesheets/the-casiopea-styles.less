@@ -1228,11 +1228,39 @@ footer {
 
 
 
+
 //large screens
 @media only screen and (min-width:1175px) {}
 
 //mobile devices tablet+phone
-@media only screen and (max-width :767px),
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait),
+and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+    .casiopea-home-hero {
+        height: 100vh;
+    }
+
+    header section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: 0 0 100%;
+        width: auto;
+        max-width: 95vw;
+        padding: 0;
+    }
+
+    .col-md-4 {
+        width: 33.33333333%;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+}
+
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait) and (max-width :767px),
 (max-device-width:767px) {
 
     header #navigation.active li {
@@ -1247,6 +1275,20 @@ footer {
     /*#casiopea-wsite {
         overflow-x: hidden;
     }*/
+
+    header #navigation li a {
+        padding: 10px;
+        display: block;
+        clear: both;
+        width: 100%;
+    }
+
+    #casiopea-project .adentro-afuera-project header #navigation li a {
+        color: #f0f0f0;
+        display: block;
+        clear: both;
+        width: 100%;
+    }
 
     #casiopea-project .jumbotron.casiopea-section {
         max-height: max-content;
