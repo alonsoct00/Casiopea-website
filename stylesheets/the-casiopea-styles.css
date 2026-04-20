@@ -28,9 +28,6 @@ header section {
   align-items: center;
   justify-content: space-between;
 }
-header #navigation > li:nth-child(5) {
-  display: none;
-}
 header #navigation li a {
   color: #fff;
 }
