@@ -58,9 +58,6 @@ class Header extends HTMLElement {
                         </ul>
                     </li>
                     <li>
-                        <a class="h-link" href='faq.html'>Preguntas frecuentes</a>
-                    </li>
-                    <li>
                         <a class="h-link" href='contacto.html'>Contacto</a>
                     </li>
                 </ul>

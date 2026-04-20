@@ -9,8 +9,6 @@
     background: #ebfdc6;
 }
 
-
-
 html {
     font-size: 62.5%;
     font-display: auto;
@@ -28,8 +26,6 @@ html {
     background: url(../images/noise.gif);
     opacity: 0.05;
 }
-
-
 
 header {
 
@@ -63,8 +59,6 @@ header {
     }
 
 }
-
-
 
 footer {
     background: #ebfdc6 !important;
@@ -170,10 +164,8 @@ footer {
                 &::after {
                     content: "\f077";
 
-
                 }
             }
-
 
             &.collapsed {
                 &::after {
@@ -181,8 +173,6 @@ footer {
                 }
             }
         }
-
-
 
     }
 
@@ -234,8 +224,6 @@ footer {
             text-align: left;
             .font-size(1.4);
 
-
-
             button {
                 background: transparent;
                 color: #000;
@@ -261,7 +249,6 @@ footer {
             .collapse {
                 text-align: left;
 
-
                 .card-body {
                     text-align: left;
                     .font-size(1.4);
@@ -283,6 +270,7 @@ footer {
         justify-content: center;
         width: 100%;
         height: 100%;
+        position: relative;
 
         .img-hero-intro {
             display: block;
@@ -294,8 +282,80 @@ footer {
             }
         }
     }
-}
 
+    #about-us {
+
+        h4,
+        p {
+            color: #fff;
+        }
+
+        h4 {
+            border-bottom: 1px solid #fff;
+        }
+
+        .container-fluid {
+            .row.block {
+                position: relative;
+
+                &::before {
+                    content: "";
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 100px;
+                    background: #4FD9D1;
+                    position: absolute;
+                    top: -35px;
+                    left: 100px;
+                    animation: cssVisible 2000ms;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait) and (max-width:767px),
+    (max-device-width:767px) {
+
+        #about-us {
+            padding-top: 80px;
+            padding-bottom: 80px;
+
+            .container-fluid {
+                position: relative;
+                &::after {
+                        content: "";
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 100px;
+                        background: #4FD9D1;
+                        position: absolute;
+                        top: -115px;
+                        bottom: auto;
+                        left: 20px;
+                        animation: cssVisible 2000ms;
+                        display: block;
+                        z-index: 9999;
+                    }
+                .row.block {
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .casiopea-home-hero {
+            .img-hero-intro {
+                position: relative;
+
+            }
+        }
+    }
+}
 
 #casiopea-projects {
     header {
@@ -315,6 +375,7 @@ footer {
     }
 
     #projects-section {
+
         #filter-trigger {
             background: #ebfdc6;
             color: #333;
@@ -344,7 +405,6 @@ footer {
             }
         }
 
-
     }
 
     #projects-wrapper {
@@ -356,9 +416,15 @@ footer {
         .inner .caption {
             background-color: #917AF0;
         }
+
+                .deleted-project {
+                    display: none;
+                    visibility: hidden;
+                    width: 0px;
+                    height: 0px;
+                }
     }
 }
-
 
 #casiopea-project {
 
@@ -434,16 +500,15 @@ footer {
         line-height: 1.6em;
         font-family: "Inconsolata", sans-serif;
 
-
         dl {
             font-size: 0.95em;
             color: #000;
 
             /*div {
-                display: flex;
-                align-items: normal;
-                margin-bottom: 4px;
-            }*/
+display: flex;
+align-items: normal;
+margin-bottom: 4px;
+}*/
 
             dt {
                 display: inline-block;
@@ -564,8 +629,6 @@ footer {
         }
     }
 
-
-
     .fonima-project {
 
         .other-projects-block,
@@ -573,7 +636,6 @@ footer {
             background: #000;
             color: #fff;
         }
-
 
         header {
             #navigation li a {
@@ -777,7 +839,6 @@ footer {
         }
     }
 
-
     .poliangular-project {
 
         .other-projects-block,
@@ -812,7 +873,6 @@ footer {
         }
     }
 
-
     .animasivo-project {
 
         .other-projects-block,
@@ -843,7 +903,6 @@ footer {
         }
     }
 
-
     .la-vejez-project {
 
         .other-projects-block,
@@ -867,7 +926,6 @@ footer {
             background: #eee !important;
         }
     }
-
 
     .ruido-furia-project {
 
@@ -899,7 +957,6 @@ footer {
         }
     }
 
-
     .adentro-afuera-project {
 
         .other-projects-block,
@@ -924,7 +981,6 @@ footer {
             color: #f0f0f0;
         }
     }
-
 
     .la-catrina-project {
 
@@ -1059,9 +1115,6 @@ footer {
         }
     }
 
-
-
-
     .no-devoluciones-project {
 
         .other-projects-block,
@@ -1113,7 +1166,6 @@ footer {
     }
 }
 
-
 #contact-page {
     background: #917AF0 !important;
 
@@ -1164,7 +1216,6 @@ footer {
             }
         }
     }
-
 
     footer {
         background: #917AF0 !important;
@@ -1226,9 +1277,6 @@ footer {
 
 }
 
-
-
-
 //large screens
 @media only screen and (min-width:1175px) {}
 
@@ -1260,7 +1308,7 @@ and (min-device-width : 768px) and (max-device-width : 1024px) {
 
 }
 
-@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait) and (max-width :767px),
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait) and (max-width:767px),
 (max-device-width:767px) {
 
     header #navigation.active li {
@@ -1273,8 +1321,8 @@ and (min-device-width : 768px) and (max-device-width : 1024px) {
     }
 
     /*#casiopea-wsite {
-        overflow-x: hidden;
-    }*/
+overflow-x: hidden;
+}*/
 
     header #navigation li a {
         padding: 10px;
@@ -1321,7 +1369,6 @@ and (min-device-width : 768px) and (max-device-width : 1024px) {
         width: 100vw;
     }
 
-
     #our-team {
         .profile-team-item {
             margin-bottom: 30px;
@@ -1353,7 +1400,6 @@ and (min-device-width : 768px) and (max-device-width : 1024px) {
     }
 
 }
-
 
 @keyframes cssVisible {
     0% {
