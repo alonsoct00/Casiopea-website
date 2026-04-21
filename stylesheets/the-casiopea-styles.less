@@ -286,7 +286,7 @@ footer {
     #about-us {
 
         h4,
-        p {
+        p, a {
             color: #fff;
         }
 
@@ -323,20 +323,22 @@ footer {
 
             .container-fluid {
                 position: relative;
+
                 &::after {
-                        content: "";
-                        width: 70px;
-                        height: 70px;
-                        border-radius: 100px;
-                        background: #4FD9D1;
-                        position: absolute;
-                        top: -115px;
-                        bottom: auto;
-                        left: 20px;
-                        animation: cssVisible 2000ms;
-                        display: block;
-                        z-index: 9999;
-                    }
+                    content: "";
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 100px;
+                    background: #4FD9D1;
+                    position: absolute;
+                    top: -115px;
+                    bottom: auto;
+                    left: 20px;
+                    animation: cssVisible 2000ms;
+                    display: block;
+                    z-index: 9999;
+                }
+
                 .row.block {
                     position: relative;
 
@@ -417,13 +419,13 @@ footer {
             background-color: #917AF0;
         }
 
-                .deleted-project {
-                    display: none;
-                    visibility: hidden;
-                    width: 0px;
-                    height: 0px;
-                    z-index: -100;
-                }
+        .deleted-project {
+            display: none;
+            visibility: hidden;
+            width: 0px;
+            height: 0px;
+            z-index: -100;
+        }
     }
 }
 
