@@ -319,6 +319,7 @@ footer a.icon {
   visibility: hidden;
   width: 0px;
   height: 0px;
+  z-index: -100;
 }
 #casiopea-project .jumbotron.casiopea-section {
   max-height: auto;
