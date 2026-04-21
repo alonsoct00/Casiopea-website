@@ -219,7 +219,8 @@ footer a.icon {
   height: auto;
 }
 #main-aboutus-page #about-us h4,
-#main-aboutus-page #about-us p {
+#main-aboutus-page #about-us p,
+#main-aboutus-page #about-us a {
   color: #fff;
 }
 #main-aboutus-page #about-us h4 {
