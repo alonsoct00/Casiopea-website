@@ -29,7 +29,7 @@ class Header extends HTMLElement {
                     </li>
                     <li>
                         <a class="h-link" href='proyectos.html'>Proyectos</a>
-                        <ul id="filter-nav">
+                        <ul id="filter-nav" style="display: none">
                             <li class="filter-nav-item">
                                 <a class="h-link filter-nav-anchor" href='proyectos.html#all' data-filter='*'>All</a>
                             </li>
