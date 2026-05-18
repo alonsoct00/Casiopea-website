@@ -780,6 +780,25 @@ margin-bottom: 4px;
 #casiopea-project .video-explicativo-project footer {
   background: #8f7aee !important;
 }
+#casiopea-project .ambulante-project .other-projects-block,
+#casiopea-project .ambulante-project #back-cta {
+  background: #4fd9d1;
+  color: #000;
+}
+#casiopea-project .ambulante-project #project-work-demos h2 {
+  font-size: 30px;
+  font-family: "Inconsolata", sans-serif;
+}
+#casiopea-project .ambulante-project header #navigation li a {
+  color: #f0f0f0;
+}
+#casiopea-project .ambulante-project header #navigation li:hover a {
+  text-decoration: none;
+  color: #403e3b;
+}
+#casiopea-project .ambulante-project footer {
+  background: #4fd9d1 !important;
+}
 #casiopea-project .cutout-project .other-projects-block,
 #casiopea-project .cutout-project #back-cta {
   background: #917af0;
@@ -925,7 +944,7 @@ margin-bottom: 4px;
 #casiopea-faq footer {
   background: #f33c38 !important;
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait), and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .casiopea-home-hero {
     height: 100vh;
   }
