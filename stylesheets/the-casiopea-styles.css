@@ -799,6 +799,29 @@ margin-bottom: 4px;
 #casiopea-project .ambulante-project footer {
   background: #4fd9d1 !important;
 }
+#casiopea-project .song-of-the-last-lacandon .other-projects-block,
+#casiopea-project .song-of-the-last-lacandon #back-cta {
+  background: #0a090b;
+  color: #f0f0f0;
+}
+#casiopea-project .song-of-the-last-lacandon #project-work-demos h2 {
+  font-size: 30px;
+  font-family: "Inconsolata", sans-serif;
+}
+#casiopea-project .song-of-the-last-lacandon header #navigation li a {
+  color: #f0f0f0;
+}
+#casiopea-project .song-of-the-last-lacandon header #navigation li:hover a {
+  text-decoration: none;
+  color: #403e3b;
+}
+#casiopea-project .song-of-the-last-lacandon footer {
+  background: #0a090b !important;
+}
+#casiopea-project .song-of-the-last-lacandon footer .social a,
+#casiopea-project .song-of-the-last-lacandon footer .copy p {
+  color: #f0f0f0 !important;
+}
 #casiopea-project .cutout-project .other-projects-block,
 #casiopea-project .cutout-project #back-cta {
   background: #917af0;
