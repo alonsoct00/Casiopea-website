@@ -28,7 +28,6 @@ header.affix .img-logo img {
 header section {
   display: flex;
   align-items: center;
-  justify-content: center;
   justify-content: space-between;
 }
 header #navigation li a {
@@ -47,7 +46,9 @@ footer {
   background: #ebfdc6 !important;
   z-index: 10;
   position: relative;
+  bottom: 0;
   width: 100%;
+  height: auto;
 }
 footer section {
   padding: 40px 0 !important;
@@ -63,8 +64,7 @@ footer a.icon {
 .img-logo img {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
 }
 #casiopea-wsite p {
   color: #000;
@@ -100,16 +100,23 @@ footer a.icon {
 }
 #casiopea-wsite a#back-cta {
   position: relative;
-  margin: 0 auto;
+  clear: both;
+  margin: 0px auto;
   display: block;
   height: 40px;
   line-height: 40px;
+  color: inherit;
+  background: inherit;
   text-align: center;
   font-size: 18px;
+  bottom: 0;
+  left: 0px;
+  right: 0px;
   z-index: 1;
 }
 #casiopea-wsite #back-cta:before {
   content: "\2190";
+  display: inline-block;
   margin-right: 4px;
 }
 #casiopea-wsite button {
@@ -119,12 +126,13 @@ footer a.icon {
 #casiopea-wsite button:focus,
 #casiopea-wsite button:active {
   box-shadow: none;
-  outline: 0;
+  outline: 0px;
 }
 #casiopea-wsite button.show-more-i:after {
   position: absolute;
   font: normal normal normal 14px/1 FontAwesome;
-  right: 0;
+  right: 0px;
+  left: auto;
 }
 #casiopea-wsite button.show-more-i:not(.collapsed)::after {
   content: "\f077";
@@ -133,27 +141,20 @@ footer a.icon {
   content: "\f078";
 }
 #casiopea-wsite .casiopea-section.fluid-section {
-  padding: 0;
+  padding: 0px;
   max-width: 100%;
 }
 #casiopea-wsite .casiopea-section .video-container {
   background: #000;
   height: 100dvh;
   width: 100%;
+  display: block;
 }
 #casiopea-wsite .casiopea-section .video-container .video {
   display: block;
   object-fit: cover;
   height: 100%;
   width: 100%;
-}
-#casiopea-wsite .casiopea-section .img-project-container {
-  object-fit: cover;
-}
-#casiopea-wsite .casiopea-section .img-project-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 #casiopea-wsite .other-projects-block {
   display: none;
@@ -167,6 +168,7 @@ footer a.icon {
   font-size: 18px;
 }
 #casiopea-wsite #our-team .semblance {
+  clear: both;
   display: block;
   float: left;
   width: 100%;
@@ -180,18 +182,18 @@ footer a.icon {
   border: 0;
   border-bottom: 1px solid #000;
   text-align: left;
-  padding: 0 0 12px 0;
+  padding: 0px 0px 12px 0px;
   margin-top: 30px;
   margin-bottom: 10px;
   text-transform: none;
-  border-radius: 0;
+  border-radius: 0px;
   width: 100%;
 }
 #casiopea-wsite #our-team .semblance button:hover,
 #casiopea-wsite #our-team .semblance button:focus,
 #casiopea-wsite #our-team .semblance button:active {
   box-shadow: none;
-  outline: 0;
+  outline: 0px;
 }
 #casiopea-wsite #our-team .semblance .collapse {
   text-align: left;
@@ -202,8 +204,8 @@ footer a.icon {
   font-size: 1.4rem;
 }
 #casiopea-wsite #our-team .semblance .collapse .card-body p {
-  display: block;
   text-align: left;
+  display: block;
 }
 #main-aboutus-page .casiopea-home-hero {
   display: flex;
@@ -213,18 +215,17 @@ footer a.icon {
   height: 100%;
   max-height: 1080px;
   position: relative;
+  object-fit: cover;
 }
 #main-aboutus-page .casiopea-home-hero .img-hero-intro {
   display: block;
-  margin: 0;
+  margin: 0px;
   width: 100%;
   height: 100%;
 }
 #main-aboutus-page .casiopea-home-hero .img-hero-intro img {
-  display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
 }
 #main-aboutus-page #about-us {
   padding-top: 100px;
@@ -232,7 +233,6 @@ footer a.icon {
   min-height: 400px;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 #main-aboutus-page #about-us h4,
 #main-aboutus-page #about-us p {
@@ -271,6 +271,7 @@ footer a.icon {
   left: 100px;
   transform: translateY(50%);
   animation: cssVisible 2000ms;
+  display: block;
   z-index: 9999;
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (max-width: 767px), (max-device-width: 767px) {
@@ -337,22 +338,26 @@ footer a.icon {
 #casiopea-projects #projects-wrapper .deleted-project {
   display: none;
   visibility: hidden;
-  width: 0;
-  height: 0;
+  width: 0px;
+  height: 0px;
   z-index: -100;
 }
 #casiopea-project .jumbotron.casiopea-section {
+  max-height: auto;
   overflow: hidden;
 }
 #casiopea-project .jumbotron.casiopea-section:after {
   content: "";
   width: 100%;
   min-height: 100%;
+  height: auto;
   background: #000;
+  z-index: 1;
   opacity: 0.3;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0px;
+  right: 0px;
+  left: 0px;
 }
 #casiopea-project h1.intro-project-title {
   visibility: hidden;
@@ -369,21 +374,25 @@ footer a.icon {
   height: 100%;
 }
 #casiopea-project .casiopea-project-hero-intro .video-container {
+  margin: 0px;
   display: block;
   height: 100%;
   width: auto;
   min-width: 100vw;
 }
 #casiopea-project .casiopea-project-hero-intro .video-container video {
+  display: block;
   width: 100%;
   height: auto;
   object-fit: cover;
 }
-#casiopea-project .casiopea-project-hero-intro .img-hero-intro img {
+#casiopea-project .casiopea-project-hero-intro .img-hero-intro {
   display: block;
+  margin: 0px;
+}
+#casiopea-project .casiopea-project-hero-intro .img-hero-intro img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
 }
 #casiopea-project .intro-project-title {
   opacity: 0.5;
@@ -396,16 +405,30 @@ footer a.icon {
 #casiopea-project #info-project-txt dl {
   font-size: 0.95em;
   color: #000;
+  /*div {
+display: flex;
+align-items: normal;
+margin-bottom: 4px;
+}*/
 }
 #casiopea-project #info-project-txt dl dt {
   display: inline-block;
   font-weight: normal;
+  margin-right: 0px;
 }
 #casiopea-project #info-project-txt dl dd {
   display: inline-block;
 }
+#casiopea-project #info-project-txt dl,
+#casiopea-project #info-project-txt dt,
+#casiopea-project #info-project-txt dd {
+  font-size: 0.95em;
+  color: #000;
+}
 #casiopea-project #project-work-demos .row {
   display: flex;
+  align-items: normal;
+  justify-content: normal;
   flex-wrap: wrap;
   margin-bottom: 30px;
 }
@@ -434,22 +457,25 @@ footer a.icon {
 #casiopea-project #project-work-demos .lottie-object {
   display: block;
 }
-#casiopea-project #project-work-demos .img-project-container img {
+#casiopea-project #project-work-demos .img-project-container {
   display: block;
+}
+#casiopea-project #project-work-demos .img-project-container img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  margin: 0 auto;
+  height: auto;
+  display: block;
+  margin: 0px auto;
 }
 #casiopea-project #project-work-demos .video-container {
   width: 100%;
   display: flex;
-  margin: 0 auto;
+  margin: 0px auto;
   overflow: hidden;
 }
 #casiopea-project #project-work-demos .video-container video {
-  width: 100%;
+  display: block;
   margin: 0;
+  width: 100%;
 }
 #casiopea-project .other-projects-block {
   visibility: hidden;
@@ -466,10 +492,11 @@ footer a.icon {
   color: #fff;
 }
 #casiopea-project .dos-camaleones-project header #navigation li:hover a {
+  text-decoration: none;
   color: #403e3b;
 }
 #casiopea-project .dos-camaleones-project footer {
-  background: #eee !important;
+  background: #eeeeee !important;
 }
 #casiopea-project .fonima-project .other-projects-block,
 #casiopea-project .fonima-project #back-cta {
@@ -480,6 +507,7 @@ footer a.icon {
   color: #f0f0f0;
 }
 #casiopea-project .fonima-project header #navigation li:hover a {
+  text-decoration: none;
   color: #403e3b;
 }
 #casiopea-project .fonima-project footer {
@@ -503,6 +531,7 @@ footer a.icon {
   color: #f0f0f0;
 }
 #casiopea-project .birdsong-project header #navigation li:hover a {
+  text-decoration: none;
   color: #403e3b;
 }
 #casiopea-project .birdsong-project footer {
@@ -521,6 +550,7 @@ footer a.icon {
   color: #f0f0f0;
 }
 #casiopea-project .sobre-amor-project header #navigation li:hover a {
+  text-decoration: none;
   color: #403e3b;
 }
 #casiopea-project .sobre-amor-project footer {
@@ -539,6 +569,7 @@ footer a.icon {
   color: #f0f0f0;
 }
 #casiopea-project .smmx-project header #navigation li:hover a {
+  text-decoration: none;
   color: #403e3b;
 }
 #casiopea-project .smmx-project footer {
@@ -552,6 +583,7 @@ footer a.icon {
   color: #f0f0f0;
 }
 #casiopea-project .centavrvs-project header #navigation li:hover a {
+  text-decoration: none;
   color: #403e3b;
 }
 #casiopea-project .centavrvs-project #cta-video {
@@ -567,6 +599,7 @@ footer a.icon {
 }
 #casiopea-project .centavrvs-project footer {
   background: #000 !important;
+  color: #fff;
 }
 #casiopea-project .centavrvs-project footer .social a,
 #casiopea-project .centavrvs-project footer .copy p {
@@ -576,6 +609,7 @@ footer a.icon {
   color: #f0f0f0;
 }
 #casiopea-project .conoces-tomas-project header #navigation li:hover a {
+  text-decoration: none;
   color: #403e3b;
 }
 #casiopea-project .conoces-tomas-project .other-projects-block,
@@ -590,6 +624,7 @@ footer a.icon {
   color: #f0f0f0;
 }
 #casiopea-project .visuales-project header #navigation li:hover a {
+  text-decoration: none;
   color: #403e3b;
 }
 #casiopea-project .visuales-project .other-projects-block,
@@ -609,6 +644,7 @@ footer a.icon {
   color: #f0f0f0;
 }
 #casiopea-project .poliangular-project header #navigation li:hover a {
+  text-decoration: none;
   color: #403e3b;
 }
 #casiopea-project .poliangular-project footer {
@@ -629,10 +665,12 @@ footer a.icon {
   color: #f0f0f0;
 }
 #casiopea-project .animasivo-project header #navigation li:hover a {
+  text-decoration: none;
   color: #403e3b;
 }
 #casiopea-project .animasivo-project footer {
   background: #121212 !important;
+  color: #f0f0f0;
 }
 #casiopea-project .animasivo-project footer .social a,
 #casiopea-project .animasivo-project footer .copy p {
@@ -647,6 +685,7 @@ footer a.icon {
   color: #f0f0f0;
 }
 #casiopea-project .la-vejez-project header #navigation li:hover a {
+  text-decoration: none;
   color: #403e3b;
 }
 #casiopea-project .la-vejez-project footer {
@@ -661,10 +700,12 @@ footer a.icon {
   color: #f0f0f0;
 }
 #casiopea-project .ruido-furia-project header #navigation li:hover a {
+  text-decoration: none;
   color: #403e3b;
 }
 #casiopea-project .ruido-furia-project footer {
   background: #030817 !important;
+  color: #f0f0f0;
 }
 #casiopea-project .ruido-furia-project footer .social a,
 #casiopea-project .ruido-furia-project footer .copy p {
@@ -679,6 +720,7 @@ footer a.icon {
   color: #f0f0f0;
 }
 #casiopea-project .adentro-afuera-project header #navigation li:hover a {
+  text-decoration: none;
   color: #403e3b;
 }
 #casiopea-project .adentro-afuera-project footer {
@@ -694,10 +736,12 @@ footer a.icon {
   color: #f0f0f0;
 }
 #casiopea-project .la-catrina-project header #navigation li:hover a {
+  text-decoration: none;
   color: #403e3b;
 }
 #casiopea-project .la-catrina-project footer {
   background: #151915 !important;
+  color: #f0f0f0;
 }
 #casiopea-project .la-catrina-project footer .social a,
 #casiopea-project .la-catrina-project footer .copy p {
@@ -712,6 +756,7 @@ footer a.icon {
   color: #f0f0f0;
 }
 #casiopea-project .en-un-ser-vivo-project header #navigation li:hover a {
+  text-decoration: none;
   color: #403e3b;
 }
 #casiopea-project .en-un-ser-vivo-project footer {
@@ -729,6 +774,7 @@ footer a.icon {
   color: #f0f0f0;
 }
 #casiopea-project .video-explicativo-project header #navigation li:hover a {
+  text-decoration: none;
   color: #403e3b;
 }
 #casiopea-project .video-explicativo-project footer {
@@ -747,6 +793,7 @@ footer a.icon {
   color: #f0f0f0;
 }
 #casiopea-project .ambulante-project header #navigation li:hover a {
+  text-decoration: none;
   color: #403e3b;
 }
 #casiopea-project .ambulante-project footer {
@@ -754,24 +801,22 @@ footer a.icon {
 }
 #casiopea-project .song-of-the-last-lacandon .other-projects-block,
 #casiopea-project .song-of-the-last-lacandon #back-cta {
-  background: #0a090c;
+  background: #0a090b;
   color: #f0f0f0;
 }
 #casiopea-project .song-of-the-last-lacandon #project-work-demos h2 {
   font-size: 30px;
   font-family: "Inconsolata", sans-serif;
 }
-#casiopea-project .song-of-the-last-lacandon video {
-  background-color: #0a090c;
-}
 #casiopea-project .song-of-the-last-lacandon header #navigation li a {
   color: #f0f0f0;
 }
 #casiopea-project .song-of-the-last-lacandon header #navigation li:hover a {
+  text-decoration: none;
   color: #403e3b;
 }
 #casiopea-project .song-of-the-last-lacandon footer {
-  background: #0a090c !important;
+  background: #0a090b !important;
 }
 #casiopea-project .song-of-the-last-lacandon footer .social a,
 #casiopea-project .song-of-the-last-lacandon footer .copy p {
@@ -786,12 +831,13 @@ footer a.icon {
   font-size: 18px;
 }
 #casiopea-project .cutout-project #project-work-demos .row {
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 #casiopea-project .cutout-project header #navigation li a {
   color: #f0f0f0;
 }
 #casiopea-project .cutout-project header #navigation li:hover a {
+  text-decoration: none;
   color: #403e3b;
 }
 #casiopea-project .cutout-project footer {
@@ -814,29 +860,12 @@ footer a.icon {
   color: #f0f0f0;
 }
 #casiopea-project .no-devoluciones-project header #navigation li:hover a {
+  text-decoration: none;
   color: #403e3b;
 }
 #casiopea-project .no-devoluciones-project footer {
   background: #e53f3f !important;
   color: #f0f0f0;
-}
-#casiopea-project .kidoo .other-projects-block,
-#casiopea-project .kidoo #back-cta {
-  background: #edffc9;
-  color: #000;
-}
-#casiopea-project .kidoo #project-work-demos h2 {
-  font-size: 30px;
-  font-family: "Inconsolata", sans-serif;
-}
-#casiopea-project .kidoo header #navigation li a {
-  color: #f0f0f0;
-}
-#casiopea-project .kidoo header #navigation li:hover a {
-  color: #403e3b;
-}
-#casiopea-project .kidoo footer {
-  background: #edffc9 !important;
 }
 #casiopea-project .talleres-project .other-projects-block,
 #casiopea-project .talleres-project #back-cta {
@@ -847,6 +876,7 @@ footer a.icon {
   color: #f0f0f0;
 }
 #casiopea-project .talleres-project header #navigation li:hover a {
+  text-decoration: none;
   color: #403e3b;
 }
 #casiopea-project .talleres-project footer {
@@ -860,13 +890,14 @@ footer a.icon {
   color: #000;
 }
 #contact-page header #navigation li:hover a {
+  text-decoration: none;
   color: #000;
 }
 #contact-page header .img-logo img {
   filter: invert(1);
 }
 #contact-page section.contact {
-  margin: 0;
+  margin: 0px;
   width: 100%;
   max-width: 100%;
   display: block;
@@ -902,16 +933,21 @@ footer a.icon {
 #casiopea-faq #grid-faq {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: normal;
+  max-width: 100%;
   padding: 20px;
   background: #f33c38;
 }
 #casiopea-faq #grid-faq .faq-item {
   display: inline-flex;
+  align-items: normal;
+  justify-content: normal;
   margin-bottom: 30px;
 }
 #casiopea-faq #grid-faq .faq-question {
   width: 80%;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 #casiopea-faq #grid-faq .faq-question a {
   color: #000 !important;
@@ -920,11 +956,13 @@ footer a.icon {
 #casiopea-faq #grid-faq .faq-question a:focus {
   color: #edffc9 !important;
 }
+#casiopea-faq #grid-faq .thumbnail-faq {
+  width: 100%;
+}
 #casiopea-faq #grid-faq .thumbnail-faq img {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
 }
 #casiopea-faq footer {
   background: #f33c38 !important;
@@ -936,8 +974,9 @@ footer a.icon {
   header section {
     display: flex;
     align-items: center;
-    justify-content: center;
     justify-content: space-between;
+    flex: 0 0 100%;
+    width: auto;
     max-width: 95vw;
     padding: 0;
   }
@@ -948,7 +987,7 @@ footer a.icon {
     width: 50%;
   }
 }
-@media only screen and (max-device-width: 767px), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (max-width: 767px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (max-width: 767px), (max-device-width: 767px) {
   header #navigation.active li {
     background: #000;
     text-align: left;
@@ -956,18 +995,25 @@ footer a.icon {
   ul#filter-nav {
     display: none;
   }
+  /*#casiopea-wsite {
+overflow-x: hidden;
+}*/
   header #navigation li a {
     padding: 10px;
     display: block;
+    clear: both;
     width: 100%;
   }
   #casiopea-project .adentro-afuera-project header #navigation li a {
     color: #f0f0f0;
     display: block;
+    clear: both;
     width: 100%;
   }
   #casiopea-project .jumbotron.casiopea-section {
+    max-height: max-content;
     height: auto;
+    overflow: hidden;
   }
   #casiopea-project .jumbotron.casiopea-section::after {
     height: 100%;
@@ -980,6 +1026,7 @@ footer a.icon {
   }
   #about-us-hero-top {
     display: block;
+    clear: both;
     overflow-x: hidden;
     background-size: cover;
     max-height: 50vh;
