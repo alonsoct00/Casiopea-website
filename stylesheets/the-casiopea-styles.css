@@ -305,6 +305,11 @@ footer a.icon {
 #casiopea-projects .jumbotron {
   background: transparent;
 }
+#casiopea-projects .img-hero-intro {
+  width: 100%;
+  display: block;
+  flex: 0 0 100%;
+}
 #casiopea-projects #projects-section #filter-trigger {
   background: #ebfdc6;
   color: #333;
