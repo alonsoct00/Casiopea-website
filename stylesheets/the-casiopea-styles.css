@@ -690,6 +690,21 @@ footer a.icon {
   background: #4fd9d1 !important;
   color: #f0f0f0;
 }
+#casiopea-project .trkon-project .other-projects-block,
+#casiopea-project .trkon-project #back-cta {
+  background: #4fd9d1;
+  color: #000;
+}
+#casiopea-project .trkon-project header #navigation li a {
+  color: #f0f0f0;
+}
+#casiopea-project .trkon-project header #navigation li:hover a {
+  color: #403e3b;
+}
+#casiopea-project .trkon-project footer {
+  background: #4fd9d1 !important;
+  color: #f0f0f0;
+}
 #casiopea-project .la-catrina-project .other-projects-block,
 #casiopea-project .la-catrina-project #back-cta {
   background: #151915;
