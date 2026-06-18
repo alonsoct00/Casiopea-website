@@ -42,7 +42,7 @@ def should_convert_to_webp(src):
     return Path(src).suffix.lower() in IMAGE_EXTENSIONS
 
 
-def build_picture_element(attrs):
+def build_picture_element(attrs, file_dir):
     src_attr = 'data-src' if 'data-src' in attrs else 'src' if 'src' in attrs else None
     if not src_attr:
         return None
@@ -53,7 +53,7 @@ def build_picture_element(attrs):
     if not should_convert_to_webp(src_value):
         return None
 
-    webp_path = (PROJECT_DIR / src_value).with_suffix('.webp')
+    webp_path = (file_dir / src_value).with_suffix('.webp')
     if not webp_path.exists():
         return None
 
@@ -90,7 +90,7 @@ def build_picture_element(attrs):
     return picture
 
 
-def convert_img_tags_outside_pictures(content):
+def convert_img_tags_outside_pictures(content, file_dir):
     segments = []
     last_end = 0
     for match in PICTURE_BLOCK_REGEX.finditer(content):
@@ -104,13 +104,13 @@ def convert_img_tags_outside_pictures(content):
         if segment.startswith('<picture'):
             processed.append(segment)
         else:
-            processed.append(IMG_TAG_REGEX.sub(lambda m: replace_img_tag(m.group(1)), segment))
+            processed.append(IMG_TAG_REGEX.sub(lambda m: replace_img_tag(m.group(1), file_dir), segment))
     return ''.join(processed)
 
 
-def replace_img_tag(attr_string):
+def replace_img_tag(attr_string, file_dir):
     attrs = parse_attributes(attr_string)
-    picture = build_picture_element(attrs)
+    picture = build_picture_element(attrs, file_dir)
     if picture:
         return picture
 
@@ -120,7 +120,7 @@ def replace_img_tag(attr_string):
 
 def convert_img_tags_in_file(filepath):
     content = filepath.read_text(encoding='utf-8')
-    new_content = convert_img_tags_outside_pictures(content)
+    new_content = convert_img_tags_outside_pictures(content, filepath.parent)
     if new_content != content:
         filepath.write_text(new_content, encoding='utf-8')
         return True

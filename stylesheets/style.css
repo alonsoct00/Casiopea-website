@@ -1738,11 +1738,11 @@ header.affix #navigation .trigger .bar {
 }
 
 .dark-slide .next-slide {
-    cursor: url(../images/slide-right.png), auto;
+    cursor: url(../images/tera-slider/slide-right.png), auto;
 }
 
 .dark-slide .prev-slide {
-    cursor: url(../images/slide-left.png), auto;
+    cursor: url(../images/tera-slider/slide-left.png), auto;
 }
 
 .dark-slide #navigation .trigger .bar {
