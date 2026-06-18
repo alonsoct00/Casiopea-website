@@ -132,6 +132,11 @@ footer a.icon {
 #casiopea-wsite button.show-more-i.collapsed::after {
   content: "\f078";
 }
+#casiopea-wsite .casiopea-project-hero-intro .img-hero-intro {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
 #casiopea-wsite .casiopea-section.fluid-section {
   padding: 0;
   max-width: 100%;
@@ -872,6 +877,9 @@ footer a.icon {
 #casiopea-project .talleres-project footer {
   background: #4fd9d1 !important;
   color: #f0f0f0;
+}
+#casiopea-project .abuelitas-kitchen .casiopea-project-hero-intro {
+  display: block;
 }
 #casiopea-project .abuelitas-kitchen .other-projects-block,
 #casiopea-project .abuelitas-kitchen #back-cta {
