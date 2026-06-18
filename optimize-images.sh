@@ -80,32 +80,31 @@ convert_images_in_dir() {
     fi
 }
 
-# Process main images directory
-if [ -d "$PROJECT_DIR/images" ]; then
-    convert_images_in_dir "$PROJECT_DIR/images"
-fi
+# Process all JPG and PNG files recursively under the project directory
+find "$PROJECT_DIR" \( -iname '*.jpg' -o -iname '*.png' \) -type f | while read -r img; do
+    filename=$(basename "$img")
+    extension="${img##*.}"
+    webp_file="${img%.*}.webp"
 
-# Process images/faqs subdirectory
-if [ -d "$PROJECT_DIR/images/faqs" ]; then
-    convert_images_in_dir "$PROJECT_DIR/images/faqs"
-fi
+    # Get file sizes
+    original_size=$(stat -f%z "$img" 2>/dev/null || echo 0)
 
-# Process images/tera-slider subdirectory
-if [ -d "$PROJECT_DIR/images/tera-slider" ]; then
-    convert_images_in_dir "$PROJECT_DIR/images/tera-slider"
-fi
+    # Convert to WebP
+    cwebp -q $QUALITY "$img" -o "$webp_file" 2>/dev/null
 
-# Process projects directories
-if [ -d "$PROJECT_DIR/projects" ]; then
-    for project_dir in "$PROJECT_DIR/projects"/*; do
-        if [ -d "$project_dir/media" ]; then
-            convert_images_in_dir "$project_dir/media"
-        fi
-        if [ -d "$project_dir/media/portada" ]; then
-            convert_images_in_dir "$project_dir/media/portada"
-        fi
-    done
-fi
+    # Get WebP size
+    webp_size=$(stat -f%z "$webp_file" 2>/dev/null || echo 0)
+
+    # Calculate savings
+    if [ $original_size -gt 0 ]; then
+        saved=$((original_size - webp_size))
+        percent=$((saved * 100 / original_size))
+        TOTAL_ORIGINAL=$((TOTAL_ORIGINAL + original_size))
+        TOTAL_WEBP=$((TOTAL_WEBP + webp_size))
+        TOTAL_SAVED=$((TOTAL_SAVED + saved))
+        printf "   ✓ %-40s | %6d → %6d bytes | %3d%% saved\n" "$filename" "$original_size" "$webp_size" "$percent"
+    fi
+done
 
 # Print summary
 echo ""
