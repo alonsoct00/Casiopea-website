@@ -243,3 +243,116 @@ document.addEventListener(
   },
   { passive: false },
 );
+
+// ========================================
+// LAZY LOADING - Image & Video Optimization
+// ========================================
+// Initializes lazy loading for images and videos to improve page performance
+// Usage: add data-src attribute to img tags and loading="lazy" attribute to video tags
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Check if IntersectionObserver is supported
+  if ('IntersectionObserver' in window) {
+    initLazyLoadingImages();
+    initLazyLoadingVideos();
+  } else {
+    // Fallback for older browsers - load all images immediately
+    document.querySelectorAll('img[data-src]').forEach(img => {
+      img.src = img.dataset.src;
+    });
+  }
+});
+
+// Initialize lazy loading for images
+function initLazyLoadingImages() {
+  const imageObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        
+        // Support for responsive images with picture element
+        if (img.parentElement.tagName === 'PICTURE') {
+          const sources = img.parentElement.querySelectorAll('source[data-srcset]');
+          sources.forEach(source => {
+            source.srcset = source.dataset.srcset;
+          });
+        }
+        
+        // Load main image
+        if (img.dataset.src) {
+          img.src = img.dataset.src;
+        }
+        
+        // Add loaded class for fade-in animation
+        img.classList.add('lazy-loaded');
+        
+        // Stop observing this image
+        observer.unobserve(img);
+      }
+    });
+  }, {
+    rootMargin: '50px' // Start loading 50px before entering viewport
+  });
+
+  // Observe all images with data-src attribute
+  document.querySelectorAll('img[data-src]').forEach(img => {
+    imageObserver.observe(img);
+  });
+}
+
+// Initialize lazy loading for videos
+function initLazyLoadingVideos() {
+  const videoObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const video = entry.target;
+        
+        // Load video sources
+        video.querySelectorAll('source[data-src]').forEach(source => {
+          source.src = source.dataset.src;
+        });
+        
+        // Reload video to start playback
+        video.load();
+        video.classList.add('lazy-loaded');
+        
+        observer.unobserve(video);
+      }
+    });
+  }, {
+    rootMargin: '100px'
+  });
+
+  // Observe all videos with data-src in sources
+  document.querySelectorAll('video source[data-src]').forEach(source => {
+    if (source.parentElement && source.parentElement.tagName === 'VIDEO') {
+      videoObserver.observe(source.parentElement);
+    }
+  });
+}
+
+// CSS for fade-in animation on lazy-loaded images
+const style = document.createElement('style');
+style.textContent = `
+  img[data-src] {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+  }
+  
+  img.lazy-loaded {
+    opacity: 1;
+  }
+  
+  /* Placeholder background while loading */
+  img[data-src] {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+  }
+  
+  @keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+`;
+document.head.appendChild(style);
