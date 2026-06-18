@@ -1,3 +1,41 @@
+// --- VARIABLES ---
+@black: #000;
+@white: #fff;
+@gray-light: #eee;
+@gray-mid: #403e3b;
+@gray-soft: #f0f0f0;
+@gray-dark: #0a090c;
+
+@green-light: #ebfdc6;
+@green-mid: #efffc9;
+@green-hover: #edffc9;
+
+@cyan: #4fd9d1;
+@cyan-hover: #4ed8d0;
+@cyan-soft: #61f1e99c;
+
+@purple: #917af0;
+@purple-dark: #8f7aee;
+
+@red: #f33c38;
+@red-strong: #e53f3f;
+@red-cherry: #ea5b63;
+@red-tomato: #f53d3a;
+
+@pink: #a64a96;
+@cream: #e5e1dd;
+@aqua: #cbf7f2;
+
+@font-main: "Inconsolata", sans-serif;
+
+@space-lg: 100px;
+@space-md: 40px;
+@space-sm: 30px;
+
+@opacity-low: 0.05;
+
+
+// --- MIXINS ---
 .font-size(@sizeValue) {
     @remValue: @sizeValue;
     @pxValue: (@sizeValue * 10);
@@ -5,20 +43,35 @@
     font-size:~"@{remValue}rem";
 }
 
-*::selection {
-    background: #ebfdc6;
+.flex-center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.full-img() {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
+// --- GLOBAL ---
+*::selection {
+    background: @green-light;
+}
 
 html {
     font-size: 62.5%;
     font-display: auto;
     text-rendering: auto;
+    zoom: reset;
+    touch-action: pan-x pan-y;
 }
 
 .Noise {
-    content: ' ';
+    content: " ";
     display: block;
     position: fixed;
     top: 0;
@@ -26,15 +79,14 @@ html {
     width: 100%;
     height: 100%;
     background: url(../images/noise.gif);
-    opacity: 0.05;
+    opacity: @opacity-low;
 }
 
 
-
+// --- HEADER ---
 header {
-
     &.affix {
-        background: #000 !important;
+        background: @black !important;
 
         .img-logo img {
             filter: invert(0) !important;
@@ -42,64 +94,63 @@ header {
     }
 
     section {
-        display: flex;
-        align-items: center;
+        .flex-center();
         justify-content: space-between;
     }
 
     #navigation li a {
-        color: #fff;
+        color: @white;
     }
 
     #navigation li:hover a {
         text-decoration: none;
-        color: #403E3B;
+        color: @gray-mid;
     }
 
     a.h-link.filter-nav-anchor:hover,
     .filter-nav-anchor:hover,
     .filter-nav-anchor:focus {
-        color: #fff !important;
+        color: @white !important;
     }
-
 }
 
 
-
+// --- FOOTER ---
 footer {
-    background: #ebfdc6 !important;
+    background: @green-light !important;
     z-index: 10;
     position: relative;
+    width: 100%;
 
     section {
-        padding: 40px 0 !important;
+        padding: @space-md 0 !important;
     }
 
     a.icon {
-        color: #000;
+        color: @black;
     }
 }
 
+
+// --- LOGO ---
 .img-logo {
     display: inline-block;
     width: 100%;
     max-width: 120px;
 
     img {
-        display: block;
-        width: 100%;
-        height: auto;
+        .full-img();
     }
 }
 
+// --- HOME / GLOBAL SITE ---
 #casiopea-wsite {
-
     p {
-        color: #000;
+        color: @black;
 
         &.text-white,
         &.txt-white {
-            color: #fff;
+            color: @white;
         }
     }
 
@@ -108,43 +159,34 @@ footer {
     h3,
     h4,
     h5 {
-        color: #000;
+        color: @black;
 
         &.text-white,
         &.txt-white {
-            color: #fff;
+            color: @white;
         }
     }
 
-    ul {
-        li {
-            font-size: .9em;
-            line-height: 1.6em;
-            font-family: "Inconsolata", sans-serif;
-            color: #000;
-        }
+    ul li {
+        font-size: 0.9em;
+        line-height: 1.6em;
+        font-family: @font-main;
+        color: @black;
     }
 
     a#back-cta {
         position: relative;
-        clear: both;
-        margin: 0px auto;
+        margin: 0 auto;
         display: block;
         height: 40px;
         line-height: 40px;
-        color: inherit;
-        background: inherit;
         text-align: center;
         font-size: 18px;
-        bottom: 0;
-        left: 0px;
-        right: 0px;
         z-index: 1;
     }
 
     #back-cta:before {
         content: "\2190";
-        display: inline-block;
         margin-right: 4px;
     }
 
@@ -155,57 +197,52 @@ footer {
         &:focus,
         &:active {
             box-shadow: none;
-            outline: 0px;
+            outline: 0;
         }
 
         &.show-more-i {
             &:after {
                 position: absolute;
                 font: normal normal normal 14px/1 FontAwesome;
-                right: 0px;
-                left: auto;
+                right: 0;
             }
 
-            &:not(.collapsed) {
-                &::after {
-                    content: "\f077";
-
-
-                }
+            &:not(.collapsed)::after {
+                content: "\f077";
             }
 
-
-            &.collapsed {
-                &::after {
-                    content: "\f078";
-                }
+            &.collapsed::after {
+                content: "\f078";
             }
         }
-
-
-
     }
 
     .casiopea-section {
-
         &.fluid-section {
-            padding: 0px;
+            padding: 0;
             max-width: 100%;
         }
 
         .video-container {
-            background: #000;
-            height: 100%;
+            background: @black;
+            height: 100dvh;
             width: 100%;
-            display: block
-        }
 
-        .video-container {
             .video {
                 display: block;
                 object-fit: cover;
                 height: 100%;
                 width: 100%;
+            }
+        }
+
+        .img-project-container {
+            object-fit: cover;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
         }
     }
@@ -219,56 +256,50 @@ footer {
     }
 
     #our-team {
-
         figure.profile .social a.icon {
-            color: #000;
+            color: @black;
             background: transparent;
             font-size: 18px;
         }
 
         .semblance {
-            clear: both;
             display: block;
             float: left;
             width: 100%;
             text-align: left;
             .font-size(1.4);
 
-
-
             button {
                 background: transparent;
-                color: #000;
+                color: @black;
                 border: 0;
-                border-bottom: 1px solid #000;
+                border-bottom: 1px solid @black;
                 text-align: left;
-                padding: 0px 0px 12px 0px;
+                padding: 0 0 12px 0;
                 margin-top: 30px;
                 margin-bottom: 10px;
                 text-transform: none;
-                border-radius: 0px;
+                border-radius: 0;
                 width: 100%;
 
                 &:hover,
                 &:focus,
                 &:active {
                     box-shadow: none;
-                    outline: 0px;
+                    outline: 0;
                 }
-
             }
 
             .collapse {
                 text-align: left;
-
 
                 .card-body {
                     text-align: left;
                     .font-size(1.4);
 
                     p {
-                        text-align: left;
                         display: block;
+                        text-align: left;
                     }
                 }
             }
@@ -276,33 +307,118 @@ footer {
     }
 }
 
+
+
+// --- ABOUT US PAGE ---
 #main-aboutus-page {
     .casiopea-home-hero {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
+        .flex-center();
         width: 100%;
         height: 100%;
+        max-height: 1080px;
+        position: relative;
 
         .img-hero-intro {
             display: block;
-            margin: 0px;
+            margin: 0;
+            width: 100%;
+            height: 100%;
 
             img {
-                width: 100%;
-                height: auto;
+                .full-img();
             }
+        }
+    }
+
+    #about-us {
+        padding-top: @space-lg;
+        padding-bottom: @space-lg;
+        min-height: 400px;
+        .flex-center();
+
+        h4,
+        p {
+            color: @white;
+        }
+
+        h4 {
+            border-bottom: 1px solid @white;
+        }
+
+        a {
+            color: @green-mid;
+            font-weight: 600;
+            text-decoration: underline;
+
+            &:hover {
+                color: @green-hover;
+            }
+        }
+    }
+
+    .dot-separator {
+        position: relative;
+        padding: 0;
+
+        .container-fluid {
+            height: 0;
+
+            .row.block {
+                position: relative;
+                padding: 0;
+                overflow: unset;
+
+                .dot {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 100px;
+                    background: @cyan;
+                    position: absolute;
+                    bottom: 0;
+                    left: 100px;
+                    transform: translateY(50%);
+                    animation: cssVisible 2000ms;
+                    z-index: 9999;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (max-width: 767px),
+    (max-device-width: 767px) {
+
+        #about-us {
+            padding-top: 85px;
+            padding-bottom: 85px;
+            min-height: unset;
+
+            .container-fluid {
+                position: relative;
+
+                .row.block {
+                    position: relative;
+                }
+            }
+        }
+
+        .dot-separator .dot {
+            left: 16px !important;
+        }
+
+        .casiopea-home-hero .img-hero-intro {
+            position: relative;
+            width: 100%;
         }
     }
 }
 
-
+// --- PROJECTS LIST ---
 #casiopea-projects {
     header {
         background-color: transparent;
 
         #navigation li a {
-            color: #000;
+            color: @black;
         }
 
         .img-logo img {
@@ -314,37 +430,37 @@ footer {
         background: transparent;
     }
 
+    .img-hero-intro {
+        width: 100%;
+        display: block;
+        flex: 0 0 100%;
+    }
+
     #projects-section {
         #filter-trigger {
-            background: #ebfdc6;
+            background: @green-light;
             color: #333;
 
             &:hover {
-                background: #4ed8d0;
+                background: @cyan-hover;
             }
         }
 
-        #filters {
-            li {
-                button {
-                    background: #ebfdc6;
-                    outline: 0;
-                    -webkit-appearance: none;
-                    color: #000;
+        #filters li button {
+            background: @green-light;
+            outline: 0;
+            -webkit-appearance: none;
+            color: @black;
 
-                    &:focus,
-                    &:hover {
-                        background: #61f1e99c;
-                    }
+            &:focus,
+            &:hover {
+                background: @cyan-soft;
+            }
 
-                    &:active {
-                        background: #4ed8d0;
-                    }
-                }
+            &:active {
+                background: @cyan-hover;
             }
         }
-
-
     }
 
     #projects-wrapper {
@@ -354,30 +470,34 @@ footer {
         animation: cssVisible 3000ms forwards;
 
         .inner .caption {
-            background-color: #917AF0;
+            background-color: @purple;
+        }
+
+        .deleted-project {
+            display: none;
+            visibility: hidden;
+            width: 0;
+            height: 0;
+            z-index: -100;
         }
     }
 }
 
 
+// --- PROJECT PAGE BASE ---
 #casiopea-project {
-
     .jumbotron.casiopea-section {
-        max-height: auto;
         overflow: hidden;
 
         &:after {
             content: "";
             width: 100%;
             min-height: 100%;
-            height: auto;
-            background: #000;
-            z-index: 1;
-            opacity: 0.30;
+            background: @black;
+            opacity: 0.3;
             position: absolute;
-            top: 0px;
-            right: 0px;
-            left: 0px;
+            top: 0;
+            left: 0;
         }
     }
 
@@ -388,7 +508,7 @@ footer {
 
     &.white-menu {
         #navigation li a {
-            color: #f0f0f0;
+            color: @gray-soft;
         }
     }
 
@@ -400,28 +520,28 @@ footer {
         height: 100%;
 
         .video-container {
-            margin: 0px;
             display: block;
             height: 100%;
             width: auto;
             min-width: 100vw;
 
             video {
-                display: block;
                 width: 100%;
                 height: auto;
-                object-fit: cover
+                object-fit: cover;
             }
         }
 
         .img-hero-intro {
+            width: 100%;
+            height: 100%;
             display: block;
-            margin: 0px;
 
-            img {
-                width: 100%;
-                height: auto;
-            }
+        }
+
+        .img-hero-intro img {
+            .full-img();
+
         }
     }
 
@@ -430,25 +550,17 @@ footer {
     }
 
     #info-project-txt {
-        font-size: .9em;
+        font-size: 0.9em;
         line-height: 1.6em;
-        font-family: "Inconsolata", sans-serif;
-
+        font-family: @font-main;
 
         dl {
             font-size: 0.95em;
-            color: #000;
-
-            /*div {
-                display: flex;
-                align-items: normal;
-                margin-bottom: 4px;
-            }*/
+            color: @black;
 
             dt {
                 display: inline-block;
                 font-weight: normal;
-                margin-right: 0px;
             }
 
             dd {
@@ -457,18 +569,9 @@ footer {
         }
     }
 
-    #info-project-txt dl,
-    #info-project-txt dt,
-    #info-project-txt dd {
-        font-size: 0.95em;
-        color: #000;
-    }
-
     #project-work-demos {
         .row {
             display: flex;
-            align-items: normal;
-            justify-content: normal;
             flex-wrap: wrap;
             margin-bottom: 30px;
 
@@ -505,27 +608,20 @@ footer {
             display: block;
         }
 
-        .img-project-container {
-            display: block;
-
-            img {
-                width: 100%;
-                height: auto;
-                display: block;
-                margin: 0px auto;
-            }
+        .img-project-container img {
+            .full-img();
+            margin: 0 auto;
         }
 
         .video-container {
             width: 100%;
             display: flex;
-            margin: 0px auto;
+            margin: 0 auto;
             overflow: hidden;
 
             video {
-                display: block;
-                margin: 0;
                 width: 100%;
+                margin: 0;
             }
         }
     }
@@ -534,489 +630,540 @@ footer {
         visibility: hidden;
         display: none;
 
-        .other-projects-info {
-            .item {
-                opacity: 1 !important;
-            }
+        .other-projects-info .item {
+            opacity: 1 !important;
         }
     }
+}
 
+// --- PROJECTS: DOS CAMALEONES ---
+#casiopea-project {
     .dos-camaleones-project {
 
         .other-projects-block,
         #back-cta {
-            background: #eee;
+            background: @gray-light;
         }
 
-        header {
-            #navigation li a {
-                color: #fff;
-            }
+        header #navigation li a {
+            color: @white;
+        }
 
-            #navigation li:hover a {
-                text-decoration: none;
-                color: #403E3B;
-            }
+        header #navigation li:hover a {
+            color: @gray-mid;
         }
 
         footer {
-            background: #EEEEEE !important;
+            background: @gray-light !important;
         }
     }
 
 
-
+    // --- PROJECTS: FONIMA ---
     .fonima-project {
 
         .other-projects-block,
         #back-cta {
-            background: #000;
-            color: #fff;
+            background: @black;
+            color: @white;
         }
 
+        header #navigation li a {
+            color: @gray-soft;
+        }
 
-        header {
-            #navigation li a {
-                color: #f0f0f0;
-            }
-
-            #navigation li:hover a {
-                text-decoration: none;
-                color: #403E3B;
-            }
+        header #navigation li:hover a {
+            color: @gray-mid;
         }
 
         footer {
-            background: #000 !important;
+            background: @black !important;
 
             .social a,
             .copy p {
-                color: #f0f0f0 !important;
+                color: @gray-soft !important;
             }
         }
 
-        .link-to {
-            a {
-                color: #000;
+        .link-to a {
+            color: @black;
 
-                &:hover {
-                    color: #a64a96;
-                }
+            &:hover {
+                color: @pink;
             }
         }
     }
 
+
+    // --- PROJECTS: BIRDSONG ---
     .birdsong-project {
 
         .other-projects-block,
         #back-cta {
-            background: #eee;
+            background: @gray-light;
         }
 
-        header {
-            #navigation li a {
-                color: #f0f0f0;
-            }
+        header #navigation li a {
+            color: @gray-soft;
+        }
 
-            #navigation li:hover a {
-                text-decoration: none;
-                color: #403E3B;
-            }
+        header #navigation li:hover a {
+            color: @gray-mid;
         }
 
         footer {
-            background: #fff !important;
+            background: @white !important;
         }
     }
 
+
+    // --- PROJECTS: SOBRE AMOR ---
     .sobre-amor-project {
 
         .other-projects-block,
         #back-cta {
-            background: #a64a96;
-            color: #fff;
+            background: @pink;
+            color: @white;
 
-            .title-block {
-                h3 {
-                    color: #fff;
-                }
+            .title-block h3 {
+                color: @white;
             }
         }
 
-        header {
-            #navigation li a {
-                color: #f0f0f0;
-            }
+        header #navigation li a {
+            color: @gray-soft;
+        }
 
-            #navigation li:hover a {
-                text-decoration: none;
-                color: #403E3B;
-            }
+        header #navigation li:hover a {
+            color: @gray-mid;
         }
 
         footer {
-            background: #a64a96 !important;
+            background: @pink !important;
 
             .social a,
             .copy p {
-                color: #f0f0f0 !important;
+                color: @gray-soft !important;
             }
         }
     }
 
+
+    // --- PROJECTS: SMMX ---
     .smmx-project {
 
         .other-projects-block,
         #back-cta {
-            background: #0a090c;
-            color: #fff;
+            background: @gray-dark;
+            color: @white;
         }
 
-        header {
-            #navigation li a {
-                color: #f0f0f0;
-            }
+        header #navigation li a {
+            color: @gray-soft;
+        }
 
-            #navigation li:hover a {
-                text-decoration: none;
-                color: #403E3B;
-            }
+        header #navigation li:hover a {
+            color: @gray-mid;
         }
 
         footer {
-            background: #0a090c !important;
+            background: @gray-dark !important;
 
             .social a,
             .copy p {
-                color: #f0f0f0 !important;
+                color: @gray-soft !important;
             }
         }
     }
 
-    .centavrvs-project {
-        header {
-            #navigation li a {
-                color: #f0f0f0;
-            }
 
-            #navigation li:hover a {
-                text-decoration: none;
-                color: #403E3B;
-            }
+    // --- PROJECTS: CENTAVRVS ---
+    .centavrvs-project {
+        header #navigation li a {
+            color: @gray-soft;
+        }
+
+        header #navigation li:hover a {
+            color: @gray-mid;
         }
 
         #cta-video {
-            color: #f0f0f0;
+            color: @gray-soft;
 
             &:hover {
-                color: #EDFFC9;
+                color: @green-hover;
             }
         }
 
         .other-projects-block,
         #back-cta {
-            background: #000;
-            color: #f0f0f0;
+            background: @black;
+            color: @gray-soft;
         }
 
         footer {
-            background: #000 !important;
-            color: #fff;
+            background: @black !important;
 
             .social a,
             .copy p {
-                color: #f0f0f0 !important;
+                color: @gray-soft !important;
             }
         }
     }
 
+
+    // --- PROJECTS: CONOCES TOMÁS ---
     .conoces-tomas-project {
+        header #navigation li a {
+            color: @gray-soft;
+        }
 
-        header {
-            #navigation li a {
-                color: #f0f0f0;
-            }
-
-            #navigation li:hover a {
-                text-decoration: none;
-                color: #403E3B;
-            }
+        header #navigation li:hover a {
+            color: @gray-mid;
         }
 
         .other-projects-block,
         #back-cta {
-            background: #4FD9D1;
-            color: #000;
+            background: @cyan;
+            color: @black;
         }
 
         footer {
-            background: #4FD9D1 !important;
+            background: @cyan !important;
         }
     }
 
+
+    // --- PROJECTS: VISUALES ---
     .visuales-project {
-        header {
-            #navigation li a {
-                color: #f0f0f0;
-            }
+        header #navigation li a {
+            color: @gray-soft;
+        }
 
-            #navigation li:hover a {
-                text-decoration: none;
-                color: #403E3B;
-            }
+        header #navigation li:hover a {
+            color: @gray-mid;
         }
 
         .other-projects-block,
         #back-cta {
-            background: #edffc9;
-            color: #000;
+            background: @green-hover;
+            color: @black;
         }
 
         footer {
-            background: #edffc9 !important;
+            background: @green-hover !important;
         }
     }
 
 
+    // --- PROJECTS: POLIANGULAR ---
     .poliangular-project {
 
         .other-projects-block,
         #back-cta {
-            background: #e5e1dd;
-            color: #000;
+            background: @cream;
+            color: @black;
         }
 
-        header {
-            #navigation li a {
-                color: #f0f0f0;
-            }
+        header #navigation li a {
+            color: @gray-soft;
+        }
 
-            #navigation li:hover a {
-                text-decoration: none;
-                color: #403E3B;
-            }
+        header #navigation li:hover a {
+            color: @gray-mid;
         }
 
         footer {
-            background: #e5e1dd !important;
+            background: @cream !important;
         }
 
-        .link-to {
-            a {
-                color: #000;
+        .link-to a {
+            color: @black;
 
-                &:hover {
-                    color: #a64a96;
-                }
+            &:hover {
+                color: @pink;
             }
         }
     }
 
 
+    // --- PROJECTS: ANIMASIVO ---
     .animasivo-project {
 
         .other-projects-block,
         #back-cta {
             background: #121212;
-            color: #f0f0f0;
+            color: @gray-soft;
         }
 
-        header {
-            #navigation li a {
-                color: #f0f0f0;
-            }
+        header #navigation li a {
+            color: @gray-soft;
+        }
 
-            #navigation li:hover a {
-                text-decoration: none;
-                color: #403E3B;
-            }
+        header #navigation li:hover a {
+            color: @gray-mid;
         }
 
         footer {
             background: #121212 !important;
-            color: #f0f0f0;
 
             .social a,
             .copy p {
-                color: #f0f0f0 !important;
+                color: @gray-soft !important;
             }
         }
     }
 
 
+    // --- PROJECTS: LA VEJEZ ---
     .la-vejez-project {
 
         .other-projects-block,
         #back-cta {
-            background: #eee;
-            color: #000;
+            background: @gray-light;
+            color: @black;
         }
 
-        header {
-            #navigation li a {
-                color: #f0f0f0;
-            }
+        header #navigation li a {
+            color: @gray-soft;
+        }
 
-            #navigation li:hover a {
-                text-decoration: none;
-                color: #403E3B;
-            }
+        header #navigation li:hover a {
+            color: @gray-mid;
         }
 
         footer {
-            background: #eee !important;
+            background: @gray-light !important;
         }
     }
 
 
+    // --- PROJECTS: RUIDO Y FURIA ---
     .ruido-furia-project {
 
         .other-projects-block,
         #back-cta {
             background: #030817 !important;
-            color: #f0f0f0;
+            color: @gray-soft;
         }
 
-        header {
-            #navigation li a {
-                color: #f0f0f0;
-            }
+        header #navigation li a {
+            color: @gray-soft;
+        }
 
-            #navigation li:hover a {
-                text-decoration: none;
-                color: #403E3B;
-            }
+        header #navigation li:hover a {
+            color: @gray-mid;
         }
 
         footer {
             background: #030817 !important;
-            color: #f0f0f0;
 
             .social a,
             .copy p {
-                color: #f0f0f0 !important;
+                color: @gray-soft !important;
             }
         }
     }
 
 
+    // --- PROJECTS: ADENTRO / AFUERA ---
     .adentro-afuera-project {
 
         .other-projects-block,
         #back-cta {
-            background: #4fd9d1;
-            color: #000;
+            background: @cyan;
+            color: @black;
         }
 
-        header {
-            #navigation li a {
-                color: #f0f0f0;
-            }
+        header #navigation li a {
+            color: @gray-soft;
+        }
 
-            #navigation li:hover a {
-                text-decoration: none;
-                color: #403E3B;
-            }
+        header #navigation li:hover a {
+            color: @gray-mid;
         }
 
         footer {
-            background: #4fd9d1 !important;
-            color: #f0f0f0;
+            background: @cyan !important;
+            color: @gray-soft;
         }
     }
 
 
+    // --- PROJECTS: THE-RIVER KON  ---
+    .trkon-project {
+
+        .other-projects-block,
+        #back-cta {
+            background: @cyan;
+            color: @black;
+        }
+
+        header #navigation li a {
+            color: @gray-soft;
+        }
+
+        header #navigation li:hover a {
+            color: @gray-mid;
+        }
+
+        footer {
+            background: @cyan !important;
+            color: @gray-soft;
+        }
+    }
+
+
+    // --- PROJECTS: LA CATRINA ---
     .la-catrina-project {
 
         .other-projects-block,
         #back-cta {
             background: #151915;
-            color: #f0f0f0;
+            color: @gray-soft;
         }
 
-        header {
-            #navigation li a {
-                color: #f0f0f0;
-            }
+        header #navigation li a {
+            color: @gray-soft;
+        }
 
-            #navigation li:hover a {
-                text-decoration: none;
-                color: #403E3B;
-            }
+        header #navigation li:hover a {
+            color: @gray-mid;
         }
 
         footer {
             background: #151915 !important;
-            color: #f0f0f0;
 
             .social a,
             .copy p {
-                color: #f0f0f0 !important;
+                color: @gray-soft !important;
             }
         }
     }
 
+
+    // --- PROJECTS: EN UN SER VIVO ---
     .en-un-ser-vivo-project {
 
         .other-projects-block,
         #back-cta {
-            background: #CBF7F2;
-            color: #000;
+            background: @aqua;
+            color: @black;
         }
 
-        header {
-            #navigation li a {
-                color: #f0f0f0;
-            }
+        header #navigation li a {
+            color: @gray-soft;
+        }
 
-            #navigation li:hover a {
-                text-decoration: none;
-                color: #403E3B;
-            }
+        header #navigation li:hover a {
+            color: @gray-mid;
         }
 
         footer {
-            background: #CBF7F2 !important;
+            background: @aqua !important;
         }
     }
 
+
+    // --- PROJECTS: VIDEO EXPLICATIVO ---
     .video-explicativo-project {
 
         .other-projects-block,
         #back-cta {
-            background: #8F7AEE;
-            color: #000;
+            background: @purple-dark;
+            color: @black;
         }
 
-        #project-work-demos {
-            h2 {
-                font-size: 18px;
-            }
+        #project-work-demos h2 {
+            font-size: 18px;
         }
 
-        header {
-            #navigation li a {
-                color: #f0f0f0;
-            }
+        header #navigation li a {
+            color: @gray-soft;
+        }
 
-            #navigation li:hover a {
-                text-decoration: none;
-                color: #403E3B;
-            }
+        header #navigation li:hover a {
+            color: @gray-mid;
         }
 
         footer {
-            background: #8F7AEE !important;
+            background: @purple-dark !important;
         }
-
     }
 
+
+    // --- PROJECTS: AMBULANTE ---
+    .ambulante-project {
+
+        .other-projects-block,
+        #back-cta {
+            background: @cyan;
+            color: @black;
+        }
+
+        #project-work-demos h2 {
+            font-size: 30px;
+            font-family: @font-main;
+        }
+
+        header #navigation li a {
+            color: @gray-soft;
+        }
+
+        header #navigation li:hover a {
+            color: @gray-mid;
+        }
+
+        footer {
+            background: @cyan !important;
+        }
+    }
+
+
+    // --- PROJECTS: SONG OF THE LAST LACANDON ---
+    .song-of-the-last-lacandon {
+
+        .other-projects-block,
+        #back-cta {
+            background: @gray-dark;
+            color: @gray-soft;
+        }
+
+        #project-work-demos h2 {
+            font-size: 30px;
+            font-family: @font-main;
+        }
+
+        video {
+            background-color: @gray-dark;
+        }
+
+        header #navigation li a {
+            color: @gray-soft;
+        }
+
+        header #navigation li:hover a {
+            color: @gray-mid;
+        }
+
+        footer {
+            background: @gray-dark !important;
+
+            .social a,
+            .copy p {
+                color: @gray-soft !important;
+            }
+        }
+    }
+
+
+    // --- PROJECTS: CUTOUT ---
     .cutout-project {
 
         .other-projects-block,
         #back-cta {
-            background: #917AF0;
-            color: #000;
+            background: @purple;
+            color: @black;
         }
 
         #project-work-demos {
@@ -1025,106 +1172,189 @@ footer {
             }
 
             .row {
-                margin-bottom: 0px;
+                margin-bottom: 0;
             }
         }
 
-        header {
-            #navigation li a {
-                color: #f0f0f0;
-            }
+        header #navigation li a {
+            color: @gray-soft;
+        }
 
-            #navigation li:hover a {
-                text-decoration: none;
-                color: #403E3B;
-            }
+        header #navigation li:hover a {
+            color: @gray-mid;
         }
 
         footer {
-            background: #917AF0 !important;
+            background: @purple !important;
         }
-
     }
 
+
+    // --- PROJECTS: PULSO ---
     .pulso-project {
 
         .other-projects-block,
         #back-cta {
-            background: #ea5b63;
-            color: #000;
+            background: @red-cherry;
+            color: @black;
         }
 
         footer {
-            background: #ea5b63 !important;
+            background: @red-cherry !important;
         }
     }
 
 
-
-
+    // --- PROJECTS: NO DEVOLUCIONES ---
     .no-devoluciones-project {
 
         .other-projects-block,
         #back-cta {
-            background: #e53f3f;
-            color: #000;
+            background: @red-strong;
+            color: @black;
         }
 
-        header {
-            #navigation li a {
-                color: #f0f0f0;
-            }
+        header #navigation li a {
+            color: @gray-soft;
+        }
 
-            #navigation li:hover a {
-                text-decoration: none;
-                color: #403E3B;
-            }
+        header #navigation li:hover a {
+            color: @gray-mid;
         }
 
         footer {
-            background: #e53f3f !important;
-            color: #f0f0f0;
+            background: @red-strong !important;
+            color: @gray-soft;
         }
     }
 
+
+    // --- PROJECTS: KIDOO ---
+    .kidoo {
+
+        .other-projects-block,
+        #back-cta {
+            background: @green-hover;
+            color: @black;
+        }
+
+        #project-work-demos h2 {
+            font-size: 30px;
+            font-family: @font-main;
+        }
+
+        header #navigation li a {
+            color: @gray-soft;
+        }
+
+        header #navigation li:hover a {
+            color: @gray-mid;
+        }
+
+        footer {
+            background: @green-hover !important;
+        }
+    }
+
+
+    // --- PROJECTS: TALLERES ---
     .talleres-project {
 
         .other-projects-block,
         #back-cta {
-            background: #4FD9D1;
-            color: #000;
+            background: @cyan;
+            color: @black;
         }
 
-        header {
-            #navigation li a {
-                color: #f0f0f0;
-            }
+        header #navigation li a {
+            color: @gray-soft;
+        }
 
-            #navigation li:hover a {
-                text-decoration: none;
-                color: #403E3B;
-            }
+        header #navigation li:hover a {
+            color: @gray-mid;
         }
 
         footer {
-            background: #4FD9D1 !important;
-            color: #f0f0f0;
+            background: @cyan !important;
+            color: @gray-soft;
         }
     }
+
+
+    // --- PROJECTS: ABUELITAS KITCHEN ---
+
+    .abuelitas-kitchen {
+        .casiopea-project-hero-intro {
+            display: block;
+        }
+
+        .other-projects-block,
+        #back-cta {
+            background: @purple;
+            color: @black;
+        }
+
+        header #navigation li a {
+            color: @gray-soft;
+        }
+
+        header #navigation li:hover a {
+            color: @gray-mid;
+        }
+
+        footer {
+            background: @purple !important;
+
+            .social a,
+            .copy p {
+                color: @black !important;
+            }
+        }
+    }
+
+
+    // --- PROJECTS: HISE ---
+
+    .hise-project {
+
+        .other-projects-block,
+        #back-cta {
+            background: @red-cherry;
+            color: @black;
+        }
+
+        header #navigation li a {
+            color: @gray-soft;
+        }
+
+        header #navigation li:hover a {
+            color: @gray-mid;
+        }
+
+        footer {
+            background: @red-cherry !important;
+
+            .social a,
+            .copy p {
+                color: @black !important;
+            }
+        }
+    }
+
+
 }
 
-
+// --- CONTACT PAGE ---
 #contact-page {
-    background: #917AF0 !important;
+    background: @purple !important;
 
     header {
         #navigation li a {
-            color: #000;
+            color: @black;
         }
 
         #navigation li:hover a {
-            text-decoration: none;
-            color: #000;
+            color: @black;
         }
 
         .img-logo img {
@@ -1133,7 +1363,7 @@ footer {
     }
 
     section.contact {
-        margin: 0px;
+        margin: 0;
         width: 100%;
         max-width: 100%;
         display: block;
@@ -1147,7 +1377,7 @@ footer {
     }
 
     .btn.btn-default {
-        background: #000;
+        background: @black;
 
         &:hover,
         &:focus {
@@ -1155,97 +1385,78 @@ footer {
         }
     }
 
-    .link-to {
-        a {
-            color: #000;
+    .link-to a {
+        color: @black;
 
-            &:hover {
-                color: #edffc9;
-            }
+        &:hover {
+            color: @green-hover;
         }
     }
 
-
     footer {
-        background: #917AF0 !important;
+        background: @purple !important;
     }
-
 }
 
+
+// --- FAQ PAGE ---
 #casiopea-faq {
-    background: #f33c38;
+    background: @red;
 
     .jumbotron {
-        background: #f33c38;
+        background: @red;
     }
 
     #grid-faq {
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
-        justify-content: normal;
-        max-width: 100%;
         padding: 20px;
-        background: #f33c38;
+        background: @red;
 
         .faq-item {
             display: inline-flex;
-            align-items: normal;
-            justify-content: normal;
             margin-bottom: 30px;
         }
 
         .faq-question {
             width: 80%;
-            margin: 0px auto;
+            margin: 0 auto;
 
             a {
-                color: #000 !important;
+                color: @black !important;
 
                 &:hover,
                 &:focus {
-                    color: #EDFFC9 !important;
+                    color: @green-hover !important;
                 }
             }
         }
 
-        .thumbnail-faq {
-            width: 100%;
-
-            img {
-                display: block;
-                width: 100%;
-                height: auto;
-            }
+        .thumbnail-faq img {
+            .full-img();
         }
     }
 
     footer {
-        background: #f33c38 !important;
+        background: @red !important;
     }
-
 }
 
 
+// --- MEDIA QUERIES ---
 
+// Large screens
+@media only screen and (min-width: 1175px) {}
 
-//large screens
-@media only screen and (min-width:1175px) {}
-
-//mobile devices tablet+phone
-@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait),
-and (min-device-width : 768px) and (max-device-width : 1024px) {
-
+// Tablet + phone
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
     .casiopea-home-hero {
         height: 100vh;
     }
 
     header section {
-        display: flex;
-        align-items: center;
+        .flex-center();
         justify-content: space-between;
-        flex: 0 0 100%;
-        width: auto;
         max-width: 95vw;
         padding: 0;
     }
@@ -1257,14 +1468,14 @@ and (min-device-width : 768px) and (max-device-width : 1024px) {
     .col-md-6 {
         width: 50%;
     }
-
 }
 
-@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait) and (max-width :767px),
-(max-device-width:767px) {
+// Mobile
+@media only screen and (max-device-width: 767px),
+only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (max-width: 767px) {
 
     header #navigation.active li {
-        background: #000;
+        background: @black;
         text-align: left;
     }
 
@@ -1272,28 +1483,20 @@ and (min-device-width : 768px) and (max-device-width : 1024px) {
         display: none;
     }
 
-    /*#casiopea-wsite {
-        overflow-x: hidden;
-    }*/
-
     header #navigation li a {
         padding: 10px;
         display: block;
-        clear: both;
         width: 100%;
     }
 
     #casiopea-project .adentro-afuera-project header #navigation li a {
-        color: #f0f0f0;
+        color: @gray-soft;
         display: block;
-        clear: both;
         width: 100%;
     }
 
     #casiopea-project .jumbotron.casiopea-section {
-        max-height: max-content;
         height: auto;
-        overflow: hidden;
     }
 
     #casiopea-project .jumbotron.casiopea-section::after {
@@ -1305,12 +1508,11 @@ and (min-device-width : 768px) and (max-device-width : 1024px) {
     }
 
     #casiopea-projects header #navigation li a {
-        color: #fff;
+        color: @white;
     }
 
     #about-us-hero-top {
         display: block;
-        clear: both;
         overflow-x: hidden;
         background-size: cover;
         max-height: 50vh;
@@ -1321,15 +1523,12 @@ and (min-device-width : 768px) and (max-device-width : 1024px) {
         width: 100vw;
     }
 
-
-    #our-team {
-        .profile-team-item {
-            margin-bottom: 30px;
-        }
+    #our-team .profile-team-item {
+        margin-bottom: 30px;
     }
 
     #contact-page header #navigation li a {
-        color: #fff;
+        color: @white;
     }
 
     .float-right {
@@ -1351,10 +1550,10 @@ and (min-device-width : 768px) and (max-device-width : 1024px) {
     section .block {
         overflow-x: hidden;
     }
-
 }
 
 
+// --- ANIMACIONES ---
 @keyframes cssVisible {
     0% {
         opacity: 0;

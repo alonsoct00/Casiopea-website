@@ -6,10 +6,11 @@
     <meta charset='utf-8'>
     <meta content='Description' name=''>
     <meta content='1 day' name='revisit-after'>
-    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,400italic,300italic,100italic,700italic,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,400italic,300italic,100italic,700italic,700'
+        rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
     <!-- Styles -->
     <link href="stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -32,32 +33,44 @@
         </header>
         <section class="casiopea-section fluid-section" id="about-us-hero-top">
             <div class="casiopea-home-hero">
-                <span class="img-hero-intro">
-                    <img src="images/QuienesSomos-portada.png" alt="CASIOPEA Nosotros">
-                </span>
+                <picture class="img-hero-intro">
+                    <source media="(max-width: 768px)" srcset="images/Casiopea-QuienesSomos_FotoMobile.webp" type="image/webp">
+                    <source media="(max-width: 768px)" srcset="images/Casiopea-QuienesSomos_FotoMobile.jpg">
+                    <source srcset="images/about-us-casiopea-2026.webp" type="image/webp">
+                    <img data-src="images/about-us-casiopea-2026.png" alt="CASIOPEA Nosotros" loading="lazy">
+                </picture>
             </div>
         </section>
-        <section class="casiopea-section fluid-section" id="about-us" style="background: #4ed8d0">
+        <section class="dot-separator">
+            <div class="container-fluid">
+                <div class="row block">
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </section>
+        <section class="casiopea-section fluid-section" id="about-us" style="background: #917AF0">
             <div class="container-fluid">
                 <div class="row block">
                     <div class="col-md-6 col-xs-12">
                         <h4>Casiopea</h4>
-                        <p>Somos Alexandra Castellanos, Ana Cruz, Andrea Mondragón y Sandra Medina: un colectivo independiente fundado en el 2013.</p>
-                        <p>Nos dedicamos a la producción de animación, ilustración y diseño a través de la mezcla de técnicas tradicionales y digitales.</p>
-                        <p>Nuestro enfoque es crear contenido cultural, educativo y publicitario. Contamos con experiencia en la realización de cortometrajes, fragmentos animados para cine de ficción y documental, propiedad intelectual, paquetería gráfica, campaña audiovisual para festivales y videoclip. Nos interesa la ciencia, el arte y la comunicación de cualquier información que genere un impacto consciente en quien la recibe.</p>
-                        <p>Nos encanta la colaboración y participar en diversas etapas de la producción o bien en el desarrollo completo del proyecto.</p>
-                        <p>Checa nuestro trabajo aquí o escríbenos, estaremos felices de estar en contacto contigo.</p>
+                        <p>Es un estudio de animación de la CDMX, <br/>dirigido por <a
+                                href="https://www.instagram.com/arena_mon/" target="_blank" rel="noopener noreferrer">
+                                Andrea Mondragón </a> y <a href="https://www.instagram.com/sands_ml" target="_blank"
+                                rel="noopener noreferrer"> Sandra Medina</a>. <br />Exploramos lenguajes visuales que mutan con cada proyecto por medio de la mezcla de técnicas digitales y análogas.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="casiopea-section fluid-section" id="our-team" style="background: #9486f1">
+        <!-- <section class="casiopea-section fluid-section" id="our-team" style="background: #9486f1">
             <div class="container-fluid">
                 <div class="row block">
                     <div class="col-lg-3 col-md-3 col-xs-12 profile-team-item">
                         <figure class="profile">
                             <div class="avatar">
-                                <img src="images/Alex-casiopea.jpg">
+                                <picture>
+                                    <source srcset="images/Alex-casiopea.webp" type="image/webp">
+                                    <img data-src="images/Alex-casiopea.jpg" loading="lazy">
+                                </picture>
                             </div>
                             <div class="description">
                                 <h3>Alexandra Castellanos</h3>
@@ -80,7 +93,10 @@
                     <div class="col-lg-3 col-md-3 col-xs-12 profile-team-item">
                         <figure class="profile">
                             <div class="avatar">
-                                <img src="images/Andrea-casiopea.jpg">
+                                <picture>
+                                    <source srcset="images/Andrea-casiopea.webp" type="image/webp">
+                                    <img data-src="images/Andrea-casiopea.jpg" loading="lazy">
+                                </picture>
                             </div>
                             <div class="description">
                                 <h3>Andrea Mondragón</h3>
@@ -103,7 +119,10 @@
                     <div class="col-lg-3 col-md-3 col-xs-12 profile-team-item">
                         <figure class="profile">
                             <div class="avatar">
-                                <img src="images/Ana-casiopea.jpg">
+                                <picture>
+                                    <source srcset="images/Ana-casiopea.webp" type="image/webp">
+                                    <img data-src="images/Ana-casiopea.jpg" loading="lazy">
+                                </picture>
                             </div>
                             <div class="description">
                                 <h3>Ana Cruz</h3>
@@ -126,14 +145,15 @@
                     <div class="col-lg-3 col-md-3 col-xs-12 profile-team-item">
                         <figure class="profile">
                             <div class="avatar">
-                                <img src="images/Sands-casiopea.png">
+                                <picture>
+                                    <source srcset="images/Sands-casiopea.webp" type="image/webp">
+                                    <img data-src="images/Sands-casiopea.png" loading="lazy">
+                                </picture>
                             </div>
                             <div class="description">
                                 <h3>Sandra Medina</h3>
                                 <div class="social">
                                     <a class="icon fa fa-instagram" href="https://instagram.com/sands_ml" target="_blank"></a>
-                                    <!--<a class="icon fa fa-pinterest" href="#"></a>
-                                    <a class="icon fa fa-linkedin" href="#"></a>-->
                                 </div>
                             </div>
                             <div class="semblance">
@@ -150,7 +170,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <footer>
             <!-- Footer component-->
             <main-footer></main-footer>
