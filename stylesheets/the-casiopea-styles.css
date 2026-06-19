@@ -899,6 +899,27 @@ footer a.icon {
 #casiopea-project .abuelitas-kitchen footer .copy p {
   color: #000 !important;
 }
+#casiopea-project .franz-mayer-project .casiopea-project-hero-intro {
+  display: block;
+}
+#casiopea-project .franz-mayer-project .other-projects-block,
+#casiopea-project .franz-mayer-project #back-cta {
+  background: #a64a96;
+  color: #fff;
+}
+#casiopea-project .franz-mayer-project header #navigation li a {
+  color: #f0f0f0;
+}
+#casiopea-project .franz-mayer-project header #navigation li:hover a {
+  color: #403e3b;
+}
+#casiopea-project .franz-mayer-project footer {
+  background: #a64a96 !important;
+}
+#casiopea-project .franz-mayer-project footer .social a,
+#casiopea-project .franz-mayer-project footer .copy p {
+  color: #fff !important;
+}
 #casiopea-project .hise-project .other-projects-block,
 #casiopea-project .hise-project #back-cta {
   background: #ea5b63;
