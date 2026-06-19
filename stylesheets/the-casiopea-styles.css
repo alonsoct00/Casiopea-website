@@ -710,6 +710,21 @@ footer a.icon {
   background: #4fd9d1 !important;
   color: #f0f0f0;
 }
+#casiopea-project .ben-and-frank .other-projects-block,
+#casiopea-project .ben-and-frank #back-cta {
+  background: #4fd9d1;
+  color: #000;
+}
+#casiopea-project .ben-and-frank header #navigation li a {
+  color: #f0f0f0;
+}
+#casiopea-project .ben-and-frank header #navigation li:hover a {
+  color: #403e3b;
+}
+#casiopea-project .ben-and-frank footer {
+  background: #4fd9d1 !important;
+  color: #f0f0f0;
+}
 #casiopea-project .la-catrina-project .other-projects-block,
 #casiopea-project .la-catrina-project #back-cta {
   background: #151915;
