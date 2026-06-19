@@ -977,6 +977,27 @@ footer a.icon {
 #casiopea-project .hise-project footer .copy p {
   color: #000 !important;
 }
+#casiopea-project .now-whithin .casiopea-project-hero-intro {
+  display: block;
+}
+#casiopea-project .now-whithin .other-projects-block,
+#casiopea-project .now-whithin #back-cta {
+  background: #917af0;
+  color: #000;
+}
+#casiopea-project .now-whithin header #navigation li a {
+  color: #f0f0f0;
+}
+#casiopea-project .now-whithin header #navigation li:hover a {
+  color: #403e3b;
+}
+#casiopea-project .now-whithin footer {
+  background: #917af0 !important;
+}
+#casiopea-project .now-whithin footer .social a,
+#casiopea-project .now-whithin footer .copy p {
+  color: #000 !important;
+}
 #casiopea-project .macmillan-project .other-projects-block,
 #casiopea-project .macmillan-project #back-cta {
   background: #ea5b63;
