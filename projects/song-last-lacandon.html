@@ -106,9 +106,10 @@
                     <div class='col-md-12 col-xs-12 text-center'>
                         <span class="img-project-container">
                             <picture>
-                    <source data-srcset="images/Song_lacandon_Still1.webp" type="image/webp">
-                    <img data-src="images/Song_lacandon_Still1.png" alt="Song of the Last Lacandon" title="Song of the Last Lacandon" class="img-fluid" loading="lazy">
-                </picture>
+                                <source data-srcset="images/Song_lacandon_Still1.webp" type="image/webp">
+                                <img data-src="images/Song_lacandon_Still1.png" alt="Song of the Last Lacandon"
+                                    title="Song of the Last Lacandon" class="img-fluid" loading="lazy">
+                            </picture>
                         </span>
                     </div>
 
@@ -134,12 +135,13 @@
                     <div class='col-md-12 col-xs-12 text-center'>
                         <span class="img-project-container">
                             <picture>
-                    <source data-srcset="images/Song_lacandon_Still2.webp" type="image/webp">
-                    <img data-src="images/Song_lacandon_Still2.jpg" alt="Song of the Last Lacandon" title="Song of the Last Lacandon" class="img-fluid" loading="lazy">
-                </picture>
+                                <source data-srcset="images/Song_lacandon_Still2.webp" type="image/webp">
+                                <img data-src="images/Song_lacandon_Still2.jpg" alt="Song of the Last Lacandon"
+                                    title="Song of the Last Lacandon" class="img-fluid" loading="lazy">
+                            </picture>
                         </span>
                     </div>
-                    
+
                     <div class='col-md-12 col-xs-12 text-center'>
                         <div class="video-container scrim-invisible">
                             <video class="video" poster="images/Song_lacandon_SLL_video1.png" controls>
@@ -197,44 +199,11 @@
     <script src="../javascripts/waypoints.min.js" type="text/javascript"></script>
     <script src="../javascripts/functions.js" type="text/javascript"></script>
     <script async>
-        $("a.h-link").each(function () {
+        $("a.h-link").each(function() {
             var $this = $(this);
             var _href = $this.attr("href");
             $this.attr("href", '../' + _href);
         });
-    </script>
-    <script type="text/javascript" async defer>
-        const projhtml = window.location.pathname.split('/').slice(0, -1).join('/');
-
-        $.ajax({
-            url: projhtml,
-            success: function (datahtml) {
-                $(datahtml).find("a").attr("href", function (i, projhtml) {
-                    if (projhtml.match(/\.(html)$/)) {
-                        $(".other-projects-info").append(" <li class='item'><a class='inner' href='" + projhtml + "' style='background:url(" + projhtml.slice(0, -5) + ".jpg);'><div class='caption'><div class='titles'><div class='title'>" + projhtml.slice(0, -5) + "</div></div></div></a></li>");
-                    }
-                });
-            }
-        });
-
-        /*function showRandom() {
-            var ul = $('.other-projects-info'),
-                lis = ul.find('li').detach(),
-                used = [];
-            var new_lis = [];
-            while (true) {
-                var li = lis[Math.floor(Math.random() * lis.length)];
-                if (used.indexOf(li) === -1 && new_lis.indexOf(li) === -1) new_lis.push(li);
-                if (new_lis.length >= 3) break;
-            }
-            used = new_lis;
-            ul.html(new_lis);
-    
-            $('.other-projects-block').css('visibility', 'visible');
-        }*/
-
-        //showRandom();
-        //setTimeout(showRandom, 4500);
     </script>
 </body>
 

@@ -114,9 +114,10 @@
                     <div class='col-md-12 col-xs-12 text-center'>
                         <span class="img-project-container">
                             <picture>
-                    <source data-srcset="images/Kidoo_Kidoo_still1.webp" type="image/webp">
-                    <img data-src="images/Kidoo_Kidoo_still1.jpg" alt="KIDOO" title="KIDOO" class="img-fluid" loading="lazy">
-                </picture>
+                                <source data-srcset="images/Kidoo_Kidoo_still1.webp" type="image/webp">
+                                <img data-src="images/Kidoo_Kidoo_still1.jpg" alt="KIDOO" title="KIDOO"
+                                    class="img-fluid" loading="lazy">
+                            </picture>
                         </span>
                     </div>
                     <div class='col-md-12 col-xs-12 text-center'>
@@ -124,17 +125,19 @@
                             <div class='col-md-6 col-xs-12 text-center'>
                                 <span class="img-project-container">
                                     <picture>
-                    <source data-srcset="images/Kidoo_KIDOO_PERSONAJE.webp" type="image/webp">
-                    <img data-src="images/Kidoo_KIDOO_PERSONAJE.png" alt="KIDOO" title="KIDOO" class="img-fluid" loading="lazy">
-                </picture>
+                                        <source data-srcset="images/Kidoo_KIDOO_PERSONAJE.webp" type="image/webp">
+                                        <img data-src="images/Kidoo_KIDOO_PERSONAJE.png" alt="KIDOO" title="KIDOO"
+                                            class="img-fluid" loading="lazy">
+                                    </picture>
                                 </span>
                             </div>
                             <div class='col-md-6 col-xs-12 text-center'>
                                 <span class="img-project-container">
                                     <picture>
-                    <source data-srcset="images/Kidoo_PALETAS_ID_PUERTA_V03.webp" type="image/webp">
-                    <img data-src="images/Kidoo_PALETAS_ID_PUERTA_V03.png" alt="KIDOO" title="KIDOO" class="img-fluid" loading="lazy">
-                </picture>
+                                        <source data-srcset="images/Kidoo_PALETAS_ID_PUERTA_V03.webp" type="image/webp">
+                                        <img data-src="images/Kidoo_PALETAS_ID_PUERTA_V03.png" alt="KIDOO" title="KIDOO"
+                                            class="img-fluid" loading="lazy">
+                                    </picture>
                                 </span>
                             </div>
                         </div>
@@ -162,18 +165,20 @@
                     <div class='col-md-12 col-xs-12 text-center'>
                         <span class="img-project-container">
                             <picture>
-                    <source data-srcset="images/Kidoo_1_KIDOO_ARTE_Puerta_V01.webp" type="image/webp">
-                    <img data-src="images/Kidoo_1_KIDOO_ARTE_Puerta_V01.png" alt="KIDOO" title="KIDOO" class="img-fluid" loading="lazy">
-                </picture>
+                                <source data-srcset="images/Kidoo_1_KIDOO_ARTE_Puerta_V01.webp" type="image/webp">
+                                <img data-src="images/Kidoo_1_KIDOO_ARTE_Puerta_V01.png" alt="KIDOO" title="KIDOO"
+                                    class="img-fluid" loading="lazy">
+                            </picture>
                         </span>
                     </div>
 
                     <div class='col-md-12 col-xs-12 text-center'>
                         <span class="img-project-container">
                             <picture>
-                    <source data-srcset="images/Kidoo_KIDOO_Colorscript_Tunel_V01.webp" type="image/webp">
-                    <img data-src="images/Kidoo_KIDOO_Colorscript_Tunel_V01.png" alt="KIDOO" title="KIDOO" class="img-fluid" loading="lazy">
-                </picture>
+                                <source data-srcset="images/Kidoo_KIDOO_Colorscript_Tunel_V01.webp" type="image/webp">
+                                <img data-src="images/Kidoo_KIDOO_Colorscript_Tunel_V01.png" alt="KIDOO" title="KIDOO"
+                                    class="img-fluid" loading="lazy">
+                            </picture>
                         </span>
                     </div>
 
@@ -216,40 +221,7 @@
             $this.attr("href", '../' + _href);
         });
     </script>
-    <script type="text/javascript" async defer>
-        const projhtml = window.location.pathname.split('/').slice(0, -1).join('/');
-        $.ajax({
-            url: projhtml,
-            success: function(datahtml) {
-                $(datahtml).find("a").attr("href", function(i, projhtml) {
-                    if (projhtml.match(/\.(html)$/)) {
-                        $(".other-projects-info").append(
-                            " <li class='item'><a class='inner' href='" + projhtml +
-                            "' style='background:url(" + projhtml.slice(0, -5) +
-                            ".jpg);'><div class='caption'><div class='titles'><div class='title'>" +
-                            projhtml.slice(0, -5) + "</div></div></div></a></li>");
-                    }
-                });
-            }
-        });
-        /*function showRandom() {
-            var ul = $('.other-projects-info'),
-                lis = ul.find('li').detach(),
-                used = [];
-            var new_lis = [];
-            while (true) {
-                var li = lis[Math.floor(Math.random() * lis.length)];
-                if (used.indexOf(li) === -1 && new_lis.indexOf(li) === -1) new_lis.push(li);
-                if (new_lis.length >= 3) break;
-            }
-            used = new_lis;
-            ul.html(new_lis);
-    
-            $('.other-projects-block').css('visibility', 'visible');
-        }*/
-        //showRandom();
-        //setTimeout(showRandom, 4500);
-    </script>
+
 </body>
 
 </html>

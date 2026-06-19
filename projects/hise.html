@@ -97,14 +97,16 @@
                             <div>
                                 <dt>Animación 2D</dt>
                                 <dd>
-                                    Christian Arredondo, Alex Torres, Diomedes Heras, Gia Sabaht, Diana Cruz, Manuel Hunger, Eduardo Pichardo.
+                                    Christian Arredondo, Alex Torres, Diomedes Heras, Gia Sabaht, Diana Cruz, Manuel
+                                    Hunger, Eduardo Pichardo.
                                 </dd>
                             </div>
 
                             <div>
                                 <dt>Clean-up</dt>
                                 <dd>
-                                    Vero Anaya, Abraham Cerezo, Fafio Rufián, Andrea Barbosa, Andrea Estrada, Constanza Serrano, Marisol Merino, Franco Martínez.
+                                    Vero Anaya, Abraham Cerezo, Fafio Rufián, Andrea Barbosa, Andrea Estrada, Constanza
+                                    Serrano, Marisol Merino, Franco Martínez.
                                 </dd>
                             </div>
 
@@ -162,15 +164,17 @@
 
                     <div class='col-md-12 col-xs-12 text-center'>
                         <span class="img-project-container">
-                            <img data-src="images/Hiswe_HISE.gif" alt="Abuelitas Kitchen" title="Abuelitas Kitchen" class="img-fluid" loading="lazy">
+                            <img data-src="images/Hiswe_HISE.gif" alt="Abuelitas Kitchen" title="Abuelitas Kitchen"
+                                class="img-fluid" loading="lazy">
                         </span>
                     </div>
                     <div class='col-md-12 col-xs-12 text-center'>
                         <span class="img-project-container">
                             <picture>
-                    <source data-srcset="images/Hiswe_LALO4.webp" type="image/webp">
-                    <img data-src="images/Hiswe_LALO4.png" alt="Abuelitas Kitchen" title="Abuelitas Kitchen" class="img-fluid" loading="lazy">
-                </picture>
+                                <source data-srcset="images/Hiswe_LALO4.webp" type="image/webp">
+                                <img data-src="images/Hiswe_LALO4.png" alt="Abuelitas Kitchen" title="Abuelitas Kitchen"
+                                    class="img-fluid" loading="lazy">
+                            </picture>
                         </span>
                     </div>
 
@@ -212,40 +216,6 @@
             var _href = $this.attr("href");
             $this.attr("href", '../' + _href);
         });
-    </script>
-    <script type="text/javascript" async defer>
-        const projhtml = window.location.pathname.split('/').slice(0, -1).join('/');
-        $.ajax({
-            url: projhtml,
-            success: function(datahtml) {
-                $(datahtml).find("a").attr("href", function(i, projhtml) {
-                    if (projhtml.match(/\.(html)$/)) {
-                        $(".other-projects-info").append(
-                            " <li class='item'><a class='inner' href='" + projhtml +
-                            "' style='background:url(" + projhtml.slice(0, -5) +
-                            ".jpg);'><div class='caption'><div class='titles'><div class='title'>" +
-                            projhtml.slice(0, -5) + "</div></div></div></a></li>");
-                    }
-                });
-            }
-        });
-        /*function showRandom() {
-            var ul = $('.other-projects-info'),
-                lis = ul.find('li').detach(),
-                used = [];
-            var new_lis = [];
-            while (true) {
-                var li = lis[Math.floor(Math.random() * lis.length)];
-                if (used.indexOf(li) === -1 && new_lis.indexOf(li) === -1) new_lis.push(li);
-                if (new_lis.length >= 3) break;
-            }
-            used = new_lis;
-            ul.html(new_lis);
-    
-            $('.other-projects-block').css('visibility', 'visible');
-        }*/
-        //showRandom();
-        //setTimeout(showRandom, 4500);
     </script>
 </body>
 
