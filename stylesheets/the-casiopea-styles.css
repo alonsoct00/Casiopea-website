@@ -935,6 +935,30 @@ footer a.icon {
 #casiopea-project .franz-mayer-project footer .copy p {
   color: #fff !important;
 }
+#casiopea-project .campanias-project .casiopea-project-hero-intro {
+  display: block;
+}
+#casiopea-project .campanias-project .other-projects-block,
+#casiopea-project .campanias-project #back-cta {
+  background: #a64a96;
+  color: #fff;
+}
+#casiopea-project .campanias-project header #navigation li a {
+  color: #f0f0f0;
+}
+#casiopea-project .campanias-project header #navigation li:hover a {
+  color: #403e3b;
+}
+#casiopea-project .campanias-project h2 {
+  color: #fff;
+}
+#casiopea-project .campanias-project footer {
+  background: #a64a96 !important;
+}
+#casiopea-project .campanias-project footer .social a,
+#casiopea-project .campanias-project footer .copy p {
+  color: #fff !important;
+}
 #casiopea-project .hise-project .other-projects-block,
 #casiopea-project .hise-project #back-cta {
   background: #ea5b63;
