@@ -1,10 +1,11 @@
 // --- VARIABLES ---
-@black: #000;
-@white: #fff;
-@gray-light: #eee;
-@gray-mid: #403e3b;
+@black: #000000;
+@white: #ffffff;
+@gray-light: #eeeeee;
 @gray-soft: #f0f0f0;
+@gray-mid: #403e3b;
 @gray-dark: #0a090c;
+@gray-black: #1c1c1e;
 
 @green-light: #ebfdc6;
 @green-mid: #efffc9;
@@ -964,6 +965,34 @@ footer {
             }
         }
     }
+
+
+        // --- THE IMPOSSIBLE DREAM ---
+        .the-impossible-dream {
+    
+            .other-projects-block,
+            #back-cta {
+                background: @gray-black !important;
+                color: @gray-soft;
+            }
+    
+            header #navigation li a {
+                color: @gray-soft;
+            }
+    
+            header #navigation li:hover a {
+                color: @gray-mid;
+            }
+    
+            footer {
+                background: @gray-black !important;
+    
+                .social a,
+                .copy p {
+                    color: @gray-soft !important;
+                }
+            }
+        }
 
 
     // --- PROJECTS: ADENTRO / AFUERA ---
