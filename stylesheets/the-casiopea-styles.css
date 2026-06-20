@@ -20,7 +20,7 @@ html {
   opacity: 0.05;
 }
 header.affix {
-  background: #000 !important;
+  background: #000000 !important;
 }
 header.affix .img-logo img {
   filter: invert(0) !important;
@@ -32,7 +32,7 @@ header section {
   justify-content: space-between;
 }
 header #navigation li a {
-  color: #fff;
+  color: #ffffff;
 }
 header #navigation li:hover a {
   text-decoration: none;
@@ -41,7 +41,7 @@ header #navigation li:hover a {
 header a.h-link.filter-nav-anchor:hover,
 header .filter-nav-anchor:hover,
 header .filter-nav-anchor:focus {
-  color: #fff !important;
+  color: #ffffff !important;
 }
 footer {
   background: #ebfdc6 !important;
@@ -53,7 +53,7 @@ footer section {
   padding: 40px 0 !important;
 }
 footer a.icon {
-  color: #000;
+  color: #000000;
 }
 .img-logo {
   display: inline-block;
@@ -67,18 +67,18 @@ footer a.icon {
   object-fit: cover;
 }
 #casiopea-wsite p {
-  color: #000;
+  color: #000000;
 }
 #casiopea-wsite p.text-white,
 #casiopea-wsite p.txt-white {
-  color: #fff;
+  color: #ffffff;
 }
 #casiopea-wsite h1,
 #casiopea-wsite h2,
 #casiopea-wsite h3,
 #casiopea-wsite h4,
 #casiopea-wsite h5 {
-  color: #000;
+  color: #000000;
 }
 #casiopea-wsite h1.text-white,
 #casiopea-wsite h2.text-white,
@@ -90,13 +90,13 @@ footer a.icon {
 #casiopea-wsite h3.txt-white,
 #casiopea-wsite h4.txt-white,
 #casiopea-wsite h5.txt-white {
-  color: #fff;
+  color: #ffffff;
 }
 #casiopea-wsite ul li {
   font-size: 0.9em;
   line-height: 1.6em;
   font-family: "Inconsolata", sans-serif;
-  color: #000;
+  color: #000000;
 }
 #casiopea-wsite a#back-cta {
   position: relative;
@@ -137,7 +137,7 @@ footer a.icon {
   max-width: 100%;
 }
 #casiopea-wsite .casiopea-section .video-container {
-  background: #000;
+  background: #000000;
   height: 100dvh;
   width: 100%;
 }
@@ -162,7 +162,7 @@ footer a.icon {
   display: none;
 }
 #casiopea-wsite #our-team figure.profile .social a.icon {
-  color: #000;
+  color: #000000;
   background: transparent;
   font-size: 18px;
 }
@@ -176,9 +176,9 @@ footer a.icon {
 }
 #casiopea-wsite #our-team .semblance button {
   background: transparent;
-  color: #000;
+  color: #000000;
   border: 0;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #000000;
   text-align: left;
   padding: 0 0 12px 0;
   margin-top: 30px;
@@ -236,10 +236,10 @@ footer a.icon {
 }
 #main-aboutus-page #about-us h4,
 #main-aboutus-page #about-us p {
-  color: #fff;
+  color: #ffffff;
 }
 #main-aboutus-page #about-us h4 {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #ffffff;
 }
 #main-aboutus-page #about-us a {
   color: #efffc9;
@@ -297,7 +297,7 @@ footer a.icon {
   background-color: transparent;
 }
 #casiopea-projects header #navigation li a {
-  color: #000;
+  color: #000000;
 }
 #casiopea-projects header .img-logo img {
   filter: invert(1);
@@ -321,7 +321,7 @@ footer a.icon {
   background: #ebfdc6;
   outline: 0;
   -webkit-appearance: none;
-  color: #000;
+  color: #000000;
 }
 #casiopea-projects #projects-section #filters li button:focus,
 #casiopea-projects #projects-section #filters li button:hover {
@@ -353,7 +353,7 @@ footer a.icon {
   content: "";
   width: 100%;
   min-height: 100%;
-  background: #000;
+  background: #000000;
   opacity: 0.3;
   position: absolute;
   top: 0;
@@ -405,7 +405,7 @@ footer a.icon {
 }
 #casiopea-project #info-project-txt dl {
   font-size: 0.95em;
-  color: #000;
+  color: #000000;
 }
 #casiopea-project #info-project-txt dl dt {
   display: inline-block;
@@ -470,21 +470,21 @@ footer a.icon {
 }
 #casiopea-project .dos-camaleones-project .other-projects-block,
 #casiopea-project .dos-camaleones-project #back-cta {
-  background: #eee;
+  background: #eeeeee;
 }
 #casiopea-project .dos-camaleones-project header #navigation li a {
-  color: #fff;
+  color: #ffffff;
 }
 #casiopea-project .dos-camaleones-project header #navigation li:hover a {
   color: #403e3b;
 }
 #casiopea-project .dos-camaleones-project footer {
-  background: #eee !important;
+  background: #eeeeee !important;
 }
 #casiopea-project .fonima-project .other-projects-block,
 #casiopea-project .fonima-project #back-cta {
-  background: #000;
-  color: #fff;
+  background: #000000;
+  color: #ffffff;
 }
 #casiopea-project .fonima-project header #navigation li a {
   color: #f0f0f0;
@@ -493,21 +493,21 @@ footer a.icon {
   color: #403e3b;
 }
 #casiopea-project .fonima-project footer {
-  background: #000 !important;
+  background: #000000 !important;
 }
 #casiopea-project .fonima-project footer .social a,
 #casiopea-project .fonima-project footer .copy p {
   color: #f0f0f0 !important;
 }
 #casiopea-project .fonima-project .link-to a {
-  color: #000;
+  color: #000000;
 }
 #casiopea-project .fonima-project .link-to a:hover {
   color: #a64a96;
 }
 #casiopea-project .birdsong-project .other-projects-block,
 #casiopea-project .birdsong-project #back-cta {
-  background: #eee;
+  background: #eeeeee;
 }
 #casiopea-project .birdsong-project header #navigation li a {
   color: #f0f0f0;
@@ -516,16 +516,16 @@ footer a.icon {
   color: #403e3b;
 }
 #casiopea-project .birdsong-project footer {
-  background: #fff !important;
+  background: #ffffff !important;
 }
 #casiopea-project .sobre-amor-project .other-projects-block,
 #casiopea-project .sobre-amor-project #back-cta {
   background: #a64a96;
-  color: #fff;
+  color: #ffffff;
 }
 #casiopea-project .sobre-amor-project .other-projects-block .title-block h3,
 #casiopea-project .sobre-amor-project #back-cta .title-block h3 {
-  color: #fff;
+  color: #ffffff;
 }
 #casiopea-project .sobre-amor-project header #navigation li a {
   color: #f0f0f0;
@@ -543,7 +543,7 @@ footer a.icon {
 #casiopea-project .smmx-project .other-projects-block,
 #casiopea-project .smmx-project #back-cta {
   background: #0a090c;
-  color: #fff;
+  color: #ffffff;
 }
 #casiopea-project .smmx-project header #navigation li a {
   color: #f0f0f0;
@@ -572,11 +572,11 @@ footer a.icon {
 }
 #casiopea-project .centavrvs-project .other-projects-block,
 #casiopea-project .centavrvs-project #back-cta {
-  background: #000;
+  background: #000000;
   color: #f0f0f0;
 }
 #casiopea-project .centavrvs-project footer {
-  background: #000 !important;
+  background: #000000 !important;
 }
 #casiopea-project .centavrvs-project footer .social a,
 #casiopea-project .centavrvs-project footer .copy p {
@@ -591,7 +591,7 @@ footer a.icon {
 #casiopea-project .conoces-tomas-project .other-projects-block,
 #casiopea-project .conoces-tomas-project #back-cta {
   background: #4fd9d1;
-  color: #000;
+  color: #000000;
 }
 #casiopea-project .conoces-tomas-project footer {
   background: #4fd9d1 !important;
@@ -605,7 +605,7 @@ footer a.icon {
 #casiopea-project .visuales-project .other-projects-block,
 #casiopea-project .visuales-project #back-cta {
   background: #edffc9;
-  color: #000;
+  color: #000000;
 }
 #casiopea-project .visuales-project footer {
   background: #edffc9 !important;
@@ -613,7 +613,7 @@ footer a.icon {
 #casiopea-project .poliangular-project .other-projects-block,
 #casiopea-project .poliangular-project #back-cta {
   background: #e5e1dd;
-  color: #000;
+  color: #000000;
 }
 #casiopea-project .poliangular-project header #navigation li a {
   color: #f0f0f0;
@@ -625,7 +625,7 @@ footer a.icon {
   background: #e5e1dd !important;
 }
 #casiopea-project .poliangular-project .link-to a {
-  color: #000;
+  color: #000000;
 }
 #casiopea-project .poliangular-project .link-to a:hover {
   color: #a64a96;
@@ -650,8 +650,8 @@ footer a.icon {
 }
 #casiopea-project .la-vejez-project .other-projects-block,
 #casiopea-project .la-vejez-project #back-cta {
-  background: #eee;
-  color: #000;
+  background: #eeeeee;
+  color: #000000;
 }
 #casiopea-project .la-vejez-project header #navigation li a {
   color: #f0f0f0;
@@ -660,7 +660,7 @@ footer a.icon {
   color: #403e3b;
 }
 #casiopea-project .la-vejez-project footer {
-  background: #eee !important;
+  background: #eeeeee !important;
 }
 #casiopea-project .ruido-furia-project .other-projects-block,
 #casiopea-project .ruido-furia-project #back-cta {
@@ -680,10 +680,28 @@ footer a.icon {
 #casiopea-project .ruido-furia-project footer .copy p {
   color: #f0f0f0 !important;
 }
+#casiopea-project .the-impossible-dream .other-projects-block,
+#casiopea-project .the-impossible-dream #back-cta {
+  background: #1c1c1e !important;
+  color: #f0f0f0;
+}
+#casiopea-project .the-impossible-dream header #navigation li a {
+  color: #f0f0f0;
+}
+#casiopea-project .the-impossible-dream header #navigation li:hover a {
+  color: #403e3b;
+}
+#casiopea-project .the-impossible-dream footer {
+  background: #1c1c1e !important;
+}
+#casiopea-project .the-impossible-dream footer .social a,
+#casiopea-project .the-impossible-dream footer .copy p {
+  color: #f0f0f0 !important;
+}
 #casiopea-project .adentro-afuera-project .other-projects-block,
 #casiopea-project .adentro-afuera-project #back-cta {
   background: #4fd9d1;
-  color: #000;
+  color: #000000;
 }
 #casiopea-project .adentro-afuera-project header #navigation li a {
   color: #f0f0f0;
@@ -698,7 +716,7 @@ footer a.icon {
 #casiopea-project .trkon-project .other-projects-block,
 #casiopea-project .trkon-project #back-cta {
   background: #4fd9d1;
-  color: #000;
+  color: #000000;
 }
 #casiopea-project .trkon-project header #navigation li a {
   color: #f0f0f0;
@@ -713,7 +731,7 @@ footer a.icon {
 #casiopea-project .ben-and-frank .other-projects-block,
 #casiopea-project .ben-and-frank #back-cta {
   background: #4fd9d1;
-  color: #000;
+  color: #000000;
 }
 #casiopea-project .ben-and-frank header #navigation li a {
   color: #f0f0f0;
@@ -746,7 +764,7 @@ footer a.icon {
 #casiopea-project .en-un-ser-vivo-project .other-projects-block,
 #casiopea-project .en-un-ser-vivo-project #back-cta {
   background: #cbf7f2;
-  color: #000;
+  color: #000000;
 }
 #casiopea-project .en-un-ser-vivo-project header #navigation li a {
   color: #f0f0f0;
@@ -760,7 +778,7 @@ footer a.icon {
 #casiopea-project .video-explicativo-project .other-projects-block,
 #casiopea-project .video-explicativo-project #back-cta {
   background: #8f7aee;
-  color: #000;
+  color: #000000;
 }
 #casiopea-project .video-explicativo-project #project-work-demos h2 {
   font-size: 18px;
@@ -777,7 +795,7 @@ footer a.icon {
 #casiopea-project .ambulante-project .other-projects-block,
 #casiopea-project .ambulante-project #back-cta {
   background: #4fd9d1;
-  color: #000;
+  color: #000000;
 }
 #casiopea-project .ambulante-project #project-work-demos h2 {
   font-size: 30px;
@@ -820,7 +838,7 @@ footer a.icon {
 #casiopea-project .cutout-project .other-projects-block,
 #casiopea-project .cutout-project #back-cta {
   background: #917af0;
-  color: #000;
+  color: #000000;
 }
 #casiopea-project .cutout-project #project-work-demos h2 {
   font-size: 18px;
@@ -840,7 +858,7 @@ footer a.icon {
 #casiopea-project .pulso-project .other-projects-block,
 #casiopea-project .pulso-project #back-cta {
   background: #ea5b63;
-  color: #000;
+  color: #000000;
 }
 #casiopea-project .pulso-project footer {
   background: #ea5b63 !important;
@@ -848,7 +866,7 @@ footer a.icon {
 #casiopea-project .no-devoluciones-project .other-projects-block,
 #casiopea-project .no-devoluciones-project #back-cta {
   background: #e53f3f;
-  color: #000;
+  color: #000000;
 }
 #casiopea-project .no-devoluciones-project header #navigation li a {
   color: #f0f0f0;
@@ -863,7 +881,7 @@ footer a.icon {
 #casiopea-project .kidoo .other-projects-block,
 #casiopea-project .kidoo #back-cta {
   background: #edffc9;
-  color: #000;
+  color: #000000;
 }
 #casiopea-project .kidoo #project-work-demos h2 {
   font-size: 30px;
@@ -881,7 +899,7 @@ footer a.icon {
 #casiopea-project .talleres-project .other-projects-block,
 #casiopea-project .talleres-project #back-cta {
   background: #4fd9d1;
-  color: #000;
+  color: #000000;
 }
 #casiopea-project .talleres-project header #navigation li a {
   color: #f0f0f0;
@@ -899,7 +917,7 @@ footer a.icon {
 #casiopea-project .abuelitas-kitchen .other-projects-block,
 #casiopea-project .abuelitas-kitchen #back-cta {
   background: #917af0;
-  color: #000;
+  color: #000000;
 }
 #casiopea-project .abuelitas-kitchen header #navigation li a {
   color: #f0f0f0;
@@ -912,7 +930,7 @@ footer a.icon {
 }
 #casiopea-project .abuelitas-kitchen footer .social a,
 #casiopea-project .abuelitas-kitchen footer .copy p {
-  color: #000 !important;
+  color: #000000 !important;
 }
 #casiopea-project .franz-mayer-project .casiopea-project-hero-intro {
   display: block;
@@ -920,7 +938,7 @@ footer a.icon {
 #casiopea-project .franz-mayer-project .other-projects-block,
 #casiopea-project .franz-mayer-project #back-cta {
   background: #a64a96;
-  color: #fff;
+  color: #ffffff;
 }
 #casiopea-project .franz-mayer-project header #navigation li a {
   color: #f0f0f0;
@@ -933,7 +951,7 @@ footer a.icon {
 }
 #casiopea-project .franz-mayer-project footer .social a,
 #casiopea-project .franz-mayer-project footer .copy p {
-  color: #fff !important;
+  color: #ffffff !important;
 }
 #casiopea-project .campanias-project .casiopea-project-hero-intro {
   display: block;
@@ -941,7 +959,7 @@ footer a.icon {
 #casiopea-project .campanias-project .other-projects-block,
 #casiopea-project .campanias-project #back-cta {
   background: #a64a96;
-  color: #fff;
+  color: #ffffff;
 }
 #casiopea-project .campanias-project header #navigation li a {
   color: #f0f0f0;
@@ -950,19 +968,19 @@ footer a.icon {
   color: #403e3b;
 }
 #casiopea-project .campanias-project h2 {
-  color: #fff;
+  color: #ffffff;
 }
 #casiopea-project .campanias-project footer {
   background: #a64a96 !important;
 }
 #casiopea-project .campanias-project footer .social a,
 #casiopea-project .campanias-project footer .copy p {
-  color: #fff !important;
+  color: #ffffff !important;
 }
 #casiopea-project .hise-project .other-projects-block,
 #casiopea-project .hise-project #back-cta {
   background: #ea5b63;
-  color: #000;
+  color: #000000;
 }
 #casiopea-project .hise-project header #navigation li a {
   color: #f0f0f0;
@@ -975,7 +993,7 @@ footer a.icon {
 }
 #casiopea-project .hise-project footer .social a,
 #casiopea-project .hise-project footer .copy p {
-  color: #000 !important;
+  color: #000000 !important;
 }
 #casiopea-project .now-whithin .casiopea-project-hero-intro {
   display: block;
@@ -983,7 +1001,7 @@ footer a.icon {
 #casiopea-project .now-whithin .other-projects-block,
 #casiopea-project .now-whithin #back-cta {
   background: #917af0;
-  color: #000;
+  color: #000000;
 }
 #casiopea-project .now-whithin header #navigation li a {
   color: #f0f0f0;
@@ -996,12 +1014,12 @@ footer a.icon {
 }
 #casiopea-project .now-whithin footer .social a,
 #casiopea-project .now-whithin footer .copy p {
-  color: #000 !important;
+  color: #000000 !important;
 }
 #casiopea-project .macmillan-project .other-projects-block,
 #casiopea-project .macmillan-project #back-cta {
   background: #ea5b63;
-  color: #000;
+  color: #000000;
 }
 #casiopea-project .macmillan-project header #navigation li a {
   color: #f0f0f0;
@@ -1014,16 +1032,16 @@ footer a.icon {
 }
 #casiopea-project .macmillan-project footer .social a,
 #casiopea-project .macmillan-project footer .copy p {
-  color: #000 !important;
+  color: #000000 !important;
 }
 #contact-page {
   background: #917af0 !important;
 }
 #contact-page header #navigation li a {
-  color: #000;
+  color: #000000;
 }
 #contact-page header #navigation li:hover a {
-  color: #000;
+  color: #000000;
 }
 #contact-page header .img-logo img {
   filter: invert(1);
@@ -1041,14 +1059,14 @@ footer a.icon {
   right: 0;
 }
 #contact-page .btn.btn-default {
-  background: #000;
+  background: #000000;
 }
 #contact-page .btn.btn-default:hover,
 #contact-page .btn.btn-default:focus {
   background: #333;
 }
 #contact-page .link-to a {
-  color: #000;
+  color: #000000;
 }
 #contact-page .link-to a:hover {
   color: #edffc9;
@@ -1077,7 +1095,7 @@ footer a.icon {
   margin: 0 auto;
 }
 #casiopea-faq #grid-faq .faq-question a {
-  color: #000 !important;
+  color: #000000 !important;
 }
 #casiopea-faq #grid-faq .faq-question a:hover,
 #casiopea-faq #grid-faq .faq-question a:focus {
@@ -1113,7 +1131,7 @@ footer a.icon {
 }
 @media only screen and (max-device-width: 767px), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (max-width: 767px) {
   header #navigation.active li {
-    background: #000;
+    background: #000000;
     text-align: left;
   }
   ul#filter-nav {
@@ -1139,7 +1157,7 @@ footer a.icon {
     height: auto;
   }
   #casiopea-projects header #navigation li a {
-    color: #fff;
+    color: #ffffff;
   }
   #about-us-hero-top {
     display: block;
@@ -1155,7 +1173,7 @@ footer a.icon {
     margin-bottom: 30px;
   }
   #contact-page header #navigation li a {
-    color: #fff;
+    color: #ffffff;
   }
   .float-right {
     justify-content: center !important;
