@@ -408,12 +408,33 @@ footer a.icon {
   font-size: 0.95em;
   color: #000000;
 }
+#casiopea-project #info-project-txt dl > div {
+  display: flex;
+  gap: 6px 12px;
+  align-items: start;
+}
+#casiopea-project #info-project-txt dl > div:not(:last-child) {
+  margin-bottom: 6px;
+}
+#casiopea-project #info-project-txt dl dt,
+#casiopea-project #info-project-txt dl dd {
+  margin: 0;
+  line-height: 1.5;
+}
 #casiopea-project #info-project-txt dl dt {
-  display: inline-block;
-  font-weight: normal;
+  font-weight: 500;
+  white-space: normal;
+  word-break: break-all;
+  word-wrap: break-word;
+  text-align: left;
+  padding-right: 8px;
+  max-width: 200px;
+  width: 100%;
 }
 #casiopea-project #info-project-txt dl dd {
-  display: inline-block;
+  min-width: 0;
+  max-width: 500px;
+  overflow-wrap: anywhere;
 }
 #casiopea-project #project-work-demos .row {
   display: flex;

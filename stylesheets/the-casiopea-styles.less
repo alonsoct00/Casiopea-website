@@ -557,17 +557,41 @@ footer {
         font-family: @font-main;
 
         dl {
-            font-size: 0.95em;
-            color: @black;
-
-            dt {
-                display: inline-block;
-                font-weight: normal;
-            }
-
-            dd {
-                display: inline-block;
-            }
+                font-size: 0.95em;
+                color: @black;
+        
+                >div {
+                        display: flex;
+                        
+                        gap: 6px 12px;
+                        align-items: start;
+                        &:not(:last-child) {
+                                margin-bottom: 6px;                   
+                            }
+                    }
+        
+                dt,
+                dd {
+                    margin: 0;
+                    line-height: 1.5;
+                }
+        
+                dt {
+                    font-weight: 500;
+                    white-space: normal;
+                    word-break: break-all;
+                    word-wrap: break-word;
+                    text-align: left;
+                    padding-right: 8px;
+                    max-width: 200px;
+                    width: 100%
+                }
+        
+                dd {
+                    min-width: 0;
+                    max-width: 500px;
+                    overflow-wrap: anywhere;
+                }       
         }
     }
 
