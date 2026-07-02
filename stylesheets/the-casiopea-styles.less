@@ -559,10 +559,18 @@ footer {
         dl {
                 font-size: 0.95em;
                 color: @black;
+
+                &.dl-horizontal {
+                    >div {
+                        flex-wrap: wrap;
+                        flex-direction: column;
+                        margin-bottom: 8px;
+                    }
+
+                }
         
                 >div {
                         display: flex;
-                        
                         gap: 6px 12px;
                         align-items: start;
                         &:not(:last-child) {
@@ -571,12 +579,13 @@ footer {
                     }
         
                 dt,
-                dd {
+                dd, h5 {
                     margin: 0;
                     line-height: 1.5;
+                    font-size: 0.9em;
                 }
         
-                dt {
+                dt, h5 {
                     font-weight: 500;
                     white-space: normal;
                     word-break: break-all;
@@ -591,7 +600,7 @@ footer {
                     min-width: 0;
                     max-width: 500px;
                     overflow-wrap: anywhere;
-                }       
+                }
         }
     }
 
