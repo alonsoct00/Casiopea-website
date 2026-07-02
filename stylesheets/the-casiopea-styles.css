@@ -1172,50 +1172,9 @@ footer a.icon {
     display: block;
     width: 100%;
   }
-  #info-project-txt {
-    font-size: 0.9em;
-    line-height: 1.6em;
-    font-family: "Inconsolata", sans-serif;
-  }
-  #info-project-txt dl {
-    font-size: 0.95em;
-    color: #000000;
-  }
-  #info-project-txt dl.dl-horizontal > div {
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin-bottom: 8px;
-  }
-  #info-project-txt dl > div {
-    display: flex;
-    gap: 6px 12px;
-    align-items: start;
-  }
-  #info-project-txt dl > div:not(:last-child) {
-    margin-bottom: 6px;
-  }
-  #info-project-txt dl dt,
-  #info-project-txt dl dd,
-  #info-project-txt dl h5 {
-    margin: 0;
-    line-height: 1.5;
-    font-size: 0.9em;
-  }
-  #info-project-txt dl dt,
-  #info-project-txt dl h5 {
-    font-weight: 500;
-    white-space: normal;
-    word-break: normal;
-    word-wrap: normal;
-    text-align: left;
-    padding-right: 8px;
-    max-width: 125px;
-    width: 100%;
-  }
-  #info-project-txt dl dd {
-    min-width: 0;
-    max-width: 500px;
-    overflow-wrap: anywhere;
+  #casiopea-project #info-project-txt dl dt,
+  #casiopea-project #info-project-txt dl h5 {
+    max-width: 120px;
   }
   #casiopea-project .adentro-afuera-project header #navigation li a {
     color: #f0f0f0;
