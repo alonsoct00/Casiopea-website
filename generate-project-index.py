@@ -26,7 +26,7 @@ TEMPLATE = """<!DOCTYPE html>
     <![endif]-->
 </head>
 
-<body id="casiopea-project" style="background-color: #8d7be9;">
+<body id="casiopea-project" style="background-color: #fff;">
     <div class="Noise"></div>
     <div class='container-fluid' id="casiopea-wsite">
         <header data-spy='affix'>
