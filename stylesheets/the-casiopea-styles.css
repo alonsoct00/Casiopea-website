@@ -1172,9 +1172,9 @@ footer a.icon {
     display: block;
     width: 100%;
   }
-  #casiopea-project #info-project-txt dl dt,
-  #casiopea-project #info-project-txt dl h5 {
-    max-width: 120px;
+  #casiopea-project #info-project-txt dl dt {
+    max-width: auto;
+    flex: 0 0 auto;
   }
   #casiopea-project #info-project-txt dl h5 {
     flex: 0 0 100%;
@@ -1186,7 +1186,8 @@ footer a.icon {
     margin-bottom: 8px;
   }
   #casiopea-project #info-project-txt dl.dl-horizontal dt {
-    max-width: 142px;
+    max-width: auto;
+    flex: 0 0 auto;
   }
   #casiopea-project .adentro-afuera-project header #navigation li a {
     color: #f0f0f0;
