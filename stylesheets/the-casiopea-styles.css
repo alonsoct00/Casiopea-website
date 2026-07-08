@@ -340,6 +340,9 @@ footer a.icon {
 #casiopea-projects #projects-wrapper .inner .caption {
   background-color: #917af0;
 }
+#casiopea-projects #projects-wrapper .field {
+  display: none;
+}
 #casiopea-projects #projects-wrapper .deleted-project {
   display: none;
   visibility: hidden;

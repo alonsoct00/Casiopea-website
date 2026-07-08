@@ -80,7 +80,7 @@ class Footer extends HTMLElement {
                     <a class='icon fa fa-youtube' href='https://www.youtube.com/channel/UCYPkq5tLezsfBVEY1_1mcvA' target="_blank"></a>
                 </div>
                 <div class='copy'>
-                    <p>&copy; 2022 Casiopea. All Rights Reserved.</p>
+                    <p>&copy; 2026 Casiopea. All Rights Reserved.</p>
                 </div>
             </section>
 
