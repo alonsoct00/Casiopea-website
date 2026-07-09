@@ -411,9 +411,14 @@ footer a.icon {
   font-size: 0.95em;
   color: #000000;
 }
+#casiopea-project #info-project-txt dl.dl-horizontal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 #casiopea-project #info-project-txt dl.dl-horizontal > div {
   flex-wrap: wrap;
-  flex-direction: column;
+  display: flex;
   margin-bottom: 8px;
 }
 #casiopea-project #info-project-txt dl > div {
@@ -1163,6 +1168,38 @@ footer a.icon {
   }
 }
 @media only screen and (max-device-width: 767px), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (max-width: 767px) {
+  header {
+    background: #000000 !important;
+    position: fixed !important;
+    top: 0;
+    padding-top: 0;
+    transform: translate3d(0, 0, 0);
+  }
+  header.affix-top {
+    background: #000000;
+    position: fixed;
+    top: 0;
+    padding-top: 0;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+  }
+  header .brand {
+    position: relative;
+    z-index: 99;
+  }
+  header #navigation {
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: #000000;
+  }
+  header #navigation .trigger {
+    padding-top: 16px;
+  }
+  header #navigation .trigger .bar {
+    background: #ffffff;
+    height: 2px;
+  }
   header #navigation.active li {
     background: #000000;
     text-align: left;

@@ -565,9 +565,12 @@ footer {
             color: @black;
 
             &.dl-horizontal {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
                 >div {
                     flex-wrap: wrap;
-                    flex-direction: column;
+                    display: flex;
                     margin-bottom: 8px;
                 }
 
@@ -1698,6 +1701,48 @@ footer {
 // Mobile
 @media only screen and (max-device-width: 767px),
 only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (max-width: 767px) {
+
+    header {
+
+        background: @black !important;
+        position: fixed !important;
+        top: 0;
+        padding-top: 0;
+        transform: translate3d(0, 0, 0);
+
+        &.affix-top {
+            background: @black;
+            position: fixed;
+            top: 0;
+            padding-top: 0;
+            transform: translate3d(0, 0, 0);
+            z-index: 10;
+        }
+
+        .brand {
+            position: relative;
+            z-index: 99;
+        }
+
+        #navigation {
+            left: 0;
+            right: 0;
+            width: 100vw;
+
+            background: @black;
+
+            .trigger {
+                padding-top: 16px;
+            }
+
+        }
+    }
+
+
+    header #navigation .trigger .bar {
+        background: @white;
+        height: 2px;
+    }
 
     header #navigation.active li {
         background: @black;
