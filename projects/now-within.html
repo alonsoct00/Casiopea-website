@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html data-seo-key="project.now-within">
 
 <head>
+    <script>
+        (function () {
+            var lang = localStorage.getItem('casiopea-lang') || 'es';
+            document.documentElement.setAttribute('lang', lang);
+            if (lang !== 'es') document.documentElement.classList.add('i18n-pending');
+        })();
+    </script>
     <title>CASIOPEA - Proyectos - Campanias</title>
     <meta charset='utf-8'>
-    <meta content='Description' name=''>
+    <meta name="description" content="Proyecto de animación por Casiopea.">
     <meta content='1 day' name='revisit-after'>
     <meta content='width=device-width, initial-scale=1' name='viewport'>
     <!-- Fonts -->
@@ -24,7 +31,7 @@
     <![endif]-->
 </head>
 
-<body id="casiopea-project" style="background-color: #fff;">
+<body data-project-slug="now-within" id="casiopea-project" style="background-color: #fff;">
     <div class="Noise"></div>
     <div class='container-fluid now-whithin' id="casiopea-wsite">
         <header data-spy='affix'>
@@ -53,13 +60,13 @@
                             <h5>"Kirsten & Ann"</h5>
                             <div>
                                 
-                                <dt>Dirección y realización:</dt>
+                                <dt data-i18n-en="Direction and execution:">Dirección y realización:</dt>
                                 <dd>
                                     Sandra Medina
                                 </dd>
                             </div>
                             <div>
-                                <dt>Animación:</dt>
+                                <dt data-i18n-en="Animation:">Animación:</dt>
                                 <dd>
                                     América González Méndez
                                 </dd>
@@ -71,13 +78,13 @@
                             <h5>"Alice & Fred"</h5>
                             <div>
                                 
-                                <dt>Dirección y realización:</dt>
+                                <dt data-i18n-en="Direction and execution:">Dirección y realización:</dt>
                                 <dd>
                                     Andrea Mondragón
                                 </dd>
                             </div>
                             <div>
-                                <dt>Color:</dt>
+                                <dt data-i18n-en="Color:">Color:</dt>
                                 <dd>
                                     América González Méndez y Fernanda Ocampo
                                 </dd>
@@ -90,7 +97,7 @@
                             <h5>"Elisabeth & Debra"</h5>
                             <div>
                                 
-                                <dt>Dirección y realización:</dt>
+                                <dt data-i18n-en="Direction and execution:">Dirección y realización:</dt>
                                 <dd>
                                     Alexandra Castellanos
                                 </dd>
@@ -99,14 +106,14 @@
                     </div>
                     </div>
                     <div class='col-md-2 col-md-offset-1'>
-                        <h4>Producción</h4>
+                        <h4 data-i18n-en="Production">Producción</h4>
                         <p>Casiopea</p>
-                        <h4>Año:</h4>
+                        <h4 data-i18n="projects.year">Año</h4>
                         <p>2025</p>
                     </div>
                     <div class='col-md-2'>
-                        <h4>Técnica</h4>
-                        <p>2D Digital</p>
+                        <h4 data-i18n="projects.techniqueLabel">Técnica</h4>
+                        <p data-technique-value>2D Digital</p>
                     </div>
                 </div>
             </div>
@@ -217,7 +224,7 @@
                 <div class='row mb-5'>
                     <div class='col-md-12'>
                         <div class='title-block'>
-                            <h3>Otros Proyectos</h3>
+                            <h3 data-i18n="projects.otherProjects">Otros Proyectos</h3>
                         </div>
                     </div>
                 </div>
@@ -240,6 +247,7 @@
     <script src="../javascripts/jquery.placeholder.js" type="text/javascript"></script>
     <script src="../javascripts/waypoints.min.js" type="text/javascript"></script>
     <script src="../javascripts/functions.js" type="text/javascript"></script>
+    <script src="../javascripts/i18n.js" type="text/javascript"></script>
     <script async>
         $("a.h-link").each(function() {
             var $this = $(this);

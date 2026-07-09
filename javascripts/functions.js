@@ -22,46 +22,52 @@ class Header extends HTMLElement {
                         <div class='bar'></div>
                     </div>
                     <li>
-                        <a class="h-link" href='index.html'>Inicio</a>
+                        <a class="h-link" href='index.html' data-i18n="nav.home">Inicio</a>
                     </li>
                     <li>
-                        <a class="h-link" href='about-us.html'>Quiénes somos</a>
+                        <a class="h-link" href='about-us.html' data-i18n="nav.about">Quiénes somos</a>
                     </li>
                     <li>
-                        <a class="h-link" href='proyectos.html'>Proyectos</a>
+                        <a class="h-link" href='proyectos.html' data-i18n="nav.projects">Proyectos</a>
                         <ul id="filter-nav" style="display: none">
                             <li class="filter-nav-item">
-                                <a class="h-link filter-nav-anchor" href='proyectos.html#all' data-filter='*'>All</a>
+                                <a class="h-link filter-nav-anchor" href='proyectos.html#all' data-filter='*' data-i18n="filters.all">All</a>
                             </li>
                             <li class="filter-nav-item">
-                                <a class="h-link filter-nav-anchor" href='proyectos.html#motion-graphics' data-filter=".motion-graphics">Motion graphics</a>
+                                <a class="h-link filter-nav-anchor" href='proyectos.html#motion-graphics' data-filter=".motion-graphics" data-i18n="filters.motionGraphics">Motion graphics</a>
                             </li>
                             <li class="filter-nav-item">
-                                <a class="h-link filter-nav-anchor" href='proyectos.html#stop-motion' data-filter=".stop-motion">Stop motion</a>
+                                <a class="h-link filter-nav-anchor" href='proyectos.html#stop-motion' data-filter=".stop-motion" data-i18n="filters.stopMotion">Stop motion</a>
                             </li>
                             <li class="filter-nav-item">
-                                <a class="h-link filter-nav-anchor" href='proyectos.html#animated-cartoons' data-filter=".animated-cartoons">Dibujo animado</a>
+                                <a class="h-link filter-nav-anchor" href='proyectos.html#animated-cartoons' data-filter=".animated-cartoons" data-i18n="filters.animatedCartoons">Dibujo animado</a>
                             </li>
                             <li class="filter-nav-item">
-                                <a class="h-link filter-nav-anchor" href='proyectos.html#video-i' data-filter=".video-i">Video intervenido</a>
+                                <a class="h-link filter-nav-anchor" href='proyectos.html#video-i' data-filter=".video-i" data-i18n="filters.videoIntervened">Video intervenido</a>
                             </li>
                             <li class="filter-nav-item">
-                                <a class="h-link filter-nav-anchor" href='proyectos.html#fonima' data-filter=".fonima">Fonima</a>
+                                <a class="h-link filter-nav-anchor" href='proyectos.html#fonima' data-filter=".fonima" data-i18n="filters.fonima">Fonima</a>
                             </li>
                             <li class="filter-nav-item">
-                                <a class="h-link filter-nav-anchor" href='proyectos.html#workshops' data-filter=".workshops">Talleres</a>
+                                <a class="h-link filter-nav-anchor" href='proyectos.html#workshops' data-filter=".workshops" data-i18n="filters.workshops">Talleres</a>
                             </li>
                             <li>
-                                <a class="h-link filter-nav-anchor" href='proyectos.html#visuals' data-filter=".visuals">Visuales</a>
+                                <a class="h-link filter-nav-anchor" href='proyectos.html#visuals' data-filter=".visuals" data-i18n="filters.visuals">Visuales</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a class="h-link" href='contacto.html'>Contacto</a>
+                        <a class="h-link" href='contacto.html' data-i18n="nav.contact">Contacto</a>
+                    </li>
+                    <li class="lang-switch" role="group" data-i18n-aria-label="langSwitch.label" aria-label="Idioma">
+                        <button type="button" class="lang-btn" data-lang="es" aria-pressed="true">ES</button>
+                        <span aria-hidden="true">|</span>
+                        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
                     </li>
                 </ul>
+                <div class="sr-only" aria-live="polite" id="i18n-announcer"></div>
             </section>
-                
+
          `;
   }
 }
@@ -73,14 +79,14 @@ class Footer extends HTMLElement {
     this.innerHTML = `
                 <section class='text-center'>
                 <div class='social'>
-                    <a class='icon fa fa-vimeo' href='https://vimeo.com/casiopea' target="_blank"></a>
-                    <a class='icon fa fa-behance' href='https://www.behance.net/somoscasiopea' target="_blank"></a>
-                    <a class='icon fa fa-facebook' href='https://www.facebook.com/SomosCasiopea' target="_blank"></a>
-                    <a class='icon fa fa-instagram' href='https://www.instagram.com/somoscasiopea/' target="_blank"></a>
-                    <a class='icon fa fa-youtube' href='https://www.youtube.com/channel/UCYPkq5tLezsfBVEY1_1mcvA' target="_blank"></a>
+                    <a class='icon fa fa-vimeo' href='https://vimeo.com/casiopea' target="_blank" data-i18n-aria-label="footer.social.vimeo" aria-label="Vimeo"></a>
+                    <a class='icon fa fa-behance' href='https://www.behance.net/somoscasiopea' target="_blank" data-i18n-aria-label="footer.social.behance" aria-label="Behance"></a>
+                    <a class='icon fa fa-facebook' href='https://www.facebook.com/SomosCasiopea' target="_blank" data-i18n-aria-label="footer.social.facebook" aria-label="Facebook"></a>
+                    <a class='icon fa fa-instagram' href='https://www.instagram.com/somoscasiopea/' target="_blank" data-i18n-aria-label="footer.social.instagram" aria-label="Instagram"></a>
+                    <a class='icon fa fa-youtube' href='https://www.youtube.com/channel/UCYPkq5tLezsfBVEY1_1mcvA' target="_blank" data-i18n-aria-label="footer.social.youtube" aria-label="YouTube"></a>
                 </div>
                 <div class='copy'>
-                    <p>&copy; 2026 Casiopea. All Rights Reserved.</p>
+                    <p data-i18n="footer.copyright">&copy; 2026 Casiopea. Todos los derechos reservados.</p>
                 </div>
             </section>
 
@@ -224,7 +230,7 @@ customElements.define("main-footer", Footer);
     }
   });
 
-  $('<a href="/proyectos.html" id="back-cta">Regresar</a>').insertBefore(
+  $('<a href="/proyectos.html" id="back-cta" data-i18n-en="Back">Regresar</a>').insertBefore(
     ".other-projects-block",
   );
 })(jQuery);

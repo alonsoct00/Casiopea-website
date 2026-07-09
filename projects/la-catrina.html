@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html data-seo-key="project.la-catrina">
 
 <head>
+    <script>
+        (function () {
+            var lang = localStorage.getItem('casiopea-lang') || 'es';
+            document.documentElement.setAttribute('lang', lang);
+            if (lang !== 'es') document.documentElement.classList.add('i18n-pending');
+        })();
+    </script>
     <title>CASIOPEA - Proyectos - La Catrina</title>
     <meta charset='utf-8'>
-    <meta content='Description' name=''>
+    <meta name="description" content="Proyecto de animación por Casiopea.">
     <meta content='1 day' name='revisit-after'>
     <meta content='width=device-width, initial-scale=1' name='viewport'>
     <!-- Fonts -->
@@ -24,7 +31,7 @@
     <![endif]-->
 </head>
 
-<body id="casiopea-project">
+<body data-project-slug="la-catrina" id="casiopea-project">
     <div class="Noise"></div>
     <div class='container-fluid la-catrina-project' id="casiopea-wsite">
         <header data-spy='affix'>
@@ -52,55 +59,55 @@
                         <h4>La Catrina</h4>
                         <dl>
                             <div>
-                                <dt>Dirección y Producción:</dt>
+                                <dt data-i18n-en="Direction and production:">Dirección y Producción:</dt>
                                 <dd>
                                     Ana Cruz
                                 </dd>
                             </div>
                             <div>
-                                <dt>Guión:</dt>
+                                <dt data-i18n-en="Script:">Guión:</dt>
                                 <dd>
                                     Ernesto Martínez Bucio
                                 </dd>
                             </div>
                             <div>
-                                <dt>Historia original:</dt>
+                                <dt data-i18n-en="Original story:">Historia original:</dt>
                                 <dd>
                                     Homero Ramírez Tena
                                 </dd>
                             </div>
                             <div>
-                                <dt>Animación:</dt>
+                                <dt data-i18n-en="Animation:">Animación:</dt>
                                 <dd>
                                     Aranzazu Zamora, Alex Castellanos, Ismael Piña, Manuel Ortíz Hunger
                                 </dd>
                             </div>
                             <div>
-                                <dt>Arte:</dt>
+                                <dt data-i18n-en="Art:">Arte:</dt>
                                 <dd>
                                     Sandra Medina, Andrea Mondragón, Gissela Sauñe, Arturo Rodríguez
                                 </dd>
                             </div>
                             <div>
-                                <dt>Música y Diseño Sonoro:</dt>
+                                <dt data-i18n-en="Music and sound design:">Música y Diseño Sonoro:</dt>
                                 <dd>
                                     Ernesto Malaca
                                 </dd>
                             </div>
                             <div>
-                                <dt>Locución:</dt>
+                                <dt data-i18n-en="Voiceover:">Locución:</dt>
                                 <dd>
                                     Javier Sánchez
                                 </dd>
                             </div>
                             <div>
-                                <dt>Coproducción:</dt>
+                                <dt data-i18n-en="Co-production:">Coproducción:</dt>
                                 <dd>
                                     Micufilm y Desarrollos Museográficos
                                 </dd>
                             </div>
                             <div>
-                                <dt>Producción Micufilm:</dt>
+                                <dt data-i18n-en="Micufilm production:">Producción Micufilm:</dt>
                                 <dd>
                                     Marcos Almada Rivero y Carlos Azcuaga
                                 </dd>
@@ -108,14 +115,14 @@
                         </dl>
                     </div>
                     <div class='col-md-2 col-md-offset-1'>
-                        <h4>Cliente</h4>
+                        <h4 data-i18n="projects.client">Cliente</h4>
                         <p>CONACULTA</p>
-                        <h4>Año</h4>
+                        <h4 data-i18n="projects.year">Año</h4>
                         <p>2015</p>
                     </div>
                     <div class='col-md-2'>
-                        <h4>Técnica</h4>
-                        <p>Motion Grpahics</p>
+                        <h4 data-i18n="projects.techniqueLabel">Técnica</h4>
+                        <p data-technique-value>Motion Grpahics</p>
                     </div>
                 </div>
             </div>
@@ -241,7 +248,7 @@
                 <div class='row mb-5'>
                     <div class='col-md-12'>
                         <div class='title-block'>
-                            <h3>Otros Proyectos</h3>
+                            <h3 data-i18n="projects.otherProjects">Otros Proyectos</h3>
                         </div>
                     </div>
                 </div>
@@ -264,6 +271,7 @@
     <script src="../javascripts/jquery.placeholder.js" type="text/javascript"></script>
     <script src="../javascripts/waypoints.min.js" type="text/javascript"></script>
     <script src="../javascripts/functions.js" type="text/javascript"></script>
+    <script src="../javascripts/i18n.js" type="text/javascript"></script>
     <script async>
         $("a.h-link").each(function() {
             var $this = $(this);

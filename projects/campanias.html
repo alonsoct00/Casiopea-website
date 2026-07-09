@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html data-seo-key="project.campanias">
 
 <head>
+    <script>
+        (function () {
+            var lang = localStorage.getItem('casiopea-lang') || 'es';
+            document.documentElement.setAttribute('lang', lang);
+            if (lang !== 'es') document.documentElement.classList.add('i18n-pending');
+        })();
+    </script>
     <title>CASIOPEA - Proyectos - Campanias</title>
     <meta charset='utf-8'>
-    <meta content='Description' name=''>
+    <meta name="description" content="Proyecto de animación por Casiopea.">
     <meta content='1 day' name='revisit-after'>
     <meta content='width=device-width, initial-scale=1' name='viewport'>
     <!-- Fonts -->
@@ -24,7 +31,7 @@
     <![endif]-->
 </head>
 
-<body id="casiopea-project" style="background-color: #fff;">
+<body data-project-slug="campanias" id="casiopea-project" style="background-color: #fff;">
     <div class="Noise"></div>
     <div class='container-fluid campanias-project' id="casiopea-wsite">
         <header data-spy='affix'>
@@ -53,19 +60,19 @@
                         <h4>Campañas</h4>
                         <dl>
                             <div>
-                                <dt>Dirección:</dt>
+                                <dt data-i18n-en="Direction:">Dirección:</dt>
                                 <dd>
                                     Casiopea
                                 </dd>
                             </div>
                             <div>
-                                <dt>Arte:</dt>
+                                <dt data-i18n-en="Art:">Arte:</dt>
                                 <dd>
                                     María de Lourdes Rodríguez (Blume Vermello), Sandra Medina, Andrea Mondragón, Alexandra Castellanos
                                 </dd>
                             </div>
                             <div>
-                                <dt>Animación:</dt>
+                                <dt data-i18n-en="Animation:">Animación:</dt>
                                 <dd>
                                     Sandra Medina, Andrea Mondragón, Alexandra Castellanos, Andrea Barbosa
                                 </dd>
@@ -74,14 +81,14 @@
                         </dl>
                     </div>
                     <div class='col-md-2 col-md-offset-1'>
-                        <h4>Cliente</h4>
+                        <h4 data-i18n="projects.client">Cliente</h4>
                         <p>Estudios Churubusco <br/> Museo Interactivo de Economía CDMX</p>
-                        <h4>Año:</h4>
+                        <h4 data-i18n="projects.year">Año</h4>
                         <p>2022, 2024, 2025</p>
                     </div>
                     <!--<div class='col-md-2'>
-                        <h4>Técnica</h4>
-                        <p>Digital/Stop Motion</p>
+                        <h4 data-i18n="projects.techniqueLabel">Técnica</h4>
+                        <p data-technique-value>Digital/Stop Motion</p>
                     </div>-->
                 </div>
             </div>
@@ -183,7 +190,7 @@
                 <div class='row mb-5'>
                     <div class='col-md-12'>
                         <div class='title-block'>
-                            <h3>Otros Proyectos</h3>
+                            <h3 data-i18n="projects.otherProjects">Otros Proyectos</h3>
                         </div>
                     </div>
                 </div>
@@ -206,6 +213,7 @@
     <script src="../javascripts/jquery.placeholder.js" type="text/javascript"></script>
     <script src="../javascripts/waypoints.min.js" type="text/javascript"></script>
     <script src="../javascripts/functions.js" type="text/javascript"></script>
+    <script src="../javascripts/i18n.js" type="text/javascript"></script>
     <script async>
         $("a.h-link").each(function () {
             var $this = $(this);

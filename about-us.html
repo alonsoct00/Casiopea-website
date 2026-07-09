@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html data-seo-key="about">
 
 <head>
+    <script>
+        (function () {
+            var lang = localStorage.getItem('casiopea-lang') || 'es';
+            document.documentElement.setAttribute('lang', lang);
+            if (lang !== 'es') document.documentElement.classList.add('i18n-pending');
+        })();
+    </script>
     <title>CASIOPEA - Nosotros</title>
     <meta charset='utf-8'>
-    <meta content='Description' name=''>
+    <meta name="description" content="Conoce a Casiopea, estudio de animación en CDMX dirigido por Andrea Mondragón y Sandra Medina.">
     <meta content='1 day' name='revisit-after'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -37,7 +44,7 @@
                     <source media="(max-width: 768px)" srcset="images/Casiopea-QuienesSomos_FotoMobile.webp" type="image/webp">
                     <source media="(max-width: 768px)" srcset="images/Casiopea-QuienesSomos_FotoMobile.jpg">
                     <source srcset="images/about-us-casiopea-2026.webp" type="image/webp">
-                    <img data-src="images/about-us-casiopea-2026.png" alt="CASIOPEA Nosotros" loading="lazy">
+                    <img data-src="images/about-us-casiopea-2026.png" alt="CASIOPEA Nosotros" data-i18n-alt="about.heroAlt" loading="lazy">
                 </picture>
             </div>
         </section>
@@ -52,8 +59,8 @@
             <div class="container-fluid">
                 <div class="row block">
                     <div class="col-md-6 col-xs-12">
-                        <h4>Casiopea</h4>
-                        <p>Es un estudio de animación de la CDMX, <br/>dirigido por <a
+                        <h4 data-i18n="about.title">Casiopea</h4>
+                        <p data-i18n-en-html="Is an animation studio based in Mexico City, <br/>led by <a href=&quot;https://www.instagram.com/arena_mon/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;>Andrea Mondragón</a> and <a href=&quot;https://www.instagram.com/sands_ml&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;>Sandra Medina</a>. <br />We explore visual languages that mutate with every project by blending digital and analog techniques.">Es un estudio de animación de la CDMX, <br/>dirigido por <a
                                 href="https://www.instagram.com/arena_mon/" target="_blank" rel="noopener noreferrer">
                                 Andrea Mondragón </a> y <a href="https://www.instagram.com/sands_ml" target="_blank"
                                 rel="noopener noreferrer"> Sandra Medina</a>. <br />Exploramos lenguajes visuales que mutan con cada proyecto por medio de la mezcla de técnicas digitales y análogas.</p>
@@ -187,6 +194,7 @@
     <script src="javascripts/jquery.placeholder.js" type="text/javascript"></script>
     <script src="javascripts/waypoints.min.js" type="text/javascript"></script>
     <script src="javascripts/functions.js" type="text/javascript"></script>
+    <script src="javascripts/i18n.js" type="text/javascript"></script>
 </body>
 
 </html>

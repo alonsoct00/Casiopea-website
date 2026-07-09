@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html data-seo-key="project.no-se-aceptan-devoluciones">
 
 <head>
+    <script>
+        (function () {
+            var lang = localStorage.getItem('casiopea-lang') || 'es';
+            document.documentElement.setAttribute('lang', lang);
+            if (lang !== 'es') document.documentElement.classList.add('i18n-pending');
+        })();
+    </script>
     <title>CASIOPEA - Proyectos - No se aceptan devoluciones</title>
     <meta charset='utf-8'>
-    <meta content='Description' name=''>
+    <meta name="description" content="Proyecto de animación por Casiopea.">
     <meta content='1 day' name='revisit-after'>
     <meta content='width=device-width, initial-scale=1' name='viewport'>
     <!-- Fonts -->
@@ -24,7 +31,7 @@
     <![endif]-->
 </head>
 
-<body id="casiopea-project">
+<body data-project-slug="no-se-aceptan-devoluciones" id="casiopea-project">
     <div class="Noise"></div>
     <div class='container-fluid no-devoluciones-project' id="casiopea-wsite">
         <header data-spy='affix'>
@@ -53,31 +60,31 @@
                         <h4>No se aceptan devoluciones</h4>
                         <dl>
                             <div>
-                                <dt>Dirección:</dt>
+                                <dt data-i18n-en="Direction:">Dirección:</dt>
                                 <dd>
                                     DiezyMedia
                                 </dd>
                             </div>
                             <div>
-                                <dt>Producción:</dt>
+                                <dt data-i18n-en="Production:">Producción:</dt>
                                 <dd>
                                     Toloache
                                 </dd>
                             </div>
                             <div>
-                                <dt>Dirección de animación:</dt>
+                                <dt data-i18n-en="Animation direction:">Dirección de animación:</dt>
                                 <dd>
                                     Eduardo Valencia y Salvador Herrera
                                 </dd>
                             </div>
                             <div>
-                                <dt>Arte y Animación:</dt>
+                                <dt data-i18n-en="Art and animation:">Arte y Animación:</dt>
                                 <dd>
                                     Casiopea
                                 </dd>
                             </div>
                             <div>
-                                <dt>Diseño de personaje:</dt>
+                                <dt data-i18n-en="Character design:">Diseño de personaje:</dt>
                                 <dd>
                                     Mr. Mitote
                                 </dd>
@@ -85,14 +92,14 @@
                         </dl>
                     </div>
                     <div class='col-md-2 col-md-offset-2'>
-                        <h4>Cliente</h4>
+                        <h4 data-i18n="projects.client">Cliente</h4>
                         <p>Eugenio Derbez</p>
-                        <h4>Año</h4>
+                        <h4 data-i18n="projects.year">Año</h4>
                         <p>2013</p>
                     </div>
                     <div class='col-md-2'>
-                        <h4>Técnica</h4>
-                        <p>Stop Motion</p>
+                        <h4 data-i18n="projects.techniqueLabel">Técnica</h4>
+                        <p data-technique-value>Stop Motion</p>
                     </div>
                 </div>
             </div>
@@ -177,7 +184,7 @@
                 <div class='row mb-5'>
                     <div class='col-md-12'>
                         <div class='title-block'>
-                            <h3>Otros Proyectos</h3>
+                            <h3 data-i18n="projects.otherProjects">Otros Proyectos</h3>
                         </div>
                     </div>
                 </div>
@@ -200,6 +207,7 @@
     <script src="../javascripts/jquery.placeholder.js" type="text/javascript"></script>
     <script src="../javascripts/waypoints.min.js" type="text/javascript"></script>
     <script src="../javascripts/functions.js" type="text/javascript"></script>
+    <script src="../javascripts/i18n.js" type="text/javascript"></script>
     <script async>
         $("a.h-link").each(function() {
             var $this = $(this);

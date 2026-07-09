@@ -43,6 +43,35 @@ header .filter-nav-anchor:hover,
 header .filter-nav-anchor:focus {
   color: #ffffff !important;
 }
+html.i18n-pending body {
+  visibility: hidden;
+}
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 10px;
+}
+.lang-switch span {
+  color: #ffffff;
+  opacity: 0.5;
+}
+.lang-switch .lang-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #ffffff;
+  opacity: 0.5;
+}
+.lang-switch .lang-btn.active,
+.lang-switch .lang-btn:hover,
+.lang-switch .lang-btn:focus {
+  opacity: 1;
+  text-decoration: underline;
+}
 footer {
   background: #ebfdc6 !important;
   z-index: 10;

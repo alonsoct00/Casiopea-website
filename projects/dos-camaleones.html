@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html data-seo-key="project.dosCamaleones">
 
 <head>
+    <script>
+        (function () {
+            var lang = localStorage.getItem('casiopea-lang') || 'es';
+            document.documentElement.setAttribute('lang', lang);
+            if (lang !== 'es') document.documentElement.classList.add('i18n-pending');
+        })();
+    </script>
     <title>CASIOPEA - Proyectos - Dos Camaleones</title>
     <meta charset='utf-8'>
-    <meta content='Description' name=''>
+    <meta name="description" content="Dos Camaleones — cortometraje de dibujo animado producido por Casiopea para Cartoon Network LA.">
     <meta content='1 day' name='revisit-after'>
     <meta content='width=device-width, initial-scale=1' name='viewport'>
     <!-- Fonts -->
@@ -23,7 +30,7 @@
     <![endif]-->
 </head>
 
-<body id="casiopea-project" style="background-color:#fff">
+<body id="casiopea-project" data-project-slug="dos-camaleones" style="background-color:#fff">
     <div class="Noise"></div>
     <div class='container-fluid dos-camaleones-project' id="casiopea-wsite">
         <header data-spy='affix'>
@@ -50,49 +57,49 @@
                         <h4>Dos Camaleones</h4>
                         <dl>
                             <div>
-                                <dt>Dirección:</dt>
+                                <dt data-i18n-en="Direction:">Dirección:</dt>
                                 <dd>
                                     Andrea Mondragón
                                 </dd>
                             </div>
                             <div>
-                                <dt>Dirección de arte:</dt>
+                                <dt data-i18n-en="Art direction:">Dirección de arte:</dt>
                                 <dd>
                                     Sandra Medina
                                 </dd>
                             </div>
                             <div>
-                                <dt>Producción:</dt>
+                                <dt data-i18n-en="Production:">Producción:</dt>
                                 <dd>
                                     Ana Cruz
                                 </dd>
                             </div>
                             <div>
-                                <dt>Arte:</dt>
+                                <dt data-i18n-en="Art:">Arte:</dt>
                                 <dd>
                                     Sandra Medina, Verónica Anaya, John Marceline, Dáneri Castro
                                 </dd>
                             </div>
                             <div>
-                                <dt>Animación:</dt>
+                                <dt data-i18n-en="Animation:">Animación:</dt>
                                 <dd>
                                     Daniela Espinosa, Frida Ramírez, Andrea Barbosa, Ana Inés Flores, Andrea Mondragón
                                 </dd>
                             </div>
                             <div>
-                                <dt>Color:</dt>
+                                <dt data-i18n-en="Color:">Color:</dt>
                                 <dd>
                                     Andrea Estrada
                                 </dd>
                             </div>
                             <div>
-                                <dt>Compuesto:</dt>
+                                <dt data-i18n-en="Compositing:">Compuesto:</dt>
                                 <dd>
                                     Alex Castellanos y Andrea Barbosa
                                 </dd>
                             </div>
                             <div>
-                                <dt>Guión:</dt>
+                                <dt data-i18n-en="Script:">Guión:</dt>
                                 <dd>
                                     Ana Cruz, Sandra Medina, Andrea Mondragón y Alex Castellanos
                                 </dd>
@@ -100,14 +107,14 @@
                         </dl>
                     </div>
                     <div class='col-md-2 col-md-offset-1'>
-                        <h4>Cliente</h4>
+                        <h4 data-i18n="projects.client">Cliente</h4>
                         <p>Cartoon Network LA</p>
-                        <h4>Año</h4>
+                        <h4 data-i18n="projects.year">Año</h4>
                         <p>2020</p>
                     </div>
                     <div class='col-md-2'>
-                        <h4>Técnica</h4>
-                        <p>Dibujo Animado</p>
+                        <h4 data-i18n="projects.techniqueLabel">Técnica</h4>
+                        <p data-technique-value>Dibujo Animado</p>
                     </div>
                 </div>
             </div>
@@ -195,7 +202,7 @@
                 <div class='row mb-5'>
                     <div class='col-md-12'>
                         <div class='title-block'>
-                            <h3>Otros Proyectos</h3>
+                            <h3 data-i18n="projects.otherProjects">Otros Proyectos</h3>
                         </div>
                     </div>
                 </div>
@@ -218,6 +225,7 @@
     <script src="../javascripts/jquery.placeholder.js" type="text/javascript"></script>
     <script src="../javascripts/waypoints.min.js" type="text/javascript"></script>
     <script src="../javascripts/functions.js" type="text/javascript"></script>
+    <script src="../javascripts/i18n.js" type="text/javascript"></script>
     <script async>
     $("a.h-link").each(function() {
         var $this = $(this);

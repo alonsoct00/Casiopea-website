@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html data-seo-key="project.animasivo">
 
 <head>
+    <script>
+        (function () {
+            var lang = localStorage.getItem('casiopea-lang') || 'es';
+            document.documentElement.setAttribute('lang', lang);
+            if (lang !== 'es') document.documentElement.classList.add('i18n-pending');
+        })();
+    </script>
     <title>CASIOPEA - Proyectos - Animasivo</title>
     <meta charset='utf-8'>
-    <meta content='Description' name=''>
+    <meta name="description" content="Proyecto de animación por Casiopea.">
     <meta content='1 day' name='revisit-after'>
     <meta content='width=device-width, initial-scale=1' name='viewport'>
     <!-- Fonts -->
@@ -24,7 +31,7 @@
     <![endif]-->
 </head>
 
-<body id="casiopea-project">
+<body data-project-slug="animasivo" id="casiopea-project">
     <div class="Noise"></div>
     <div class='container-fluid animasivo-project' id="casiopea-wsite">
         <header data-spy='affix'>
@@ -52,25 +59,25 @@
                         <h5>Festival de animación contemporánea de la Ciudad de México.</h5>
                         <dl>
                             <div>
-                                <dt>Producción:</dt>
+                                <dt data-i18n-en="Production:">Producción:</dt>
                                 <dd>
                                     Alex Castellanos
                                 </dd>
                             </div>
                             <div>
-                                <dt>Arte Stop Motion:</dt>
+                                <dt data-i18n-en="Stop motion art:">Arte Stop Motion:</dt>
                                 <dd>
                                     Sandra Medina
                                 </dd>
                             </div>
                             <div>
-                                <dt>Animación:</dt>
+                                <dt data-i18n-en="Animation:">Animación:</dt>
                                 <dd>
                                     María José Rico, Erick Morales, Aranzazú Zamora y Alex Castellanos
                                 </dd>
                             </div>
                             <div>
-                                <dt>Diseño sonoro:</dt>
+                                <dt data-i18n-en="Sound design:">Diseño sonoro:</dt>
                                 <dd>
                                     Dj Unisex – 京都市 / Vorágine 2018
                                 </dd>
@@ -78,14 +85,14 @@
                         </dl>
                     </div>
                     <div class='col-md-2 col-md-offset-1'>
-                        <h4>Cliente</h4>
+                        <h4 data-i18n="projects.client">Cliente</h4>
                         <p>Animasivo</p>
-                        <h4>Año</h4>
+                        <h4 data-i18n="projects.year">Año</h4>
                         <p>2017</p>
                     </div>
                     <div class='col-md-2'>
-                        <h4>Técnica</h4>
-                        <p>Dibujo Animado, Stop Motion, Rotoscopia</p>
+                        <h4 data-i18n="projects.techniqueLabel">Técnica</h4>
+                        <p data-technique-value>Dibujo Animado, Stop Motion, Rotoscopia</p>
                     </div>
                 </div>
             </div>
@@ -189,7 +196,7 @@
                 <div class='row mb-5'>
                     <div class='col-md-12'>
                         <div class='title-block'>
-                            <h3>Otros Proyectos</h3>
+                            <h3 data-i18n="projects.otherProjects">Otros Proyectos</h3>
                         </div>
                     </div>
                 </div>
@@ -212,6 +219,7 @@
     <script src="../javascripts/jquery.placeholder.js" type="text/javascript"></script>
     <script src="../javascripts/waypoints.min.js" type="text/javascript"></script>
     <script src="../javascripts/functions.js" type="text/javascript"></script>
+    <script src="../javascripts/i18n.js" type="text/javascript"></script>
     <script async>
         $("a.h-link").each(function() {
             var $this = $(this);

@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About us",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "filters": {
+    "all": "All",
+    "motionGraphics": "Motion graphics",
+    "stopMotion": "Stop motion",
+    "animatedCartoons": "Animated drawing",
+    "videoIntervened": "Video intervention",
+    "fonima": "Fonima",
+    "workshops": "Workshops",
+    "visuals": "Visuals"
+  },
+  "footer": {
+    "copyright": "© {{year}} Casiopea. All rights reserved.",
+    "social": {
+      "vimeo": "Vimeo",
+      "behance": "Behance",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    }
+  },
+  "langSwitch": {
+    "label": "Language",
+    "announceEs": "Language switched to Spanish",
+    "announceEn": "Language switched to English"
+  },
+  "contact": {
+    "title": "Got a project? Let's talk:",
+    "form": {
+      "name": "Name",
+      "email": "E-mail",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send",
+      "sending": "Sending",
+      "thanks": "Thank you!",
+      "error": "Error!",
+      "validationError": "Please correct the highlighted fields."
+    },
+    "workInquiryLead": "Let's work together! If you have a project and want to collaborate with us, write to us at:",
+    "internshipsLead": "If you're interested in a social service placement or internship, send your portfolio or reel and your school's requirements to:"
+  },
+  "about": {
+    "title": "Casiopea",
+    "heroAlt": "CASIOPEA About us"
+  },
+  "projects": {
+    "client": "Client",
+    "year": "Year",
+    "techniqueLabel": "Technique",
+    "otherProjects": "Other Projects",
+    "back": "Back"
+  },
+  "errors404": {
+    "heading": "You've reached an empty space",
+    "sub": "Error 404. Page not found!"
+  },
+  "seo": {
+    "home": {
+      "title": "CASIOPEA — Animation Studio in Mexico City",
+      "description": "Casiopea is a digital animation studio in Mexico City led by Andrea Mondragón and Sandra Medina. Motion graphics, stop motion, animated drawing and more."
+    },
+    "about": {
+      "title": "CASIOPEA — About Us",
+      "description": "Meet Casiopea, an animation studio in Mexico City led by Andrea Mondragón and Sandra Medina."
+    },
+    "projects": {
+      "title": "CASIOPEA — Projects",
+      "description": "Casiopea's animation portfolio: motion graphics, stop motion, animated drawing, video intervention and fonima."
+    },
+    "contact": {
+      "title": "CASIOPEA — Contact",
+      "description": "Get in touch to quote your next animation project with Casiopea."
+    },
+    "faq": {
+      "title": "CASIOPEA — Frequently Asked Questions",
+      "description": "Answers to the most frequently asked questions about working with Casiopea."
+    },
+    "errors404": {
+      "title": "CASIOPEA — Page Not Found"
+    }
+  }
+}

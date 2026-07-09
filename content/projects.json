@@ -1,0 +1,134 @@
+{
+  "dos-camaleones": {
+    "technique": {
+      "es": "Dibujo Animado",
+      "en": "Animated Drawing"
+    }
+  },
+  "abuelitas-kitchen": {
+    "technique": {
+      "es": "Digital",
+      "en": "Digital"
+    }
+  },
+  "ambulante": {
+    "technique": {
+      "es": "Digital/Stop Motion",
+      "en": "Digital/Stop Motion"
+    }
+  },
+  "animasivo": {
+    "technique": {
+      "es": "Dibujo Animado, Stop Motion, Rotoscopia",
+      "en": "Animated Drawing, Stop Motion, Rotoscoping"
+    }
+  },
+  "ben-and-frank": {
+    "technique": {
+      "es": "Stop motion, animación y compuesto digital",
+      "en": "Stop motion, animation and digital compositing"
+    }
+  },
+  "birdsong": {
+    "technique": {
+      "es": "Motion Graphics",
+      "en": "Motion Graphics"
+    }
+  },
+  "campanias": {
+    "technique": {
+      "es": "Digital/Stop Motion",
+      "en": "Digital/Stop Motion"
+    }
+  },
+  "centavrvs": {
+    "technique": {
+      "es": "Dibujo Animado",
+      "en": "Animated Drawing"
+    }
+  },
+  "cutout-fest": {
+    "technique": {
+      "es": "Dibujo Animado",
+      "en": "Animated Drawing"
+    }
+  },
+  "franz-mayer": {
+    "technique": {
+      "es": "Digital",
+      "en": "Digital"
+    }
+  },
+  "hise": {
+    "technique": {
+      "es": "Animación cuadro x cuadro digital",
+      "en": "Digital frame-by-frame animation"
+    }
+  },
+  "kidoo": {
+    "technique": {
+      "es": "2D Digital",
+      "en": "2D Digital"
+    }
+  },
+  "la-catrina": {
+    "technique": {
+      "es": "Motion Grpahics",
+      "en": "Motion Graphics"
+    }
+  },
+  "macmillan": {
+    "technique": {
+      "es": "Digital",
+      "en": "Digital"
+    }
+  },
+  "no-se-aceptan-devoluciones": {
+    "technique": {
+      "es": "Stop Motion",
+      "en": "Stop Motion"
+    }
+  },
+  "now-within": {
+    "technique": {
+      "es": "2D Digital",
+      "en": "2D Digital"
+    }
+  },
+  "poliangular": {
+    "technique": {
+      "es": "Dibujo Animado, Stop Motion, 3D",
+      "en": "Animated Drawing, Stop Motion, 3D"
+    }
+  },
+  "smmx": {
+    "technique": {
+      "es": "Stop Motion",
+      "en": "Stop Motion"
+    }
+  },
+  "song-last-lacandon": {
+    "technique": {
+      "es": "Digital",
+      "en": "Digital"
+    }
+  },
+  "the-impossible-dream": {
+    "technique": {
+      "es": "Mixta",
+      "en": "Mixed media"
+    }
+  },
+  "the-river-kon": {
+    "technique": {
+      "es": "2D Digital",
+      "en": "2D Digital"
+    }
+  },
+  "video-explicativo": {
+    "technique": {
+      "es": "",
+      "en": ""
+    }
+  }
+}

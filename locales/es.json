@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Quiénes somos",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "filters": {
+    "all": "All",
+    "motionGraphics": "Motion graphics",
+    "stopMotion": "Stop motion",
+    "animatedCartoons": "Dibujo animado",
+    "videoIntervened": "Video intervenido",
+    "fonima": "Fonima",
+    "workshops": "Talleres",
+    "visuals": "Visuales"
+  },
+  "footer": {
+    "copyright": "© {{year}} Casiopea. Todos los derechos reservados.",
+    "social": {
+      "vimeo": "Vimeo",
+      "behance": "Behance",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    }
+  },
+  "langSwitch": {
+    "label": "Idioma",
+    "announceEs": "Idioma cambiado a español",
+    "announceEn": "Idioma cambiado a inglés"
+  },
+  "contact": {
+    "title": "¿Tienes un proyecto? Escríbenos:",
+    "form": {
+      "name": "Nombre",
+      "email": "E-mail",
+      "phone": "Teléfono",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "send": "Enviar",
+      "sending": "Enviando",
+      "thanks": "¡Gracias!",
+      "error": "¡Error!",
+      "validationError": "Por favor corrige los campos marcados."
+    },
+    "workInquiryLead": "¡Trabajemos juntxs! Si tienes algún proyecto y quieres colaborar con nosotras escríbenos a:",
+    "internshipsLead": "Si te interesa hacer el servicio social o prácticas profesionales, envía tu portafolio o reel y los requerimientos de tu escuela a:"
+  },
+  "about": {
+    "title": "Casiopea",
+    "heroAlt": "CASIOPEA Nosotros"
+  },
+  "projects": {
+    "client": "Cliente",
+    "year": "Año",
+    "techniqueLabel": "Técnica",
+    "otherProjects": "Otros Proyectos",
+    "back": "Regresar"
+  },
+  "errors404": {
+    "heading": "Has llegado a un espacio vacío",
+    "sub": "Error 404. Página no encontrada"
+  },
+  "seo": {
+    "home": {
+      "title": "CASIOPEA — Estudio de animación en CDMX",
+      "description": "Casiopea es un estudio de animación digital en la Ciudad de México dirigido por Andrea Mondragón y Sandra Medina. Motion graphics, stop motion, dibujo animado y más."
+    },
+    "about": {
+      "title": "CASIOPEA — Quiénes somos",
+      "description": "Conoce a Casiopea, estudio de animación en CDMX dirigido por Andrea Mondragón y Sandra Medina."
+    },
+    "projects": {
+      "title": "CASIOPEA — Proyectos",
+      "description": "Portafolio de proyectos de animación de Casiopea: motion graphics, stop motion, dibujo animado, video intervenido y fonima."
+    },
+    "contact": {
+      "title": "CASIOPEA — Contacto",
+      "description": "Escríbenos para cotizar tu próximo proyecto de animación con Casiopea."
+    },
+    "faq": {
+      "title": "CASIOPEA — Preguntas Frecuentes",
+      "description": "Respuestas a las preguntas más frecuentes sobre trabajar con Casiopea."
+    },
+    "errors404": {
+      "title": "CASIOPEA — Página no encontrada"
+    }
+  }
+}

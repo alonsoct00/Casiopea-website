@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html data-seo-key="home">
 
 <head>
+    <script>
+        (function () {
+            var lang = localStorage.getItem('casiopea-lang') || 'es';
+            document.documentElement.setAttribute('lang', lang);
+            if (lang !== 'es') document.documentElement.classList.add('i18n-pending');
+        })();
+    </script>
     <title>CASIOPEA</title>
     <meta charset='utf-8'>
-    <meta content='Description' name=''>
+    <meta name="description" content="Casiopea es un estudio de animación digital en la Ciudad de México dirigido por Andrea Mondragón y Sandra Medina.">
     <meta content='1 day' name='revisit-after'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -55,6 +62,7 @@
     <script src="javascripts/jquery.placeholder.js" type="text/javascript"></script>
     <script src="javascripts/waypoints.min.js" type="text/javascript"></script>
     <script src="javascripts/functions.js" type="text/javascript"></script>
+    <script src="javascripts/i18n.js" type="text/javascript"></script>
     <script async>
         var mainVideo = $('#home-hero-video'),
             desktopSrcmp4 = "videos/REEL_INICIO_V02.mp4",
