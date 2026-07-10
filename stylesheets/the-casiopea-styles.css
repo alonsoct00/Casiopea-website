@@ -1229,8 +1229,6 @@ footer a.icon {
   header #navigation .trigger {
     padding-top: 16px;
   }
-<<<<<<< Updated upstream
-=======
   header #navigation li.lang-switch {
     padding-block: 15px !important;
     padding-inline-start: 10px;
@@ -1239,7 +1237,6 @@ footer a.icon {
     z-index: 99;
     position: relative;
   }
->>>>>>> Stashed changes
   header #navigation .trigger .bar {
     background: #ffffff;
     height: 2px;
