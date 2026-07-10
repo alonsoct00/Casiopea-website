@@ -1,6 +1,6 @@
 # i18n Guide
 
-How the Spanish/English translation system works, and how to extend it. For the *why* behind these decisions, see `docs/12-architecture-design.md`. For a fast condensed summary meant for AI agents picking up this repo, see `agent-context.md` in the project root — this document is the longer, human-oriented version.
+How the Spanish/English translation system works, and how to extend it. For the *why* behind these decisions, see `docs/12-architecture-design.md`. For a fast condensed summary meant for AI agents picking up this repo, see `.agent.md` in the project root — this document is the longer, human-oriented version.
 
 ## How translations work
 

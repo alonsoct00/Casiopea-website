@@ -1,6 +1,6 @@
 # Migration Report — Spanish/English i18n
 
-Summary of the full i18n project: what was analyzed, what changed, why, and what's left. For architecture rationale see `docs/12-architecture-design.md`; for the fast-reference version see `agent-context.md` in the project root.
+Summary of the full i18n project: what was analyzed, what changed, why, and what's left. For architecture rationale see `docs/12-architecture-design.md`; for the fast-reference version see `.agent.md` in the project root.
 
 ## Files analyzed (Phase 1)
 
@@ -14,7 +14,7 @@ Full site: 6 root HTML pages, 22 project HTML pages, `javascripts/functions.js` 
 | `content/projects.json` | Per-project technique value (the one genuinely translatable per-project field) |
 | `javascripts/i18n.js` | The i18n runtime: locale fetch/cache, DOM binding, FOUC prevention, switcher logic, public `window.CasiopeaI18n` API |
 | `docs/01` – `docs/12`, `docs/content-inventory.md`, `docs/seo-content.md`, `docs/i18n-guide.md`, `docs/content-guide.md`, `docs/migration-report.md` | Audit, architecture, and usage documentation |
-| `agent-context.md` | Condensed onboarding doc for future agents/contributors |
+| `.agent.md` (merged into the existing pre-i18n file) | Condensed onboarding doc for future agents/contributors |
 
 ## Files modified
 
