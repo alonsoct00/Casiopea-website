@@ -19,6 +19,9 @@ html {
   background: url(../images/noise.gif);
   opacity: 0.05;
 }
+a:focus {
+  outline: 0;
+}
 header.affix {
   background: #000000 !important;
 }
@@ -31,7 +34,8 @@ header section {
   justify-content: center;
   justify-content: space-between;
 }
-header #navigation li a {
+header #navigation li a,
+header li.lang-switch * {
   color: #ffffff;
 }
 header #navigation li:hover a {
@@ -43,33 +47,19 @@ header .filter-nav-anchor:hover,
 header .filter-nav-anchor:focus {
   color: #ffffff !important;
 }
-html.i18n-pending body {
-  visibility: hidden;
+header #navigation li.lang-switch:hover {
+  background: unset;
 }
-.lang-switch {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-left: 10px;
-}
-.lang-switch span {
-  color: #ffffff;
-  opacity: 0.5;
-}
-.lang-switch .lang-btn {
+header button.lang-btn {
   background: none;
-  border: none;
-  padding: 0;
-  font: inherit;
-  font-size: 1.4rem;
-  cursor: pointer;
-  color: #ffffff;
-  opacity: 0.5;
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  box-shadow: none;
+  font-weight: normal;
 }
-.lang-switch .lang-btn.active,
-.lang-switch .lang-btn:hover,
-.lang-switch .lang-btn:focus {
-  opacity: 1;
+header button.lang-btn.active {
+  font-weight: 600;
   text-decoration: underline;
 }
 footer {
@@ -325,7 +315,8 @@ footer a.icon {
 #casiopea-projects header {
   background-color: transparent;
 }
-#casiopea-projects header #navigation li a {
+#casiopea-projects header #navigation li a,
+#casiopea-projects header li.lang-switch * {
   color: #000000;
 }
 #casiopea-projects header .img-logo img {
@@ -396,7 +387,8 @@ footer a.icon {
   visibility: hidden;
   display: none;
 }
-#casiopea-project.white-menu #navigation li a {
+#casiopea-project.white-menu #navigation li a,
+#casiopea-project.white-menu li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .casiopea-project-hero-intro {
@@ -539,7 +531,8 @@ footer a.icon {
 #casiopea-project .dos-camaleones-project #back-cta {
   background: #eeeeee;
 }
-#casiopea-project .dos-camaleones-project header #navigation li a {
+#casiopea-project .dos-camaleones-project header #navigation li a,
+#casiopea-project .dos-camaleones-project li.lang-switch * {
   color: #ffffff;
 }
 #casiopea-project .dos-camaleones-project header #navigation li:hover a {
@@ -553,7 +546,8 @@ footer a.icon {
   background: #000000;
   color: #ffffff;
 }
-#casiopea-project .fonima-project header #navigation li a {
+#casiopea-project .fonima-project header #navigation li a,
+#casiopea-project .fonima-project li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .fonima-project header #navigation li:hover a {
@@ -576,7 +570,8 @@ footer a.icon {
 #casiopea-project .birdsong-project #back-cta {
   background: #eeeeee;
 }
-#casiopea-project .birdsong-project header #navigation li a {
+#casiopea-project .birdsong-project header #navigation li a,
+#casiopea-project .birdsong-project li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .birdsong-project header #navigation li:hover a {
@@ -594,7 +589,8 @@ footer a.icon {
 #casiopea-project .sobre-amor-project #back-cta .title-block h3 {
   color: #ffffff;
 }
-#casiopea-project .sobre-amor-project header #navigation li a {
+#casiopea-project .sobre-amor-project header #navigation li a,
+#casiopea-project .sobre-amor-project li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .sobre-amor-project header #navigation li:hover a {
@@ -612,7 +608,8 @@ footer a.icon {
   background: #0a090c;
   color: #ffffff;
 }
-#casiopea-project .smmx-project header #navigation li a {
+#casiopea-project .smmx-project header #navigation li a,
+#casiopea-project .smmx-project li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .smmx-project header #navigation li:hover a {
@@ -625,7 +622,8 @@ footer a.icon {
 #casiopea-project .smmx-project footer .copy p {
   color: #f0f0f0 !important;
 }
-#casiopea-project .centavrvs-project header #navigation li a {
+#casiopea-project .centavrvs-project header #navigation li a,
+#casiopea-project .centavrvs-project li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .centavrvs-project header #navigation li:hover a {
@@ -649,7 +647,8 @@ footer a.icon {
 #casiopea-project .centavrvs-project footer .copy p {
   color: #f0f0f0 !important;
 }
-#casiopea-project .conoces-tomas-project header #navigation li a {
+#casiopea-project .conoces-tomas-project header #navigation li a,
+#casiopea-project .conoces-tomas-project li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .conoces-tomas-project header #navigation li:hover a {
@@ -663,7 +662,8 @@ footer a.icon {
 #casiopea-project .conoces-tomas-project footer {
   background: #4fd9d1 !important;
 }
-#casiopea-project .visuales-project header #navigation li a {
+#casiopea-project .visuales-project header #navigation li a,
+#casiopea-project .visuales-project li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .visuales-project header #navigation li:hover a {
@@ -682,7 +682,8 @@ footer a.icon {
   background: #e5e1dd;
   color: #000000;
 }
-#casiopea-project .poliangular-project header #navigation li a {
+#casiopea-project .poliangular-project header #navigation li a,
+#casiopea-project .poliangular-project li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .poliangular-project header #navigation li:hover a {
@@ -702,7 +703,8 @@ footer a.icon {
   background: #121212;
   color: #f0f0f0;
 }
-#casiopea-project .animasivo-project header #navigation li a {
+#casiopea-project .animasivo-project header #navigation li a,
+#casiopea-project .animasivo-project li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .animasivo-project header #navigation li:hover a {
@@ -720,7 +722,8 @@ footer a.icon {
   background: #eeeeee;
   color: #000000;
 }
-#casiopea-project .la-vejez-project header #navigation li a {
+#casiopea-project .la-vejez-project header #navigation li a,
+#casiopea-project .la-vejez-project li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .la-vejez-project header #navigation li:hover a {
@@ -734,7 +737,8 @@ footer a.icon {
   background: #030817 !important;
   color: #f0f0f0;
 }
-#casiopea-project .ruido-furia-project header #navigation li a {
+#casiopea-project .ruido-furia-project header #navigation li a,
+#casiopea-project .ruido-furia-project li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .ruido-furia-project header #navigation li:hover a {
@@ -752,7 +756,8 @@ footer a.icon {
   background: #1c1c1e !important;
   color: #f0f0f0;
 }
-#casiopea-project .the-impossible-dream header #navigation li a {
+#casiopea-project .the-impossible-dream header #navigation li a,
+#casiopea-project .the-impossible-dream li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .the-impossible-dream header #navigation li:hover a {
@@ -770,7 +775,8 @@ footer a.icon {
   background: #4fd9d1;
   color: #000000;
 }
-#casiopea-project .adentro-afuera-project header #navigation li a {
+#casiopea-project .adentro-afuera-project header #navigation li a,
+#casiopea-project .adentro-afuera-project li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .adentro-afuera-project header #navigation li:hover a {
@@ -785,7 +791,8 @@ footer a.icon {
   background: #4fd9d1;
   color: #000000;
 }
-#casiopea-project .trkon-project header #navigation li a {
+#casiopea-project .trkon-project header #navigation li a,
+#casiopea-project .trkon-project li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .trkon-project header #navigation li:hover a {
@@ -800,7 +807,8 @@ footer a.icon {
   background: #4fd9d1;
   color: #000000;
 }
-#casiopea-project .ben-and-frank header #navigation li a {
+#casiopea-project .ben-and-frank header #navigation li a,
+#casiopea-project .ben-and-frank li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .ben-and-frank header #navigation li:hover a {
@@ -815,7 +823,8 @@ footer a.icon {
   background: #151915;
   color: #f0f0f0;
 }
-#casiopea-project .la-catrina-project header #navigation li a {
+#casiopea-project .la-catrina-project header #navigation li a,
+#casiopea-project .la-catrina-project li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .la-catrina-project header #navigation li:hover a {
@@ -833,7 +842,8 @@ footer a.icon {
   background: #cbf7f2;
   color: #000000;
 }
-#casiopea-project .en-un-ser-vivo-project header #navigation li a {
+#casiopea-project .en-un-ser-vivo-project header #navigation li a,
+#casiopea-project .en-un-ser-vivo-project li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .en-un-ser-vivo-project header #navigation li:hover a {
@@ -850,7 +860,8 @@ footer a.icon {
 #casiopea-project .video-explicativo-project #project-work-demos h2 {
   font-size: 18px;
 }
-#casiopea-project .video-explicativo-project header #navigation li a {
+#casiopea-project .video-explicativo-project header #navigation li a,
+#casiopea-project .video-explicativo-project li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .video-explicativo-project header #navigation li:hover a {
@@ -868,7 +879,8 @@ footer a.icon {
   font-size: 30px;
   font-family: "Inconsolata", sans-serif;
 }
-#casiopea-project .ambulante-project header #navigation li a {
+#casiopea-project .ambulante-project header #navigation li a,
+#casiopea-project .ambulante-project li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .ambulante-project header #navigation li:hover a {
@@ -889,7 +901,8 @@ footer a.icon {
 #casiopea-project .song-of-the-last-lacandon video {
   background-color: #0a090c;
 }
-#casiopea-project .song-of-the-last-lacandon header #navigation li a {
+#casiopea-project .song-of-the-last-lacandon header #navigation li a,
+#casiopea-project .song-of-the-last-lacandon li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .song-of-the-last-lacandon header #navigation li:hover a {
@@ -913,7 +926,8 @@ footer a.icon {
 #casiopea-project .cutout-project #project-work-demos .row {
   margin-bottom: 0;
 }
-#casiopea-project .cutout-project header #navigation li a {
+#casiopea-project .cutout-project header #navigation li a,
+#casiopea-project .cutout-project li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .cutout-project header #navigation li:hover a {
@@ -935,7 +949,8 @@ footer a.icon {
   background: #e53f3f;
   color: #000000;
 }
-#casiopea-project .no-devoluciones-project header #navigation li a {
+#casiopea-project .no-devoluciones-project header #navigation li a,
+#casiopea-project .no-devoluciones-project li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .no-devoluciones-project header #navigation li:hover a {
@@ -954,7 +969,8 @@ footer a.icon {
   font-size: 30px;
   font-family: "Inconsolata", sans-serif;
 }
-#casiopea-project .kidoo header #navigation li a {
+#casiopea-project .kidoo header #navigation li a,
+#casiopea-project .kidoo li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .kidoo header #navigation li:hover a {
@@ -968,7 +984,8 @@ footer a.icon {
   background: #4fd9d1;
   color: #000000;
 }
-#casiopea-project .talleres-project header #navigation li a {
+#casiopea-project .talleres-project header #navigation li a,
+#casiopea-project .talleres-project li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .talleres-project header #navigation li:hover a {
@@ -986,7 +1003,8 @@ footer a.icon {
   background: #917af0;
   color: #000000;
 }
-#casiopea-project .abuelitas-kitchen header #navigation li a {
+#casiopea-project .abuelitas-kitchen header #navigation li a,
+#casiopea-project .abuelitas-kitchen li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .abuelitas-kitchen header #navigation li:hover a {
@@ -1007,7 +1025,8 @@ footer a.icon {
   background: #a64a96;
   color: #ffffff;
 }
-#casiopea-project .franz-mayer-project header #navigation li a {
+#casiopea-project .franz-mayer-project header #navigation li a,
+#casiopea-project .franz-mayer-project li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .franz-mayer-project header #navigation li:hover a {
@@ -1028,7 +1047,8 @@ footer a.icon {
   background: #a64a96;
   color: #ffffff;
 }
-#casiopea-project .campanias-project header #navigation li a {
+#casiopea-project .campanias-project header #navigation li a,
+#casiopea-project .campanias-project li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .campanias-project header #navigation li:hover a {
@@ -1049,7 +1069,8 @@ footer a.icon {
   background: #ea5b63;
   color: #000000;
 }
-#casiopea-project .hise-project header #navigation li a {
+#casiopea-project .hise-project header #navigation li a,
+#casiopea-project .hise-project li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .hise-project header #navigation li:hover a {
@@ -1070,7 +1091,8 @@ footer a.icon {
   background: #917af0;
   color: #000000;
 }
-#casiopea-project .now-whithin header #navigation li a {
+#casiopea-project .now-whithin header #navigation li a,
+#casiopea-project .now-whithin li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .now-whithin header #navigation li:hover a {
@@ -1088,7 +1110,8 @@ footer a.icon {
   background: #ea5b63;
   color: #000000;
 }
-#casiopea-project .macmillan-project header #navigation li a {
+#casiopea-project .macmillan-project header #navigation li a,
+#casiopea-project .macmillan-project li.lang-switch * {
   color: #f0f0f0;
 }
 #casiopea-project .macmillan-project header #navigation li:hover a {
@@ -1104,7 +1127,8 @@ footer a.icon {
 #contact-page {
   background: #917af0 !important;
 }
-#contact-page header #navigation li a {
+#contact-page header #navigation li a,
+#contact-page header li.lang-switch * {
   color: #000000;
 }
 #contact-page header #navigation li:hover a {

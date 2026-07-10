@@ -83,6 +83,12 @@ html {
     opacity: @opacity-low;
 }
 
+a {
+    &:focus {
+        outline: 0;
+    }
+}
+
 
 // --- HEADER ---
 header {
@@ -99,7 +105,8 @@ header {
         justify-content: space-between;
     }
 
-    #navigation li a {
+    #navigation li a,
+    li.lang-switch * {
         color: @white;
     }
 
@@ -112,6 +119,24 @@ header {
     .filter-nav-anchor:hover,
     .filter-nav-anchor:focus {
         color: @white !important;
+    }
+
+    #navigation li.lang-switch:hover {
+        background: unset;
+    }
+
+    button.lang-btn {
+        background: none;
+        appearance: none;
+        -webkit-appearance: none;
+        border: 0;
+        box-shadow: none;
+        font-weight: normal;
+
+        &.active {
+            font-weight: 600;
+            text-decoration: underline;
+        }
     }
 }
 
@@ -418,7 +443,8 @@ footer {
     header {
         background-color: transparent;
 
-        #navigation li a {
+        #navigation li a,
+        li.lang-switch * {
             color: @black;
         }
 
@@ -513,7 +539,9 @@ footer {
     }
 
     &.white-menu {
-        #navigation li a {
+
+        #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
     }
@@ -568,6 +596,7 @@ footer {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
+
                 >div {
                     flex-wrap: wrap;
                     display: flex;
@@ -690,7 +719,8 @@ footer {
             background: @gray-light;
         }
 
-        header #navigation li a {
+        header #navigation li a,
+        li.lang-switch * {
             color: @white;
         }
 
@@ -713,9 +743,11 @@ footer {
             color: @white;
         }
 
-        header #navigation li a {
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
+
 
         header #navigation li:hover a {
             color: @gray-mid;
@@ -748,7 +780,8 @@ footer {
             background: @gray-light;
         }
 
-        header #navigation li a {
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
 
@@ -775,7 +808,8 @@ footer {
             }
         }
 
-        header #navigation li a {
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
 
@@ -803,7 +837,8 @@ footer {
             color: @white;
         }
 
-        header #navigation li a {
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
 
@@ -824,7 +859,9 @@ footer {
 
     // --- PROJECTS: CENTAVRVS ---
     .centavrvs-project {
-        header #navigation li a {
+
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
 
@@ -859,7 +896,9 @@ footer {
 
     // --- PROJECTS: CONOCES TOMÁS ---
     .conoces-tomas-project {
-        header #navigation li a {
+
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
 
@@ -881,7 +920,9 @@ footer {
 
     // --- PROJECTS: VISUALES ---
     .visuales-project {
-        header #navigation li a {
+
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
 
@@ -910,7 +951,8 @@ footer {
             color: @black;
         }
 
-        header #navigation li a {
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
 
@@ -941,7 +983,8 @@ footer {
             color: @gray-soft;
         }
 
-        header #navigation li a {
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
 
@@ -969,7 +1012,8 @@ footer {
             color: @black;
         }
 
-        header #navigation li a {
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
 
@@ -992,7 +1036,8 @@ footer {
             color: @gray-soft;
         }
 
-        header #navigation li a {
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
 
@@ -1020,7 +1065,8 @@ footer {
             color: @gray-soft;
         }
 
-        header #navigation li a {
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
 
@@ -1048,7 +1094,8 @@ footer {
             color: @black;
         }
 
-        header #navigation li a {
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
 
@@ -1072,7 +1119,8 @@ footer {
             color: @black;
         }
 
-        header #navigation li a {
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
 
@@ -1096,7 +1144,8 @@ footer {
             color: @black;
         }
 
-        header #navigation li a {
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
 
@@ -1120,7 +1169,8 @@ footer {
             color: @gray-soft;
         }
 
-        header #navigation li a {
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
 
@@ -1148,7 +1198,8 @@ footer {
             color: @black;
         }
 
-        header #navigation li a {
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
 
@@ -1175,7 +1226,8 @@ footer {
             font-size: 18px;
         }
 
-        header #navigation li a {
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
 
@@ -1203,7 +1255,8 @@ footer {
             font-family: @font-main;
         }
 
-        header #navigation li a {
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
 
@@ -1235,7 +1288,8 @@ footer {
             background-color: @gray-dark;
         }
 
-        header #navigation li a {
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
 
@@ -1273,7 +1327,8 @@ footer {
             }
         }
 
-        header #navigation li a {
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
 
@@ -1311,7 +1366,8 @@ footer {
             color: @black;
         }
 
-        header #navigation li a {
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
 
@@ -1340,7 +1396,8 @@ footer {
             font-family: @font-main;
         }
 
-        header #navigation li a {
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
 
@@ -1363,7 +1420,8 @@ footer {
             color: @black;
         }
 
-        header #navigation li a {
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
 
@@ -1391,7 +1449,8 @@ footer {
             color: @black;
         }
 
-        header #navigation li a {
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
 
@@ -1425,7 +1484,8 @@ footer {
             color: @white;
         }
 
-        header #navigation li a {
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
 
@@ -1457,7 +1517,8 @@ footer {
             color: @white;
         }
 
-        header #navigation li a {
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
 
@@ -1490,7 +1551,8 @@ footer {
             color: @black;
         }
 
-        header #navigation li a {
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
 
@@ -1522,7 +1584,8 @@ footer {
             color: @black;
         }
 
-        header #navigation li a {
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
 
@@ -1551,7 +1614,8 @@ footer {
             color: @black;
         }
 
-        header #navigation li a {
+        header #navigation li a,
+        li.lang-switch * {
             color: @gray-soft;
         }
 
@@ -1577,7 +1641,9 @@ footer {
     background: @purple !important;
 
     header {
-        #navigation li a {
+
+        #navigation li a,
+        li.lang-switch * {
             color: @black;
         }
 
