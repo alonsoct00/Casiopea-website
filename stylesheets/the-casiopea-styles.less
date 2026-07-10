@@ -57,6 +57,28 @@
     object-fit: cover;
 }
 
+// Shared per-project theme: header nav + hover color used by most project pages
+.nav-soft-hover() {
+
+    header #navigation li a,
+    li.lang-switch * {
+        color: @gray-soft;
+    }
+
+    header #navigation li:hover a {
+        color: @gray-mid;
+    }
+}
+
+// Shared per-project theme: footer social/copy text color override
+.footer-social(@color) {
+
+    .social a,
+    .copy p {
+        color: @color !important;
+    }
+}
+
 
 // --- GLOBAL ---
 *::selection {
@@ -743,23 +765,12 @@ footer {
             color: @white;
         }
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         footer {
             background: @black !important;
 
-            .social a,
-            .copy p {
-                color: @gray-soft !important;
-            }
+            .footer-social(@gray-soft);
         }
 
         .link-to a {
@@ -780,14 +791,7 @@ footer {
             background: @gray-light;
         }
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         footer {
             background: @white !important;
@@ -808,22 +812,12 @@ footer {
             }
         }
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         footer {
             background: @pink !important;
 
-            .social a,
-            .copy p {
-                color: @gray-soft !important;
-            }
+            .footer-social(@gray-soft);
         }
     }
 
@@ -837,22 +831,12 @@ footer {
             color: @white;
         }
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         footer {
             background: @gray-dark !important;
 
-            .social a,
-            .copy p {
-                color: @gray-soft !important;
-            }
+            .footer-social(@gray-soft);
         }
     }
 
@@ -860,14 +844,7 @@ footer {
     // --- PROJECTS: CENTAVRVS ---
     .centavrvs-project {
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         #cta-video {
             color: @gray-soft;
@@ -886,10 +863,7 @@ footer {
         footer {
             background: @black !important;
 
-            .social a,
-            .copy p {
-                color: @gray-soft !important;
-            }
+            .footer-social(@gray-soft);
         }
     }
 
@@ -897,14 +871,7 @@ footer {
     // --- PROJECTS: CONOCES TOMÁS ---
     .conoces-tomas-project {
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         .other-projects-block,
         #back-cta {
@@ -921,14 +888,7 @@ footer {
     // --- PROJECTS: VISUALES ---
     .visuales-project {
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         .other-projects-block,
         #back-cta {
@@ -951,14 +911,7 @@ footer {
             color: @black;
         }
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         footer {
             background: @cream !important;
@@ -983,22 +936,12 @@ footer {
             color: @gray-soft;
         }
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         footer {
             background: #121212 !important;
 
-            .social a,
-            .copy p {
-                color: @gray-soft !important;
-            }
+            .footer-social(@gray-soft);
         }
     }
 
@@ -1012,14 +955,7 @@ footer {
             color: @black;
         }
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         footer {
             background: @gray-light !important;
@@ -1036,22 +972,12 @@ footer {
             color: @gray-soft;
         }
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         footer {
             background: #030817 !important;
 
-            .social a,
-            .copy p {
-                color: @gray-soft !important;
-            }
+            .footer-social(@gray-soft);
         }
     }
 
@@ -1065,22 +991,12 @@ footer {
             color: @gray-soft;
         }
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         footer {
             background: @gray-black !important;
 
-            .social a,
-            .copy p {
-                color: @gray-soft !important;
-            }
+            .footer-social(@gray-soft);
         }
     }
 
@@ -1094,14 +1010,7 @@ footer {
             color: @black;
         }
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         footer {
             background: @cyan !important;
@@ -1119,14 +1028,7 @@ footer {
             color: @black;
         }
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         footer {
             background: @cyan !important;
@@ -1144,14 +1046,7 @@ footer {
             color: @black;
         }
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         footer {
             background: @cyan !important;
@@ -1169,22 +1064,12 @@ footer {
             color: @gray-soft;
         }
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         footer {
             background: #151915 !important;
 
-            .social a,
-            .copy p {
-                color: @gray-soft !important;
-            }
+            .footer-social(@gray-soft);
         }
     }
 
@@ -1198,14 +1083,7 @@ footer {
             color: @black;
         }
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         footer {
             background: @aqua !important;
@@ -1226,14 +1104,7 @@ footer {
             font-size: 18px;
         }
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         footer {
             background: @purple-dark !important;
@@ -1255,14 +1126,7 @@ footer {
             font-family: @font-main;
         }
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         footer {
             background: @cyan !important;
@@ -1288,22 +1152,12 @@ footer {
             background-color: @gray-dark;
         }
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         footer {
             background: @gray-dark !important;
 
-            .social a,
-            .copy p {
-                color: @gray-soft !important;
-            }
+            .footer-social(@gray-soft);
         }
     }
 
@@ -1327,14 +1181,7 @@ footer {
             }
         }
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         footer {
             background: @purple !important;
@@ -1366,14 +1213,7 @@ footer {
             color: @black;
         }
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         footer {
             background: @red-strong !important;
@@ -1396,14 +1236,7 @@ footer {
             font-family: @font-main;
         }
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         footer {
             background: @green-hover !important;
@@ -1420,14 +1253,7 @@ footer {
             color: @black;
         }
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         footer {
             background: @cyan !important;
@@ -1449,22 +1275,12 @@ footer {
             color: @black;
         }
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         footer {
             background: @purple !important;
 
-            .social a,
-            .copy p {
-                color: @black !important;
-            }
+            .footer-social(@black);
         }
     }
 
@@ -1484,27 +1300,17 @@ footer {
             color: @white;
         }
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         footer {
             background: @pink !important;
 
-            .social a,
-            .copy p {
-                color: @white !important;
-            }
+            .footer-social(@white);
         }
     }
 
 
-    // --- PROJECTS: FRANZ MAYER---
+    // --- PROJECTS: CAMPAÑAS ---
 
     .campanias-project {
         .casiopea-project-hero-intro {
@@ -1517,14 +1323,7 @@ footer {
             color: @white;
         }
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         h2 {
             color: @white;
@@ -1533,10 +1332,7 @@ footer {
         footer {
             background: @pink !important;
 
-            .social a,
-            .copy p {
-                color: @white !important;
-            }
+            .footer-social(@white);
         }
     }
 
@@ -1551,22 +1347,12 @@ footer {
             color: @black;
         }
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         footer {
             background: @red-cherry !important;
 
-            .social a,
-            .copy p {
-                color: @black !important;
-            }
+            .footer-social(@black);
         }
     }
 
@@ -1584,27 +1370,17 @@ footer {
             color: @black;
         }
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         footer {
             background: @purple !important;
 
-            .social a,
-            .copy p {
-                color: @black !important;
-            }
+            .footer-social(@black);
         }
     }
 
 
-    // --- PROJECTS: HISE ---
+    // --- PROJECTS: MACMILLAN ---
 
     .macmillan-project {
 
@@ -1614,22 +1390,12 @@ footer {
             color: @black;
         }
 
-        header #navigation li a,
-        li.lang-switch * {
-            color: @gray-soft;
-        }
-
-        header #navigation li:hover a {
-            color: @gray-mid;
-        }
+        .nav-soft-hover();
 
         footer {
             background: @red-cherry !important;
 
-            .social a,
-            .copy p {
-                color: @black !important;
-            }
+            .footer-social(@black);
         }
     }
 
