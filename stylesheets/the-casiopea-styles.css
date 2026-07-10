@@ -1229,6 +1229,14 @@ footer a.icon {
   header #navigation .trigger {
     padding-top: 16px;
   }
+  header #navigation li.lang-switch {
+    padding-block: 15px !important;
+    padding-inline-start: 10px;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+    position: relative;
+  }
   header #navigation .trigger .bar {
     background: #ffffff;
     height: 2px;
