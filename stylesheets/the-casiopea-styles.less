@@ -1801,6 +1801,10 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (or
     header #navigation.active li {
         background: @black;
         text-align: left;
+
+        &.lang-switch {
+            background: @black;
+        }
     }
 
     ul#filter-nav {
@@ -1855,7 +1859,8 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (or
         height: auto;
     }
 
-    #casiopea-projects header #navigation li a {
+    #casiopea-projects header #navigation li a,
+    #casiopea-projects header li.lang-switch * {
         color: @white;
     }
 

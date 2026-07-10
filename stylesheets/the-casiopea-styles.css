@@ -1245,6 +1245,9 @@ footer a.icon {
     background: #000000;
     text-align: left;
   }
+  header #navigation.active li.lang-switch {
+    background: #000000;
+  }
   ul#filter-nav {
     display: none;
   }
@@ -1284,7 +1287,8 @@ footer a.icon {
   #casiopea-project .casiopea-project-hero-intro {
     height: auto;
   }
-  #casiopea-projects header #navigation li a {
+  #casiopea-projects header #navigation li a,
+  #casiopea-projects header li.lang-switch * {
     color: #ffffff;
   }
   #about-us-hero-top {

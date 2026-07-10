@@ -187,6 +187,16 @@ customElements.define("main-footer", Footer);
     $("#navigation").toggleClass("active"); // Toggle responsive menu
   });
 
+  // Lang switcher buttons aren't given the `h-link` class (see .agent.md),
+  // so unlike every other nav link they never call stopPropagation on their
+  // own tap. Without this, the tap bubbles to the "close nav on outside tap"
+  // handler below, which collapses #navigation mid-gesture on mobile and
+  // cancels the follow-up click i18n.js listens for — the language never
+  // switches. Stop it here so the click reaches i18n.js first.
+  $(".lang-switch").on("tap", function (e) {
+    e.stopPropagation();
+  });
+
   $("html").on("tap", function () {
     // Used to hide the responsive navigation on click outside
     $("#navigation").removeClass("active");
