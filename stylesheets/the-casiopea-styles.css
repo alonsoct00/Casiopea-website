@@ -1291,6 +1291,9 @@ footer a.icon {
   #casiopea-projects header li.lang-switch * {
     color: #ffffff;
   }
+  #casiopea-projects.projects-home .trigger .bar {
+    background: #000000;
+  }
   #about-us-hero-top {
     display: block;
     overflow-x: hidden;
