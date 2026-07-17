@@ -83,11 +83,15 @@
     <script src="javascripts/i18n.js?v=20260712" type="text/javascript"></script>
     <script async>
         var mainVideo = $('#home-hero-video'),
-            desktopSrcmp4 = "videos/REEL_INICIO_V02.mp4",
-            mobileSrcmp4 = "videos/REEL2026_WEB_VERTICAL_V03.mp4"
+            desktopSrcmp4 = "videos/REEL_INICIO_V02-opt.mp4",
+            desktopSrcwebm = "videos/REEL_INICIO_V02-opt.webm",
+            mobileSrcmp4 = "videos/REEL2026_WEB_VERTICAL_V03-opt.mp4",
+            mobileSrcwebm = "videos/REEL2026_WEB_VERTICAL_V03-opt.webm"
         if ($(window).width() < 767) {
+            mainVideo.append("<source type='video/webm' src='" + mobileSrcwebm + "' />");
             mainVideo.append("<source type='video/mp4' src='" + mobileSrcmp4 + "' />");
         } else {
+            mainVideo.append("<source type='video/webm' src='" + desktopSrcwebm + "' />");
             mainVideo.append("<source type='video/mp4' src='" + desktopSrcmp4 + "' />");
         }
     </script>
