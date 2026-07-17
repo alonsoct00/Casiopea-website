@@ -1,0 +1,21 @@
+# Casiopea
+
+> Estudio de animación digital en la Ciudad de México, dirigido por Andrea Mondragón y Sandra Medina. Motion graphics, stop motion, dibujo animado y video intervenido.
+
+Casiopea explora lenguajes visuales que mutan con cada proyecto, combinando técnicas digitales y análogas.
+
+## Páginas
+
+- [Inicio](https://casiopea.mx/): Reel y presentación del estudio
+- [Quiénes somos](https://casiopea.mx/about-us.html): Historia, equipo y forma de trabajar
+- [Proyectos](https://casiopea.mx/proyectos.html): Portafolio filtrable por técnica (motion graphics, stop motion, dibujo animado, video intervenido, fonima)
+- [Contacto](https://casiopea.mx/contacto.html): Formulario de contacto para nuevos proyectos
+- [Preguntas frecuentes](https://casiopea.mx/faq.html)
+
+## Redes
+
+- Vimeo: https://vimeo.com/casiopea
+- Instagram: https://www.instagram.com/somoscasiopea/
+- Behance: https://www.behance.net/somoscasiopea
+- Facebook: https://www.facebook.com/SomosCasiopea
+- YouTube: https://www.youtube.com/channel/UCYPkq5tLezsfBVEY1_1mcvA
