@@ -11,12 +11,13 @@
     </script>
     <title>CASIOPEA | Estudio de Animación Digital en Ciudad de México</title>
     <meta charset='utf-8'>
-    <meta name="description" content="Casiopea es un estudio de animación digital en la Ciudad de México dirigido por Andrea Mondragón y Sandra Medina. Motion graphics, stop motion, dibujo animado y más.">
+    <meta name="description" content="Casiopea, estudio de animación digital en CDMX dirigido por Andrea Mondragón y Sandra Medina. Motion graphics, stop motion y dibujo animado.">
     <meta name="keywords" content="estudio de animación, animación digital, motion graphics, stop motion, CDMX, Casiopea">
     <meta name="robots" content="index, follow">
     <meta content='1 day' name='revisit-after'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="https://casiopea.mx/">
+    <link rel="llms" href="/llms.txt">
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Casiopea">
@@ -24,6 +25,8 @@
     <meta property="og:description" content="Estudio de animación digital en CDMX dirigido por Andrea Mondragón y Sandra Medina. Motion graphics, stop motion, dibujo animado y más.">
     <meta property="og:url" content="https://casiopea.mx/">
     <meta property="og:image" content="https://casiopea.mx/videos/reel-poster.jpg">
+    <meta property="og:image:width" content="2842">
+    <meta property="og:image:height" content="1578">
     <meta property="og:locale" content="es_MX">
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -34,9 +37,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,400italic,300italic,100italic,700italic,700'
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,400italic,300italic,100italic,700italic,700&display=swap'
         rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap' rel='stylesheet' type='text/css'>
     <!-- Styles -->
     <link href="stylesheets/bootstrap.min.css?v=20260712" rel="stylesheet" type="text/css" />
     <link href="stylesheets/font-awesome.min.css?v=20260712" rel="stylesheet" type="text/css" />
@@ -47,24 +50,62 @@
     <script src="javascripts/html5shiv.js?v=20260712" type="text/javascript"></script>
     <script src="javascripts/respond.min.js?v=20260712" type="text/javascript"></script>
     <![endif]-->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Casiopea",
+        "url": "https://casiopea.mx/",
+        "logo": "https://casiopea.mx/images/logo_casiopea_blanco.gif",
+        "description": "Estudio de animación digital en la Ciudad de México dirigido por Andrea Mondragón y Sandra Medina.",
+        "founder": [
+            { "@type": "Person", "name": "Andrea Mondragón" },
+            { "@type": "Person", "name": "Sandra Medina" }
+        ],
+        "sameAs": [
+            "https://vimeo.com/casiopea",
+            "https://www.behance.net/somoscasiopea",
+            "https://www.facebook.com/SomosCasiopea",
+            "https://www.instagram.com/somoscasiopea/",
+            "https://www.youtube.com/channel/UCYPkq5tLezsfBVEY1_1mcvA"
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Casiopea",
+        "url": "https://casiopea.mx/"
+    }
+    </script>
 </head>
 
 <body id="main-home-page">
-    <div class="Noise" onclick="window.location.href='proyectos.html'"></div>
+    <a class="Noise" href="proyectos.html" aria-label="Ver proyectos" aria-hidden="true" tabindex="-1"></a>
     <div class='container-fluid' id="casiopea-wsite">
         <header data-spy='affix'>
             <!-- Navbar component-->
             <main-header></main-header>
         </header>
-        <section class="casiopea-section fluid-section" id="home-hero-top">
-            <div class="casiopea-home-hero" onclick="window.location.href='proyectos.html'">
-                <div class="video-container scrim-invisible">
-                    <video class="video" id="home-hero-video" poster="videos/reel-poster.jpg" playsinline muted
-                        autoplay loop></video>
-                </div>
-            </div>
-        </section>
+        <main>
+            <h1 class="sr-only">Casiopea &mdash; Estudio de Animación Digital en Ciudad de México</h1>
+            <section class="casiopea-section fluid-section" id="home-hero-top">
+                <a class="casiopea-home-hero" href="proyectos.html" aria-label="Ver proyectos de Casiopea">
+                    <div class="video-container scrim-invisible">
+                        <video class="video" id="home-hero-video" poster="videos/reel-poster.jpg" playsinline muted
+                            autoplay loop aria-hidden="true"></video>
+                    </div>
+                </a>
+            </section>
+        </main>
         <footer>
+            <nav class="sr-only" aria-label="Enlaces del sitio">
+                <a href="index.html">Inicio</a>
+                <a href="about-us.html">Quiénes somos</a>
+                <a href="proyectos.html">Proyectos</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
             <!-- Footer component-->
             <main-footer></main-footer>
         </footer>
